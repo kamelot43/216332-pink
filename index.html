@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <!--Навигация-->
+    <nav class="site-nav site-nav--closed">
+      <!--Кнопка открывающая скрытый контент -->
+      <button class="site-nav__toggle" type="button">Открыть меню</button>
+      <ul class="site-nav__items">
+        <li class="site-nav__item"><a>Главная</a></li>
+        <li class="site-nav__item"><a href="#">Фотографии</a></li>
+        <li class="site-nav__item"><a href="#">Конкурс</a></li>
+        <li class="site-nav__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
+    </nav>
+    <!--Картинка под блоком меню -->
+    <div class="site-header__general-img">
+      <img src="http://placehold.it/100x100 height =" " weight=" " alt="Главная картинка " ">
+    </div>
+  </header>
+  <!--Основное содержание -->
+  <main class="site-main">
+    <!--Скачать приложение -->
+    <section class="callback">
+      <button class="callback__btn" type="button">Скачать приложение</button>
+      <li class="callback__items">
+        <a class="callback__link">IOS</a>
+        <a class="callback__link">Android</a>
+        <a class="callback__link">Windows</a>
+      </li>
+    </section>
+    <!--Промо блок -->
+    <div class="promo">
+      <p class="promo__slogan">Устали от серости мегаполиса?</p>
+      <p class="promo__slogan">Нам есть,что вам предложить!</p>
+    </div>
+    <!-- Блок преемуществ -->
+    <section class="features">
+      <!--Блок приемуществ №1 -->
+      <div class="features__content">
+        <h3 class="features__title">Поднимает настроение</h3>
+        <p class="features__description">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <!--Блок приемуществ №2 -->
+      <div class="features__content">
+        <h3 class="features__title">Меняет мир вокруг</h3>
+        <p class="features__description">Сделайте снимок и украсьте его смайликом,или текстовой подписью,чтобы усилить эффект</p>
+      </div>
+      <!--Блок приемуществ №3 -->
+      <div class="features__content">
+        <h3 class="features__title">Заводит новых друзей</h3>
+        <p class="features__description">Ставьте лайки,комментируйте,делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+    </section>
+    <!-- Блок с отзывами.Слайдер -->
+    <section class="reviews">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <div class="slider">
+        <!-- Элементы управления слайдером -->
+        <div class="slider__controls"></div>
 
-  </body>
+        <div class=""></div>
+      </div>
+
+    </section>
+  </main>
+
+
+</body>
+
 </html>
