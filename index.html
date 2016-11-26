@@ -20,7 +20,7 @@
     </nav>
     <!--Картинка под блоком меню -->
     <div class="site-header__general-img">
-      <img src="http://placehold.it/100x100 height =" " weight=" " alt="Главная картинка " ">
+      <img src="http://placehold.it/100x100" alt="Главная картинка">
     </div>
   </header>
   <!--Основное содержание -->
@@ -61,14 +61,14 @@
     <section class="reviews">
       <!--Слайдер-->
       <div class="slider">
-        <input class="slider__input" type="radio" id="btn-1" name="toggle" checked>
-        <input class="slider__input" type="radio" id="btn-2" name="toggle">
-        <input class="slider__input" type="radio" id="btn-3" name="toggle">
+        <input class="slider__input" type="radio" id="slider-input-1" name="toggle" checked>
+        <input class="slider__input" type="radio" id="slider-input-2" name="toggle">
+        <input class="slider__input" type="radio" id="slider-input-3" name="toggle">
         <!-- Элементы управления слайдером -->
         <div class="slider__controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <label for="slider-input-1"></label>
+          <label for="slider-input-2"></label>
+          <label for="slider-input-3"></label>
         </div>
         <!--Блок со слайдами-->
         <div class="slider__slides">
@@ -93,9 +93,89 @@
         </div>
       </div>
     </section>
+    <!--Прейскурант-->
+    <section class="pricelist">
+      <input class="pricelist__input" type="radio" id="pricelist-input-1" name="toggle" checked>
+      <input class="pricelist__input" type="radio" id="pricelist-input-2" name="toggle">
+      <input class="pricelist__input" type="radio" id="pricelist-input-3" name="toggle">
+      <!-- Элементы управления слайдером(блока прейскурант) -->
+      <div class="pricelist__controls">
+        <label for="pricelist-input-1"></label>
+        <label for="pricelist-input-2"></label>
+        <label for="pricelist-input-3"></label>
+      </div>
+
+      <div class="pricelist__slides">
+      <!--Слайд № 1 в тарифном пакете-->
+      <div class="pricelist__slide">
+        <table class="pricelist__items">
+          <!--Заголовок таблицы-->
+          <caption class="pricelist__title">
+            <span class="pricelist__value">Стандарт</span>
+            <span class="pricelist__price">3,99 usd</span>
+          </caption>
+        <tr>
+          <td class="pricelist__option">Розовый фильтр</td>
+          <td class="pricelist__option--positive">&#10004;</td>
+        </tr>
+        <tr>
+          <td class="pricelist__option">Смайлики</td>
+          <td class="pricelist__option--positive">&#10004;</td>
+        </tr>
+        <tr>
+          <td class="pricelist__option">Комментарии</td>
+          <td class="pricelist__option--negative">&#10006;</td>
+        </tr>
+      </table>
+      </div>
+
+      <!--Слайд № 2 в тарифном пакете-->
+      <div class="pricelist__slide">
+        <table class="pricelist__items">
+          <!--Заголовок таблицы-->
+          <caption class="pricelist__title">
+            <span class="pricelist__value">Стандарт</span>
+            <span class="pricelist__price">3,99 usd</span>
+          </caption>
+        <tr>
+          <td class="pricelist__option">Розовый фильтр</td>
+          <td class="pricelist__option--positive">&#10004;</td>
+        </tr>
+        <tr>
+          <td class="pricelist__option">Смайлики</td>
+          <td class="pricelist__option--positive">&#10004;</td>
+        </tr>
+        <tr>
+          <td class="pricelist__option">Комментарии</td>
+          <td class="pricelist__option--negative">&#10006;</td>
+        </tr>
+      </table>
+      </div>
+
+      <!--Слайд № 3 в тарифном пакете-->
+      <div class="pricelist__slide">
+        <table class="pricelist__items">
+          <!--Заголовок таблицы-->
+          <caption class="pricelist__title">
+            <span class="pricelist__value">Стандарт</span>
+            <span class="pricelist__price">3,99 usd</span>
+          </caption>
+        <tr>
+          <td class="pricelist__option">Розовый фильтр</td>
+          <td class="pricelist__option--positive">&#10004;</td>
+        </tr>
+        <tr>
+          <td class="pricelist__option">Смайлики</td>
+          <td class="pricelist__option--positive">&#10004;</td>
+        </tr>
+        <tr>
+          <td class="pricelist__option">Комментарии</td>
+          <td class="pricelist__option--negative">&#10006;</td>
+        </tr>
+      </table>
+      </div>
+      </div>
+    </section>
   </main>
-
-
 </body>
-
 </html>
