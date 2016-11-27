@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк.Форма</title>
@@ -8,111 +9,151 @@
 <body>
   <!-- Шапка сайта -->
   <header class="site-header">
-    <div class="site-header__wrapper"><!--Центровщик-->
-    <!--Навигация-->
-    <nav class="site-nav site-nav--closed">
-      <!--Кнопка открывающая скрытый контент -->
-      <button class="site-nav__toggle" type="button">Открыть меню</button>
-      <ul class="site-nav__items">
-        <li class="site-nav__item"><a>Главная</a></li>
-        <li class="site-nav__item"><a href="#">Фотографии</a></li>
-        <li class="site-nav__item"><a href="#">Конкурс</a></li>
-        <li class="site-nav__item"><a href="#">HTML ACADEMY</a></li>
-      </ul>
-    </nav>
-    <!--Картинка под блоком меню -->
-    <div class="site-header__promo">
-      <h1 class="site-header__descr">Конкурс на самое безбашенное путешествие с пинк</h1>
+    <!--Центровщик-->
+    <div class="site-header__wrapper">
+      <!--Навигация-->
+      <nav class="site-nav site-nav--closed">
+        <!--Кнопка открывающая скрытый контент -->
+        <button class="site-nav__toggle" type="button">Открыть меню</button>
+        <ul class="site-nav__items">
+          <li class="site-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="site-header__promo">
+        <h2 class="site-header__descr">Конкурс на самое безбашенное путешествие с пинк</h2>
+      </div>
     </div>
-  </div>
   </header>
   <!--Основное содержание-->
   <main class="site-main">
-    <div class="site-main__wrapper"><!--Центровщик-->
-    <div class="promotion">
-      <p class="promotion__about">Поделитесь своей историей и получите шанс выиграть ценный приз-1000 миль на вашу бонусную карту</p>
+    <!--Центровщик-->
+    <div class="site-main__wrapper">
+      <div class="slogan">
+        <p class="slogan__about">Поделитесь своей историей и получите шанс выиграть ценный приз-1000 миль на вашу бонусную карту</p>
+      </div>
+      <!--Форма-->
+      <form class="user-form" action="form.php" method="get">
+        <!--Имя и фамилия-->
+        <fieldset class="user-name">
+          <ul class="user-name__items">
+            <li class="user_item">
+              <label class="user-name__label" for="user-name-input-1">Фамилия:</label>
+              <input class="user-name__input" type="text" name="user-surname" id="user-name-input-1" placeholder="Укажите фамилию <sup>*</sup>">
+            </li>
+            <li class="user_item">
+              <label class="user-name__label" for="user-name-input-2">Имя:</label>
+              <input class="user-name__input" type="text" name="user-name" id="user-name-input-2" placeholder="Введите ваше имя <sup>*</sup>">
+            </li>
+            <li class="user_item">
+              <label class="user-name__label" for="user-name-input-3">Отчество:</label>
+              <input class="user-name__input" type="text" name="user-patronymic" id="user-name-input-3" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+        <!--Блок достижений-->
+        <fieldset class="achievement">
+          <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achievement__items">
+            <li class="achievement__item">
+              <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-1">
+              <label for="achievement-input-1">Сделал селфи с акулой</label>
+            </li>
+            <li class="achievement__item">
+              <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-2">
+              <label for="achievement-input-2">Обгорел на пляже</label>
+            </li>
+            <li class="achievement__item">
+              <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-3">
+              <label for="achievement-input-3">Видел Чака Норриса</label>
+            </li>
+            <li class="achievement__item">
+              <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-4">
+              <label for="achievement-input-4">Накупил сувениров</label>
+            </li>
+            <li class="achievement__item">
+              <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-5">
+              <label for="achievement-input-5">Удержал башню</label>
+            </li>
+            <li class="achievement__item">
+              <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-6">
+              <label for="achievement-input-6">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <!--Контакты с пользователем-->
+        <fieldset class="contacts">
+          <ul class="contacts__items">
+            <li class="contacts__item">
+              <label class="contacts__label" for="contacts-input-1">Номер телефона:</label>
+              <input class="contacts__input" type="text" name="user-phone" id="contacts-input-1" placeholder="Номер пожалуйста">
+            </li>
+            <li class="contacts_item">
+              <label class="contacts__label" for="contacts-input-2">Адрес почты:</label>
+              <input class="contacts__input" type="text" name="user-mail" id="contacts-input-2" placeholder="Введите почту<sup>*</sup>">
+            </li>
+          </ul>
+        </fieldset>
+        <!--Блок о приложении пользователя-->
+        <fieldset class="user-soft">
+          <legend class="user-soft__title">С каким приложение путешествовали?</legend>
+          <ul class="user-soft__items">
+            <li class="user-soft__item">
+              <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-1">
+              <label for="user-soft-input-1">Pink для iOS</label>
+            </li>
+            <li class="user-soft__item">
+              <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-2">
+              <label for="user-soft-input-2">Pink на Android</label>
+            </li>
+            <li class="user-soft__item">
+              <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-3">
+              <label for="user-soft-input-3">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+        <!--Блок впечатления пользователя-->
+        <fieldset class="user-impression">
+          <legend class="user-impression__title">Опишите свои эмоции</legend>
+          <label for="user-impression"></label>
+          <textarea class="user-impression__textarea" name="user-impression" id="user-impression" cols="70" rows="10" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <!--Кнопка отправки формы-->
+        <button class="user-form__submit" type="button">Отправить форму</button>
+        <p class="user-form__footnote"><sup>*</sup>-обязательные поля</p>
+      </form>
     </div>
-    <!--Форма-->
-    <form class="user-form" action="form.php" method="get">
-      <!--Имя и фамилия-->
-      <fieldset class="user-name">
-        <label for="user-name-input-1">Фамилия:</label>
-        <input class="user-name__input" type="text" name="user-surname" id="user-name-input-1" placeholder="Укажите фамилию <sup>*</sup>">
-        <label for="user-name-input-2">Имя:</label>
-        <input class="user-name__input" type="text" name="user-name" id="user-name-input-2" placeholder="Введите ваше имя <sup>*</sup>">
-        <label for="user-name-input-3">Отчество:</label>
-        <input class="user-name__input" type="text" name="user-patronymic" id="user-name-input-3" placeholder="Ну и отчество тоже">
-      </fieldset>
-      <!--Блок достижений-->
-      <fieldset class="user-achievement">
-        <legend class="user-achievement__title">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="user-achievement__items">
-          <li class="user-achievement__item"><input class="user-achievement__input" type="checkbox" name="achievement" id="user-achievement-input-1">
-            <label for="user-achievement-input-1">Сделал селфи с акулой</label>
-          </li>
-          <li class="user-achievement__item"><input class="user-achievement__input" type="checkbox" name="achievement" id="user-achievement-input-2">
-            <label for="user-achievement-input-2">Обгорел на пляже</label>
-          </li>
-          <li class="user-achievement__item"><input class="user-achievement__input" type="checkbox" name="achievement" id="user-achievement-input-3">
-            <label for="user-achievement-input-3">Видел Чака Норриса</label>
-          </li>
-          <li class="user-achievement__item"><input class="user-achievement__input" type="checkbox" name="achievement" id="user-achievement-input-4">
-            <label for="user-achievement-input-4">Накупил сувениров</label>
-          </li>
-          <li class="user-achievement__item"><input class="user-achievement__input" type="checkbox" name="achievement" id="user-achievement-input-5">
-            <label for="user-achievement-input-5">Удержал башню</label>
-          </li>
-          <li class="user-achievement__item"><input class="user-achievement__input" type="checkbox" name="achievement" id="user-achievement-input-6">
-            <label for="user-achievement-input-6">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
-      <!--Контакты с пользователем-->
-      <fieldset class="user-contacts">
-        <label for="user-contacts-input-1">Номер телефона:</label>
-        <input class="user-contacts__input" type="text" name="user-phone" id="user-contacts-input-1" placeholder="Номер пожалуйста">
-        <label for="user-name-input-2">Адрес почты:</label>
-        <input class="user-contacts__input" type="text" name="user-mail" id="user-contacts-input-2" placeholder="Введите почту<sup>*</sup>">
-      </fieldset>
-      <!--Блок о приложении пользователя-->
-      <fieldset class="user-soft">
-        <legend class="user-soft__title">С каким приложение путешествовали?</legend>
-        <ul class="user-soft__items">
-          <li class="user-soft__item"><input class="user-soft__input" type="radio" name="soft" id="user-soft-input-1">
-            <label for="user-soft-input-1">Pink для iOS</label>
-          </li>
-          <li class="user-soft__item"><input class="user-soft__input" type="radio" name="soft" id="user-soft-input-2">
-            <label for="user-soft-input-2">Pink на Android</label>
-          </li>
-          <li class="user-soft__item"><input class="user-soft__input" type="radio" name="soft" id="user-soft-input-3">
-            <label for="user-soft-input-3">Windows Phone</label>
-          </li>
-        </ul>
-      </fieldset>
-      <!--Блок впечатления пользователя-->
-      <fieldset class="user-impression">
-        <legend class="user-impression__title">Опишите свои эмоции</legend>
-        <label for="user-impression"></label>
-        <textarea class="user-impression__textarea" name="user-impression" id="user-impression" cols="70" rows="10" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
-      </fieldset>
-      <!--Кнопка отправки формы-->
-      <button class="user-form__toggle" type="button">Отправить форму</button>
-      <p class="user-form__footnote"><sup>*</sup>-обязательные поля</p>
-    </form>
-  </div>
   </main>
   <footer class="site-footer site-footer--form">
-    <div class="site-footer__wrapper"><!--Центровщик-->
-    <div class="site-footer__logo-img">
-        <a href="#"><img src="http://placehold.it/100x100" alt="Главная картинка"></a>
+    <!--Центровщик-->
+    <div class="site-footer__wrapper">
+      <div class="site-footer__logo">
+        <a href="#">
+          <img src="http://placehold.it/100x100" alt="Главная картинка">
+        </a>
+      </div>
+      <div class="social">
+        <a class="social__link social__link--tv" href="#">TV</a>
+        <a class="social__link social__link--fb" href="#">FB</a>
+        <a class="social__link social__link--yt" href="#">YouTube</a>
+      </div>
+      <p class="page-footer__copyright">Разработано:
+        <a href="#">
+          <img src="http://placehold.it/50x50" alt="HTML Academy">
+        </a>
+      </p>
     </div>
-    <div class="site-footer__social">
-      <a class="site-footer__btn site-footer__btn--tv" href="#">TV</a>
-      <a class="site-footer__btn site-footer__btn--fb" href="#">FB</a>
-      <a class="site-footer__btn site-footer__btn--yt" href="#">YouTube</a>
-    </div>
-    <p class="page-footer__copyright">Разработано:<a href="#"><img src="http://placehold.it/50x50" alt="HTML Academy"></a></p>
-  </div>
   </footer>
 </body>
+
 </html>
