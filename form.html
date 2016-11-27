@@ -1,0 +1,46 @@
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк.Форма</title>
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <!--Навигация-->
+    <nav class="site-nav site-nav--closed">
+      <!--Кнопка открывающая скрытый контент -->
+      <button class="site-nav__toggle--close" type="button">Закрыть</button>
+      <button class="site-nav__toggle" type="button">Открыть меню</button>
+      <ul class="site-nav__items">
+        <li class="site-nav__item"><a>Главная</a></li>
+        <li class="site-nav__item"><a href="#">Фотографии</a></li>
+        <li class="site-nav__item"><a href="#">Конкурс</a></li>
+        <li class="site-nav__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
+    </nav>
+    <!--Картинка под блоком меню -->
+    <div class="site-header__promo">
+      <h1 class="site-header__descr">Конкурс на самое безбашенное путешествие с пинк</h1>
+    </div>
+  </header>
+  <!--Основное содержание-->
+  <main class="site-main">
+    <div class="promotion">
+      <p class="promotion__about">Поделитесь своей историей и получите шанс выиграть ценный приз-1000 миль на вашу бонусную карту</p>
+    </div>
+    <!--Форма-->
+      <form class="user-form" action="form.php" method="get">
+        <!--Имя и фамилия-->
+        <div class="user-name">
+        <label for="user-name-input-1">Фамилия:</label>
+        <input class="user-name__input" type="text" name="user-surname" id="user-name-input-1" placeholder="Укажите фамилию<sup>*</sup>" >
+        <label for="user-name-input-2">Имя:</label>
+        <input class="user-name__input" type="text" name="user-name" id="user-name-input-2" placeholder="Введите ваше имя<sup>*</sup>" >
+        <label for="user-name-input-3">Отчество:</label>
+        <input class="user-name__input" type="text" name="user-patronymic" id="user-name-input-3" placeholder="Ну и отчество тоже" >
+      </div>
+      </form>
+  </main>
+</body>
+</html>
