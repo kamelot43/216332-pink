@@ -11,17 +11,14 @@
   <header class="site-header">
     <!--Центровщик-->
     <div class="site-header__wrapper">
+      <a>
+        <h1 class="visually-hidden">pink</h1>
+      </a>
       <!--Навигация-->
       <nav class="site-nav site-nav--closed">
         <!--Кнопка открывающая скрытый контент -->
         <button class="site-nav__toggle" type="button">Открыть меню</button>
         <ul class="site-nav__items">
-          <!--Название сайт-->
-          <li class="site-nav__item">
-            <a>
-              <h1 class="site-nav__title">pink</h1>
-            </a>
-          </li>
           <li class="site-nav__item">
             <a>Главная</a>
           </li>
@@ -48,16 +45,16 @@
     <div class="site-main__wrapper">
       <!--Скачать приложение -->
       <section class="download">
-        <button class="download__btn" type="button">Скачать приложение</button>
+        <a class="download__link download__link--default" href="http://www.apple.com/itunes/" >Скачать приложение</a>
         <ul class="download__items">
           <li class="download__item">
-            <a href="#">IOS</a>
+            <a class="download__link download__link--IOS" href="http://www.apple.com/itunes/">IOS</a>
           </li>
           <li class="download__item">
-            <a href="#">Android</a>
+            <a class="download__link download__link--Android" href="https://play.google.com/store">Android</a>
           </li>
           <li class="download__item">
-            <a href="#">Windows</a>
+            <a class="download__link download__link--Windows" href="https://www.microsoftstore.com/store">Windows</a>
           </li>
         </ul>
         <p class="download__support">Доступно для iPhone,iPad,Android,<br>Windows Phone,OS X,Windows 8.</p>

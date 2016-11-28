@@ -11,17 +11,14 @@
   <header class="site-header">
     <!--Центровщик-->
     <div class="site-header__wrapper">
+      <a href="index.html">
+        <h1 class="visually-hidden">pink</h1>
+      </a>
       <!--Навигация-->
       <nav class="site-nav site-nav--closed">
         <!--Кнопка открывающая скрытый контент -->
         <button class="site-nav__toggle" type="button">Открыть меню</button>
         <ul class="site-nav__items">
-          <!--Название сайт-->
-          <li class="site-nav__item">
-            <a href="index.html">
-              <h1 class="site-nav__title">pink</h1>
-            </a>
-          </li>
           <li class="site-nav__item">
             <a href="index.html">Главная</a>
           </li>
@@ -53,15 +50,15 @@
         <!--Имя и фамилия-->
         <fieldset class="user-name">
           <ul class="user-name__items">
-            <li class="user__item">
+            <li class="user-name__item">
               <label class="user-name__label" for="user-name-input-1">Фамилия:</label>
               <input class="user-name__input" type="text" name="user-surname" id="user-name-input-1" placeholder="Укажите фамилию <sup>*</sup>">
             </li>
-            <li class="user__item">
+            <li class="user-name__item">
               <label class="user-name__label" for="user-name-input-2">Имя:</label>
               <input class="user-name__input" type="text" name="user-name" id="user-name-input-2" placeholder="Введите ваше имя <sup>*</sup>">
             </li>
-            <li class="user__item">
+            <li class="user-name__item">
               <label class="user-name__label" for="user-name-input-3">Отчество:</label>
               <input class="user-name__input" type="text" name="user-patronymic" id="user-name-input-3" placeholder="Ну и отчество тоже">
             </li>
@@ -98,33 +95,33 @@
           </ul>
         </fieldset>
         <!--Контакты с пользователем-->
-        <fieldset class="user-contacts">
-          <ul class="user-contacts__items">
-            <li class="user-contacts__item">
-              <label class="user-contacts__label" for="user-contacts-input-1">Номер телефона:</label>
-              <input class="user-contacts__input" type="text" name="user-phone" id="user-contacts-input-1" placeholder="Номер пожалуйста">
+        <fieldset class="contacts">
+          <ul class="contacts__items">
+            <li class="contacts__item">
+              <label class="contacts__label" for="contacts-input-1">Номер телефона:</label>
+              <input class="contacts__input" type="text" name="user-phone" id="contacts-input-1" placeholder="Номер пожалуйста">
             </li>
-            <li class="user-contacts_item">
-              <label class="user-contacts__label" for="user-contacts-input-2">Адрес почты:</label>
-              <input class="user-contacts__input" type="text" name="user-contacts-mail" id="user-contacts-input-2" placeholder="Введите почту<sup>*</sup>">
+            <li class="contacts_item">
+              <label class="contacts__label" for="contacts-input-2">Адрес почты:</label>
+              <input class="contacts__input" type="text" name="contacts-mail" id="contacts-input-2" placeholder="Введите почту<sup>*</sup>">
             </li>
           </ul>
         </fieldset>
         <!--Блок о приложении пользователя-->
-        <fieldset class="user-soft">
-          <legend class="user-soft__title">С каким приложение путешествовали?</legend>
-          <ul class="user-soft__items">
-            <li class="user-soft__item">
-              <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-1">
-              <label class="user-soft__label" for="user-soft-input-1">Pink для iOS</label>
+        <fieldset class="soft">
+          <legend class="soft__title">С каким приложение путешествовали?</legend>
+          <ul class="soft__items">
+            <li class="soft__item">
+              <input class="soft__input" type="radio" name="soft" id="soft-input-1">
+              <label class="soft__label" for="soft-input-1">Pink для iOS</label>
             </li>
-            <li class="user-soft__item">
-              <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-2">
-              <label class="user-soft__label" for="user-soft-input-2">Pink на Android</label>
+            <li class="soft__item">
+              <input class="soft__input" type="radio" name="soft" id="soft-input-2">
+              <label class="soft__label" for="soft-input-2">Pink на Android</label>
             </li>
-            <li class="user-soft__item">
-              <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-3">
-              <label class="user-soft__label" for="user-soft-input-3">Windows Phone</label>
+            <li class="soft__item">
+              <input class="soft__input" type="radio" name="soft" id="soft-input-3">
+              <label class="soft__label" for="soft-input-3">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
@@ -152,7 +149,7 @@
         <a class="social__link social__link--fb" href="#">FB</a>
         <a class="social__link social__link--yt" href="#">YouTube</a>
       </div>
-      <p class="page-footer__copyright">Разработано:
+      <p class="site-footer__copyright">Разработано:
         <a href="#">
           <img src="http://placehold.it/50x50" alt="HTML Academy">
         </a>
