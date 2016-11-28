@@ -16,6 +16,12 @@
         <!--Кнопка открывающая скрытый контент -->
         <button class="site-nav__toggle" type="button">Открыть меню</button>
         <ul class="site-nav__items">
+          <!--Название сайт-->
+          <li class="site-nav__item">
+            <a href="index.html">
+              <h1 class="site-nav__title">pink</h1>
+            </a>
+          </li>
           <li class="site-nav__item">
             <a href="index.html">Главная</a>
           </li>
@@ -30,7 +36,7 @@
           </li>
         </ul>
       </nav>
-      <div class="site-header__promo">
+      <div class="site-header__challenge">
         <h2 class="site-header__descr">Конкурс на самое безбашенное путешествие с пинк</h2>
       </div>
     </div>
@@ -47,15 +53,15 @@
         <!--Имя и фамилия-->
         <fieldset class="user-name">
           <ul class="user-name__items">
-            <li class="user_item">
+            <li class="user__item">
               <label class="user-name__label" for="user-name-input-1">Фамилия:</label>
               <input class="user-name__input" type="text" name="user-surname" id="user-name-input-1" placeholder="Укажите фамилию <sup>*</sup>">
             </li>
-            <li class="user_item">
+            <li class="user__item">
               <label class="user-name__label" for="user-name-input-2">Имя:</label>
               <input class="user-name__input" type="text" name="user-name" id="user-name-input-2" placeholder="Введите ваше имя <sup>*</sup>">
             </li>
-            <li class="user_item">
+            <li class="user__item">
               <label class="user-name__label" for="user-name-input-3">Отчество:</label>
               <input class="user-name__input" type="text" name="user-patronymic" id="user-name-input-3" placeholder="Ну и отчество тоже">
             </li>
@@ -67,40 +73,40 @@
           <ul class="achievement__items">
             <li class="achievement__item">
               <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-1">
-              <label for="achievement-input-1">Сделал селфи с акулой</label>
+              <label class="achievement__label" for="achievement-input-1">Сделал селфи с акулой</label>
             </li>
             <li class="achievement__item">
               <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-2">
-              <label for="achievement-input-2">Обгорел на пляже</label>
+              <label class="achievement__label" for="achievement-input-2">Обгорел на пляже</label>
             </li>
             <li class="achievement__item">
               <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-3">
-              <label for="achievement-input-3">Видел Чака Норриса</label>
+              <label class="achievement__label" for="achievement-input-3">Видел Чака Норриса</label>
             </li>
             <li class="achievement__item">
               <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-4">
-              <label for="achievement-input-4">Накупил сувениров</label>
+              <label class="achievement__label" for="achievement-input-4">Накупил сувениров</label>
             </li>
             <li class="achievement__item">
               <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-5">
-              <label for="achievement-input-5">Удержал башню</label>
+              <label class="achievement__label" for="achievement-input-5">Удержал башню</label>
             </li>
             <li class="achievement__item">
               <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-6">
-              <label for="achievement-input-6">Разгромил отель</label>
+              <label class="achievement__label" for="achievement-input-6">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
         <!--Контакты с пользователем-->
-        <fieldset class="contacts">
-          <ul class="contacts__items">
-            <li class="contacts__item">
-              <label class="contacts__label" for="contacts-input-1">Номер телефона:</label>
-              <input class="contacts__input" type="text" name="user-phone" id="contacts-input-1" placeholder="Номер пожалуйста">
+        <fieldset class="user-contacts">
+          <ul class="user-contacts__items">
+            <li class="user-contacts__item">
+              <label class="user-contacts__label" for="user-contacts-input-1">Номер телефона:</label>
+              <input class="user-contacts__input" type="text" name="user-phone" id="user-contacts-input-1" placeholder="Номер пожалуйста">
             </li>
-            <li class="contacts_item">
-              <label class="contacts__label" for="contacts-input-2">Адрес почты:</label>
-              <input class="contacts__input" type="text" name="user-mail" id="contacts-input-2" placeholder="Введите почту<sup>*</sup>">
+            <li class="user-contacts_item">
+              <label class="user-contacts__label" for="user-contacts-input-2">Адрес почты:</label>
+              <input class="user-contacts__input" type="text" name="user-contacts-mail" id="user-contacts-input-2" placeholder="Введите почту<sup>*</sup>">
             </li>
           </ul>
         </fieldset>
@@ -110,26 +116,25 @@
           <ul class="user-soft__items">
             <li class="user-soft__item">
               <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-1">
-              <label for="user-soft-input-1">Pink для iOS</label>
+              <label class="user-soft__label" for="user-soft-input-1">Pink для iOS</label>
             </li>
             <li class="user-soft__item">
               <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-2">
-              <label for="user-soft-input-2">Pink на Android</label>
+              <label class="user-soft__label" for="user-soft-input-2">Pink на Android</label>
             </li>
             <li class="user-soft__item">
               <input class="user-soft__input" type="radio" name="soft" id="user-soft-input-3">
-              <label for="user-soft-input-3">Windows Phone</label>
+              <label class="user-soft__label" for="user-soft-input-3">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
         <!--Блок впечатления пользователя-->
         <fieldset class="user-impression">
           <legend class="user-impression__title">Опишите свои эмоции</legend>
-          <label for="user-impression"></label>
           <textarea class="user-impression__textarea" name="user-impression" id="user-impression" cols="70" rows="10" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
         </fieldset>
         <!--Кнопка отправки формы-->
-        <button class="user-form__submit" type="button">Отправить форму</button>
+        <button class="user-form__submit" type="submit">Отправить форму</button>
         <p class="user-form__footnote"><sup>*</sup>-обязательные поля</p>
       </form>
     </div>
@@ -139,7 +144,7 @@
     <div class="site-footer__wrapper">
       <div class="site-footer__logo">
         <a href="#">
-          <img src="http://placehold.it/100x100" alt="Главная картинка">
+          <img src="http://placehold.it/100x100" alt="Логотип Пинк">
         </a>
       </div>
       <div class="social">
