@@ -49,19 +49,20 @@
       </div>
       <!--Форма-->
       <!--Элемент визуализации-->
-      <h2 class="visually-hidden">Форма для заполнения </h2>
+
 
       <form class="user-form" action="https://echo.htmlacademy.ru/ " method="get">
+        <h2 class="visually-hidden">Форма для заполнения </h2>
         <!--Имя и фамилия-->
         <fieldset class="user-name">
           <ul class="user-name__items">
             <li class="user-name__item">
               <label class="user-name__label" for="user-name-input-1">Фамилия:</label>
-              <input class="user-name__input" type="text" name="user-surname" id="user-name-input-1" placeholder="Укажите фамилию*">
+              <input class="user-name__input" type="text" name="user-surname" id="user-name-input-1" placeholder="Укажите фамилию*" required>
             </li>
             <li class="user-name__item">
               <label class="user-name__label" for="user-name-input-2">Имя:</label>
-              <input class="user-name__input" type="text" name="user-name" id="user-name-input-2" placeholder="Введите ваше имя*">
+              <input class="user-name__input" type="text" name="user-name" id="user-name-input-2" placeholder="Введите ваше имя*" required>
             </li>
             <li class="user-name__item">
               <label class="user-name__label" for="user-name-input-3">Отчество:</label>
@@ -69,12 +70,14 @@
             </li>
           </ul>
         </fieldset>
-        <!--Элемент визуализации-->
-        <h3 class="visually-hidden">Достижения в путешествии</h3>
+
 
         <!--Блок достижений-->
         <fieldset class="achievement">
           <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+          <!--Элемент визуализации-->
+          <h3 class="visually-hidden">Достижения в путешествии</h3>
+
           <ul class="achievement__items">
             <li class="achievement__item">
               <input class="achievement__input" type="checkbox" name="achievement" id="achievement-input-1">
@@ -102,27 +105,30 @@
             </li>
           </ul>
         </fieldset>
-        <!--Элемент визуализации-->
-        <h3 class="visually-hidden">Обратная связь с пользователем</h3>
+
 
         <!--Обратная связь с пользователем-->
         <fieldset class="feedback">
+          <!--Элемент визуализации-->
+          <h3 class="visually-hidden">Обратная связь с пользователем</h3>
           <ul class="feedback__items">
             <li class="feedback__item">
               <label class="feedback__label" for="feedback-input-1">Номер телефона:</label>
-              <input class="feedback__input" type="text" name="feedback-phone" id="feedback-input-1" placeholder="Номер пожалуйста">
+              <input class="feedback__input" type="tel" name="feedback-phone" id="feedback-input-1" placeholder="Номер пожалуйста">
             </li>
             <li class="feedback_item">
               <label class="feedback__label" for="feedback-input-2">Адрес почты:</label>
-              <input class="feedback__input" type="text" name="feedback-mail" id="feedback-input-2" placeholder="Введите почту<sup>*</sup>">
+              <input class="feedback__input" type="email" name="feedback-mail" id="feedback-input-2" placeholder="Введите почту*" required>
             </li>
           </ul>
         </fieldset>
-        <!--Элемент визуализации-->
-        <h3 class="visually-hidden">Статистика приложения</h3>
+
+
         <!--Блок о приложении пользователя-->
         <fieldset class="soft">
+          <!--Элемент визуализации-->
           <legend class="soft__title">С каким приложение путешествовали?</legend>
+          <h3 class="visually-hidden">Статистика приложения</h3>
           <ul class="soft__items">
             <li class="soft__item">
               <input class="soft__input" type="radio" name="soft" id="soft-input-1">
