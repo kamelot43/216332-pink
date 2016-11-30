@@ -1,12 +1,208 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <!--Центровщик-->
+    <div class="site-header__wrapper">
+      <!--Элемент визуальзации-->
+      <h1 class="visually-hidden">Приложение "Pink"</h1>
+
+      <!--Навигация-->
+      <nav class="site-nav site-nav--closed">
+        <!--Кнопка открывающая скрытый контент -->
+        <button class="button button--open-menu " type="button">Открыть меню</button>
+        <ul class="site-nav__items">
+          <li class="site-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Картинка под блоком меню -->
+      <div class="site-header__general-img">
+        <img src="http://placehold.it/100x100" alt="Главная картинка">
+      </div>
+    </div>
+  </header>
+  <!--Основное содержание -->
+  <main class="site-main">
+
+    <!--Блок для кнопок-->
+    <div class="button"></div>
+
+    <!--Центровщик-->
+    <div class="site-main__wrapper">
+
+      <!--Скачать приложение -->
+      <section class="download">
+        <h2 class="visually-hidden">Загрузка "Pink"</h2>
+        <a class="button button--download" href="http://www.apple.com/itunes/">Скачать приложение</a>
+        <ul class="download__items">
+          <li class="download__item">
+            <a class="download__link download__link--IOS" href="http://www.apple.com/itunes/">IOS</a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--Android" href="https://play.google.com/store">Android</a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--Windows" href="https://www.microsoftstore.com/store">Windows</a>
+          </li>
+        </ul>
+        <p class="download__support">Доступно для iPhone,iPad,Android,<br>Windows Phone,OS X,Windows 8.</p>
+      </section>
+
+      <!-- Блок преемуществ -->
+      <section class="features">
+        <h2 class="visually-hidden">О приложении</h2>
+        <!--Вводная часть как часть блока преемуществ-->
+        <!--Вводная часть -->
+        <p class="features__proposal">Устали от серости мегаполиса?<br> Нам есть,что вам предложить!</p>
+        <!--Блок приемуществ №1 -->
+        <ul class="features__items">
+          <li class="features__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <!--Блок приемуществ №2 -->
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом,или текстовой подписью,чтобы усилить эффект</p>
+          </li>
+          <!--Блок приемуществ №3 -->
+          <li class="features__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки,комментируйте,делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <!-- Здесь будет картинка вставленая фоном-->
+      </section>
+
+
+      <!-- Блок с отзывами.-->
+      <section class="reviews">
+        <!--Элемент визуальзации-->
+        <h2 class="visually-hidden">Отзывы</h2>
+        <!--Слайдер-->
+        <input class="reviews__input" type="radio" id="reviews-input-1" name="toggle" checked>
+        <input class="reviews__input" type="radio" id="reviews-input-2" name="toggle">
+        <input class="reviews__input" type="radio" id="reviews-input-3" name="toggle">
+        <!-- Элементы управления слайдером -->
+        <div class="reviews__controls">
+          <label class="reviews__label" for="reviews-input-1"></label>
+          <label class="reviews__label" for="reviews-input-2"></label>
+          <label class="reviews__label" for="reviews-input-3"></label>
+        </div>
+        <!--Блок со слайдами.Однотипные элементы вынесены в список-->
+        <ul class="reviews__items">
+          <!--Слайд №1-->
+          <li class="reviews__item">
+            <h3 class="reviews__author">Николай Петров</h3>
+            <p class="reviews__comment">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </li>
+          <!--Слайд №2-->
+          <li class="reviews__item">
+            <h3 class="reviews__author">Николай Петров</h3>
+            <p class="reviews__comment">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </li>
+          <!--Слайд №3-->
+          <li class="reviews__item">
+            <h3 class="reviews__author">Николай Петров</h3>
+            <p class="reviews__comment">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <!--Прейскурант-->
+      <section class="pricelist">
+        <!--Элемент визуальзации-->
+        <h2 class="visually-hidden">Стоимость</h2>
+        <input class="pricelist__input" type="radio" id="pricelist-input-1" name="toggle" checked>
+        <input class="pricelist__input" type="radio" id="pricelist-input-2" name="toggle">
+        <input class="pricelist__input" type="radio" id="pricelist-input-3" name="toggle">
+        <!-- Элементы управления слайдером(блока прейскурант) -->
+        <div class="pricelist__controls">
+          <label class="pricelist__label" for="pricelist-input-1"></label>
+          <label class="pricelist__label" for="pricelist-input-2"></label>
+          <label class="pricelist__label" for="pricelist-input-3"></label>
+        </div>
+        <table class="pricelist__items">
+          <tr>
+            <th class="pricelist__title">
+              <div class="pricelist__value">Стандарт</div>
+              <div class="pricelist__price">3,99 usd</div>
+            </th>
+            <th class="pricelist__title">
+              <div class="pricelist__value">Стандарт</div>
+              <div class="pricelist__price">3,99 usd</div>
+            </th>
+            <th class="pricelist__title">
+              <div class="pricelist__value">Стандарт</div>
+              <div class="pricelist__price">3,99 usd</div>
+            </th>
+          </tr>
+          <tr>
+            <td class="pricelist__option">Розовый фильтр &#10004;</td>
+            <td class="pricelist__option">Розовый фильтр &#10004;</td>
+            <td class="pricelist__option">Розовый фильтр &#10004;</td>
+          </tr>
+          <tr>
+            <td class="pricelist__option">Смайлики &#10004;</td>
+            <td class="pricelist__option">Смайлики &#10004;</td>
+            <td class="pricelist__option">Смайлики &#10004;</td>
+          </tr>
+          <tr>
+            <td class="pricelist__option">Комментарии &#10006;</td>
+            <td class="pricelist__option">Комментарии &#10006;</td>
+            <td class="pricelist__option">Комментарии &#10006;</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <!--Центровщик-->
+    <div class="site-footer__wrapper">
+      <span class="site-footer__question">Остались вопросы?<br>
+      Свяжитесь с нами!
+    </span>
+      <!--Элемент визуальзации-->
+      <h2 class="visually-hidden">Контакты</h2>
+
+      <!--Способы связи сгруппированы в список-->
+      <ul class="site-footer__items">
+        <li class="site-footer__item">
+          <h3 class="site-footer__action">Звоните:</h3>
+          <span class="site-footer__contact">+7(812)555-66-66</span>
+        </li>
+        <li class="site-footer__item">
+          <h3 class="site-footer__action">Пишите:</h3>
+          <span class="site-footer__contact">mail@htmlacademy.ru</span>
+        </li>
+        <li class="site-footer__item">
+          <h3 class="site-footer__action">Приезжайте в гости:</h3>
+          <span class="site-footer__contact">ул.Большая Конюшанная, 19/8</span>
+        </li>
+      </ul>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.32089461570254!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2s!4v1472509188440"
+        width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </footer>
+</body>
+
 </html>
