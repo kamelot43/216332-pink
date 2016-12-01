@@ -1,3 +1,57 @@
 .download {
-  background-color: blue;
+  background-color: #1d2631;
+  width: 320px;
+  min-height: 270px;
+  outline: 1px solid red;
+
+  &__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+  &__item {
+  display: inline-block;
+  margin-left: 20px;
+
+  }
+
+  &__link--IOS {
+  display: block;
+  outline: 1px solid red;
+  background-image: url("../img/logo-apple.svg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+  }
+  &__link--Android {
+    display: block;
+    outline: 1px solid red;
+    background-image: url("../img/logo-android.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+
+  }
+  &__link--Windows {
+    display: block;
+    outline: 1px solid red;
+    background-image: url("../img/logo-microsoft.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+
+  }
+  &__support {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight:normal;
+    font-family: "Open Sans","Arial", sans-serif;
+    text-align: center;
+
+  }
+
 }
