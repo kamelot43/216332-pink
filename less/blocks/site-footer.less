@@ -1,52 +1,52 @@
 .site-footer {
-  width: 320px;
+  width: @base-width;
   min-height: 615px;
   outline: 1px solid green;
   margin-top: -22px;
- &__question {
-   font-family: "Open Sans","Arial", sans-serif;
-   font-weight: 200;
-   font-size: 24px;
-   line-height: 30px;
-   color: #283645;
-   text-align: center;
-   padding-top: 40px;
- }
- &__items {
-   margin: 0 auto;
-   padding: 0;
-   list-style: none;
-   width: 240px;
-   margin-bottom: 45px;
-
- }
- &__item {
-   height: 80px;
-   width: 240px;
-   outline: 1px dotted pink;
-   display: inline-block;
-   margin: 0;
-   text-align: center;
- }
- &__action {
-   font-family: "Open Sans","Arial", sans-serif;
-   font-weight: bold;
-   font-size: 18px;
-   line-height: 20px;
-   color: #283645;
-   margin-top: 0;
-   padding-top: 5px;
-   margin-bottom: 9px;
- }
- &__action--call {
-   padding-top: 10px;
- }
- &__contact {
-   font-family: "Open Sans","Arial", sans-serif;
-   font-weight: 200;
-   font-size: 24px;
-   line-height: 24px;
-   color: #d22856;
-
- }
+  &__question {
+    font-family: @base-font-family;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    padding-top: 40px;
+  }
+  &__items {
+    .items-base();
+    margin: 0 auto;
+    width: 240px;
+    margin-bottom: 45px;
+  }
+  &__item {
+    height: 80px;
+    width: 240px;
+    outline: 1px dotted pink;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    &:nth-child(3) {
+      height: 85px;
+    }
+  }
+  &__action {
+    font-family: @base-font-family;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #283645;
+    margin-top: 0;
+    padding-top: 5px;
+    margin-bottom: 9px;
+  }
+  &__action--call {
+    padding-top: 10px;
+  }
+  &__contact {
+    font-family: @base-font-family;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: #d22856;
+  }
 }

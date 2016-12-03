@@ -1,27 +1,24 @@
 .site-nav {
-
   &__items {
-  outline:1px dotted yellow;
-  width: 320px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    outline: 1px dotted yellow;
+    width: @base-width;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-
   &__link {
     display: block;
     padding: 15px 0px;
     color: #d4d6d8;
-    border:1px solid #000000;
-    margin-bottom:-1px;
-    text-decoration:none;
+    border: 1px solid #000000;
+    margin-bottom: -1px;
+    text-decoration: none;
     text-align: center;
     font-size: 18px;
     line-height: 32px;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: "Open Sans","Arial", sans-serif;
-
+    font-family: @base-font-family;
   }
   &__link--pink {
     background-image: url("../img/logo-pink-white-mobile.svg");

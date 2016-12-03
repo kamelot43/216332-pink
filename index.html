@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 
   <title>HTML Academy: Пинк</title>
 </head>
@@ -21,11 +22,10 @@
       <nav class="site-nav site-nav--closed">
         <!--Кнопка открывающая скрытый контент -->
         <button class="button button--close-menu " type="button">Закрыть меню</button>
+        <!--<button class="button button--open-menu " type="button">Открыть меню</button>-->
         <ul class="site-nav__items">
           <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--pink">Пинк
-              <!--<img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">-->
-            </a>
+            <a class="site-nav__link site-nav__link--pink">Пинк</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link">Главная</a>
@@ -79,10 +79,10 @@
         <!--<h2 class="visually-hidden">О приложении</h2>-->
         <!--Вводная часть как часть блока преемуществ-->
         <!--Вводная часть -->
-        <div class="features__special">
-        <p class="features__proposal">Устали от серости мегаполиса?</p>
-        <p class="features__proposal-clone">Нам есть,что вам предложить!</p>
-      </div>
+        <div class="features__proposal-container">
+          <p class="features__proposal features__proposal--clone">Устали от серости мегаполиса?</p>
+          <p class="features__proposal">Нам есть,что вам предложить!</p>
+        </div>
         <!--Блок приемуществ №1 -->
         <ul class="features__items">
           <li class="features__item">
@@ -129,10 +129,10 @@
         </ul>
         <!--Слайдер-->
         <div class="reviews__inputs">
-        <input class="reviews__input" type="radio" id="reviews-input-1" name="toggle" checked>
-        <input class="reviews__input" type="radio" id="reviews-input-2" name="toggle">
-        <input class="reviews__input" type="radio" id="reviews-input-3" name="toggle">
-      </div>
+          <input class="reviews__input" type="radio" id="reviews-input-1" name="toggle" checked>
+          <input class="reviews__input" type="radio" id="reviews-input-2" name="toggle">
+          <input class="reviews__input" type="radio" id="reviews-input-3" name="toggle">
+        </div>
         <!-- Элементы управления слайдером -->
         <div class="reviews__controls">
           <label class="reviews__label" for="reviews-input-1"></label>
@@ -178,10 +178,10 @@
           </tr>
         </table>
         <div class="pricelist__inputs">
-        <input class="pricelist__input" type="radio" id="pricelist-input-1" name="toggle" checked>
-        <input class="pricelist__input" type="radio" id="pricelist-input-2" name="toggle">
-        <input class="pricelist__input" type="radio" id="pricelist-input-3" name="toggle">
-      </div>
+          <input class="pricelist__input" type="radio" id="pricelist-input-1" name="toggle" checked>
+          <input class="pricelist__input" type="radio" id="pricelist-input-2" name="toggle">
+          <input class="pricelist__input" type="radio" id="pricelist-input-3" name="toggle">
+        </div>
         <!-- Элементы управления слайдером(блока прейскурант) -->
         <div class="pricelist__controls">
           <label class="pricelist__label" for="pricelist-input-1"></label>
@@ -194,9 +194,8 @@
   <footer class="site-footer">
     <!--Центровщик-->
     <div class="site-footer__wrapper">
-      <p class="site-footer__question">Остались вопросы?<br>
-      Свяжитесь с нами!
-    </p>
+      <p class="site-footer__question">Остались вопросы?<br> Свяжитесь с нами!
+      </p>
       <!--Элемент визуальзации-->
       <!--<h2 class="visually-hidden">Контакты</h2>-->
 

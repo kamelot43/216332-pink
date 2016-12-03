@@ -1,21 +1,20 @@
 .button {
-
   &--download {
-  display: inline-block;
-  text-decoration: none;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  font-family: "Open Sans","Arial", sans-serif;
-  padding: 16px 38px;
-  border: 2px solid #ffffff;
-  border-radius: 30px;
-  margin-top: 22px;
-  margin-bottom: 35px;
-  margin-left: 20px;
-  text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: @base-font-family;
+    padding: 16px 38px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    margin-top: 22px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    text-align: center;
   }
   &--close-menu {
     position: absolute;
@@ -24,20 +23,20 @@
     width: 40px;
     height: 40px;
     font-size: 0;
-    background-color:#283645;
+    background-color: #283645;
     border: 0;
     outline: 1px solid red;
     cursor: pointer;
-  }
-  &--close-menu::before,
-  &--close-menu::after {
-    content: "";
-    position: absolute;
-    top: 17px;
-    left: 4px;
-    width: 30px;
-    height: 5px;
-    background-color: white;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 4px;
+      width: 30px;
+      height: 5px;
+      background-color: white;
+    }
   }
   &--close-menu::before {
     -webkit-transform: rotate(45deg);
@@ -46,5 +45,8 @@
   &--close-menu::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+  &__open-menu {
+    display: none;
   }
 }

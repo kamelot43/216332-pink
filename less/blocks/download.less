@@ -1,63 +1,42 @@
 .download {
   background-color: #1d2631;
-  width: 320px;
+  width: @base-width;
   min-height: 270px;
   outline: 1px solid red;
   margin-bottom: 0;
-
   &__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    .items-base();
     margin-bottom: 20px;
-
   }
   &__item {
-  display: inline-block;
-
-
+    display: inline-block;
   }
-
+  &__link {
+    display: block;
+    outline: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 47px;
+    height: 56px;
+  }
   &__link--IOS {
-  display: block;
-  outline: 1px solid red;
-  background-image: url("../img/logo-apple.svg") ;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 47px;
-  height: 56px;
-  margin-left: 58px;
+    background-image: url("../img/logo-apple.svg");
+    margin-left: 58px;
   }
   &__link--Android {
-    display: block;
-    outline: 1px solid red;
-    background-image: url("../img/logo-android.svg") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 47px;
-    height: 56px;
+    background-image: url("../img/logo-android.svg");
     margin-left: 26px;
-
   }
   &__link--Windows {
-    display: block;
-    outline: 1px solid red;
-    background-image: url("../img/logo-microsoft.svg") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 47px;
-    height: 56px;
+    background-image: url("../img/logo-microsoft.svg");
     margin-left: 30px;
-
   }
   &__support {
     color: #ffffff;
     font-size: 14px;
-    font-weight:normal;
-    font-family: "Open Sans","Arial", sans-serif;
+    font-weight: normal;
+    font-family: @base-font-family;
     text-align: center;
     line-height: 21px;
-
   }
-
 }
