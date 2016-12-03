@@ -1,5 +1,9 @@
 @base-width:320px;
 @base-font-family: "Open Sans","Arial", sans-serif;
+@bold:700;
+@regular:400;
+@label-color:##d22856;
+@form-base-color:#283645;
 
 
 
@@ -32,4 +36,11 @@
   text-transform: uppercase;
   font-weight: 700;
   color: white;
+}
+.font-base-pattern (@f-family, @f-size, @line-height, @f-weight, @color) {
+  font-family:@f-family;
+  font-size: @f-size;
+  line-height: @line-height;
+  font-weight: @f-weight;
+  color: @color;
 }
