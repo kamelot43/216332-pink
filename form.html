@@ -15,13 +15,13 @@
     <!--Центровщик-->
     <div class="site-header__wrapper">
       <!--Элемент визуализации-->
-      <!--<h1 class="visually-hidden">Приложение "Pink"</h1>-->
+      <h1 class="visually-hidden">Приложение "Pink"</h1>
 
       <!--Навигация-->
       <nav class="site-nav site-nav--closed">
         <!--Кнопка открывающая скрытый контент -->
         <button class="button button--close-menu " type="button">Закрыть меню</button>
-        <!--<button class="button button--open-menu " type="button">Открыть меню</button>-->
+        <button class="button button--open-menu visually-hidden " type="button">Открыть меню</button>
         <ul class="site-nav__items">
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link--pink">Пинк</a>
@@ -57,7 +57,7 @@
       <!--Форма-->
 
       <form class="user-form" action="https://echo.htmlacademy.ru/ " method="get">
-        <!--<h2 class="visually-hidden">Форма для заполнения </h2>-->
+        <h2 class="visually-hidden">Форма для заполнения </h2>
         <!--Имя и фамилия-->
         <fieldset class="user-name">
           <ul class="user-name__items">
@@ -113,7 +113,7 @@
         <!--Обратная связь с пользователем-->
         <fieldset class="feedback">
           <!--Элемент визуализации-->
-          <!--<h3 class="visually-hidden">Обратная связь с пользователем</h3>-->
+          <h3 class="visually-hidden">Обратная связь с пользователем</h3>
           <ul class="feedback__items">
             <li class="feedback__item">
               <label class="feedback__label" for="feedback-input-1">Номер телефона:</label>
@@ -180,17 +180,21 @@
   </footer>
 
   <!--Модальное окно №1-->
-  <div class="popup">
+  <div class="popup visually-hidden">
+    <div class="popup__container">
     <h3 class="popup__title">Что-то пошло не так!</h3>
-    <p class="popup__message">Проверьте поля,выделенные красным,скорее всего вы забыли их заполнить.</p>
+    <p class="popup__message">Проверьте поля,выделенные красным,<br>скорее всего вы забыли их заполнить.</p>
     <button class="button button--popup" type="button" title="Ок">Ок</button>
+  </div>
   </div>
 
   <!--Модальное окно №1-->
-  <div class="popup">
+  <div class="popup visually-hidden">
+    <div class="popup__container">
     <h3 class="popup__title">Ваша заявка отправлена</h3>
-    <p class="popup__message">Спасибо за ваше участие ваша заявка уже поступила к нам.В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <p class="popup__message">Спасибо за ваше участие ваша заявка<br> уже поступила к нам.В ближайшее<br> время мы рассмотрим ее и<br> оповестим вас.</p>
     <button class="button button--popup" type="button" title="Закрыть окно">Закрыть окно</button>
+  </div>
   </div>
 </body>
 
