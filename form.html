@@ -3,38 +3,45 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--<link href="css/normalize.css" rel="stylesheet">-->
   <title>HTML Academy: Пинк.Форма</title>
 </head>
 
 <body>
   <!-- Шапка сайта -->
-  <header class="site-header">
+  <header class="site-header site-header--form">
     <!--Центровщик-->
     <div class="site-header__wrapper">
       <!--Элемент визуализации-->
-      <h1 class="visually-hidden">Приложение "Pink"</h1>
+      <!--<h1 class="visually-hidden">Приложение "Pink"</h1>-->
 
       <!--Навигация-->
       <nav class="site-nav site-nav--closed">
         <!--Кнопка открывающая скрытый контент -->
-        <button class="button button--open-menu " type="button">Открыть меню</button>
+        <button class="button button--close-menu " type="button">Закрыть меню</button>
+        <!--<button class="button button--open-menu " type="button">Открыть меню</button>-->
         <ul class="site-nav__items">
           <li class="site-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="site-nav__link site-nav__link--pink">Пинк</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">Фотографии</a>
+            <a class="site-nav__link">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a>Конкурс</a>
+            <a class="site-nav__link" href="#">Фотографии</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">HTML ACADEMY</a>
+            <a class="site-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
       <div class="site-header__challenge">
-        <h3 class="site-header__descr">Конкурс на самое безбашенное путешествие с пинк</h3>
+        <h3 class="site-header__descr">Конкурс на самое безбашенное<br> путешествие с пинк</h3>
       </div>
     </div>
   </header>
@@ -45,12 +52,12 @@
     <!--Центровщик-->
     <div class="site-main__wrapper">
       <div class="slogan">
-        <p class="slogan__about">Поделитесь своей историей и получите шанс выиграть ценный приз-1000 миль на вашу бонусную карту</p>
+        <p class="slogan__about">Поделитесь своей историей и получите шанс выиграть ценный приз --1000 миль на вашу бонусную карту</p>
       </div>
       <!--Форма-->
 
       <form class="user-form" action="https://echo.htmlacademy.ru/ " method="get">
-        <h2 class="visually-hidden">Форма для заполнения </h2>
+        <!--<h2 class="visually-hidden">Форма для заполнения </h2>-->
         <!--Имя и фамилия-->
         <fieldset class="user-name">
           <ul class="user-name__items">
@@ -72,7 +79,7 @@
 
         <!--Блок достижений-->
         <fieldset class="achievement">
-          <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="achievement__title">Ваши безбашенные<br> достижения в путешествии</legend>
 
           <ul class="achievement__items">
             <li class="achievement__item">
@@ -106,7 +113,7 @@
         <!--Обратная связь с пользователем-->
         <fieldset class="feedback">
           <!--Элемент визуализации-->
-          <h3 class="visually-hidden">Обратная связь с пользователем</h3>
+          <!--<h3 class="visually-hidden">Обратная связь с пользователем</h3>-->
           <ul class="feedback__items">
             <li class="feedback__item">
               <label class="feedback__label" for="feedback-input-1">Номер телефона:</label>
