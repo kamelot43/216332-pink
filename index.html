@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -18,10 +20,12 @@
       <!--Навигация-->
       <nav class="site-nav site-nav--closed">
         <!--Кнопка открывающая скрытый контент -->
-        <!--<button class="button button--open-menu " type="button">Открыть меню</button>-->
+        <button class="button button--close-menu " type="button">Закрыть меню</button>
         <ul class="site-nav__items">
           <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--pink">PINK</a>
+            <a class="site-nav__link site-nav__link--pink">Пинк
+              <!--<img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">-->
+            </a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link">Главная</a>
@@ -77,18 +81,18 @@
         <!--Вводная часть -->
         <div class="features__special">
         <p class="features__proposal">Устали от серости мегаполиса?</p>
-        <p class="features__proposal">Нам есть,что вам предложить!</p>
+        <p class="features__proposal-clone">Нам есть,что вам предложить!</p>
       </div>
         <!--Блок приемуществ №1 -->
         <ul class="features__items">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p class="features__description">Приложение позволяет вам победить осеннюю хандру и депрессию<br>буквально в несколько кликов!</p>
           </li>
           <!--Блок приемуществ №2 -->
           <li class="features__item">
             <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом,или текстовой подписью,чтобы усилить эффект</p>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом,или текстовой подписью,<br>чтобы усилить эффект</p>
           </li>
           <!--Блок приемуществ №3 -->
           <li class="features__item">
@@ -199,7 +203,7 @@
       <!--Способы связи сгруппированы в список-->
       <ul class="site-footer__items">
         <li class="site-footer__item">
-          <h3 class="site-footer__action">Звоните:</h3>
+          <h3 class="site-footer__action site-footer__action--call">Звоните:</h3>
           <span class="site-footer__contact">+7(812)555-66-66</span>
         </li>
         <li class="site-footer__item">
