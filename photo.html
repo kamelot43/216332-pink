@@ -9,7 +9,7 @@
 
 <body>
   <!-- Шапка сайта -->
-  <header class="site-header">
+  <header class="site-header site-header--form">
     <!--Центровщик-->
     <div class="site-header__wrapper">
       <!--Элемент визуализации-->
@@ -18,42 +18,45 @@
       <!--Навигация-->
       <nav class="site-nav site-nav--closed">
         <!--Кнопка открывающая скрытый контент -->
-        <button class="site-nav__toggle" type="button">Открыть меню</button>
+        <button class="button button--close-menu " type="button">Закрыть меню</button>
         <ul class="site-nav__items">
-          <!--Название сайт-->
-
           <li class="site-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="site-nav__link site-nav__link--pink">Пинк</a>
           </li>
           <li class="site-nav__item">
-            <a>Фотографии</a>
+            <a class="site-nav__link" href="index.html">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-nav__link">Фотографии</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">html academy</a>
+            <a class="site-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
-      <div class="site-header__container">
-        <p class="site-header__descr site-header__descr--photos">Фотографии пользователей</p>
+      <div class="site-header__challenge">
+      <h3 class="site-header__descr">Фотографии пользователей</h3>
       </div>
     </div>
   </header>
   <!--Основное содержание-->
-  <main class="site-main">
+  <main class="site-main site-main--photo">
     <!--Центровщик-->
     <div class="site-main__wrapper">
       <section class="photo-gallery">
-        <p class="photo-gallery__motivation">Взгляните на фотографии,которые выкладывают пользователи!Видите,как не хватает ваших!</p>
+        <div class="slogan">
+        <p class="slogan__about">Взгляните на фотографии,которые выкладывают пользователи!<br>Видите,как не хватает ваших!</p>
+      </div>
         <!--Элемент визуализации-->
         <h2 class="visually-hidden">Посты пользователей</h2>
 
         <!--Фотокарточка №1-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="http://placehold.it/100x100" alt="Панорамный вид с моста">
+            <img src="img/panorama-mobile@1x.jpg" alt="Панорамный вид с моста">
           </div>
           <div class="photo__content">
             <div class="photo__user">Анна<span class="photo__time">(5 минут назад)</span>
@@ -66,7 +69,7 @@
         <!--Фотокарточка №2-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="http://placehold.it/100x100" alt="Белый автомобиль"> </div>
+            <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль"> </div>
           <div class="photo__content">
             <div class="photo__user">Левон<span class="photo__time">(5 часов назад)</span>
             </div>
@@ -78,7 +81,7 @@
         <!--Фотокарточка №3-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="http://placehold.it/100x100" alt="Барабанная установка">
+            <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
           </div>
           <div class="photo__content">
             <div class="photo__user">Антон<span class="photo__time">(12 часов назад)</span>
@@ -91,7 +94,7 @@
         <!--Фотокарточка №4-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="http://placehold.it/100x100" alt="Стеклянный потолок">
+            <img src="img/photo-3-mobile@1x.jpg" alt="Стеклянный потолок">
           </div>
           <div class="photo__content">
             <div class="photo__user">Борис<span class="photo__time">(20 часов назад)</span>
@@ -104,7 +107,7 @@
         <!--Фотокарточка №5-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="http://placehold.it/100x100" alt="Прилавок с бахчой">
+            <img src="img/photo-4-mobile@1x.jpg" alt="Прилавок с бахчой">
           </div>
           <div class="photo__content">
             <div class="photo__user">Сергей<span class="photo-gallery__time">(25 часов назад)</span>
@@ -117,7 +120,7 @@
         <!--Фотокарточка №6-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="http://placehold.it/100x100" alt="Вид с горы">
+            <img src="img/photo-5-mobile@1x.jpg" alt="Вид с горы">
           </div>
           <div class="photo__content">
             <div class="photo__user">Максим<span class="photo__time">(40 часов назад)</span>
@@ -130,7 +133,7 @@
         <!--Фотокарточка №7-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="http://placehold.it/100x100" alt="Вид из окна самолета">
+            <img src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета">
           </div>
           <div class="photo__content">
             <div class="photo__user">Надежда<span class="photo__time">(45 часов назад)</span>
@@ -162,12 +165,12 @@
       </section>
     </div>
   </main>
-  <footer class="site-footer">
+  <footer class="site-footer--form">
     <!--Центровщик-->
     <div class="site-footer__wrapper">
       <div class="site-footer__logo">
         <a href="#">
-          <img src="http://placehold.it/100x100" alt="Логотип Пинк">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
         </a>
       </div>
       <div class="social">
@@ -177,7 +180,7 @@
       </div>
       <p class="site-footer__copyright">Разработано:
         <a href="#">
-          <img src="http://placehold.it/50x50" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
         </a>
       </p>
     </div>
