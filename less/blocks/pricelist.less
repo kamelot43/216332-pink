@@ -1,4 +1,5 @@
 .pricelist {
+  position: relative;
   width: @base-width;
   height: 380px;
   outline: 1px solid orange;
@@ -31,9 +32,18 @@
     .font-base-pattern(@base-font-family, 24px, 30px, @regular, #ffffff);
     text-transform: uppercase;
   }
-  .pricelist__inputs {
-    margin: 0 auto;
-    width: 75px;
-    height: 20px;
-    padding-top: 38px;
+  .pricelist input[type="radio"] {
+  display: none;
+}
+  .pricelist__label {
+    .slider-controls ();
+  }
+  .pricelist__controls {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+    outline: 2px solid green;
   }
