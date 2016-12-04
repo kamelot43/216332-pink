@@ -4,14 +4,15 @@
   min-height: 270px;
   outline: 1px solid red;
   margin-bottom: 0;
-  &__items {
+}
+  .download__items {
     .items-base();
     margin-bottom: 20px;
   }
-  &__item {
+  .download__item {
     display: inline-block;
   }
-  &__link {
+  .download__link {
     display: block;
     outline: 1px solid red;
     background-repeat: no-repeat;
@@ -19,24 +20,19 @@
     width: 47px;
     height: 56px;
   }
-  &__link--IOS {
+  .download__link--IOS {
     background-image: url("../img/logo-apple.svg");
     margin-left: 58px;
   }
-  &__link--Android {
+  .download__link--Android {
     background-image: url("../img/logo-android.svg");
     margin-left: 26px;
   }
-  &__link--Windows {
+  .download__link--Windows {
     background-image: url("../img/logo-microsoft.svg");
     margin-left: 30px;
   }
-  &__support {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: normal;
-    font-family: @base-font-family;
+  .download__support {
+    .font-base-pattern(@base-font-family, 14px, 21px, @regular, #ffffff);
     text-align: center;
-    line-height: 21px;
   }
-}

@@ -3,40 +3,31 @@
   min-height: 405px;
   outline: 1px dotted pink;
   margin-top: -18px;
-  &__items {
+}
+  .reviews__items {
     .items-base();
     padding-left: 18px;
     margin-bottom: 30px;
     margin-top: 56px;
   }
-  &__item {
+  .reviews__item {
     outline: 1px dotted green;
     margin: 0;
     width: 280px;
     min-height: 220px;
   }
-  &__comment {
-    font-family: @base-font-family;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: #283645;
+  .reviews__comment {
+    .font-base-pattern(@base-font-family, 14px, 30px, @regular, @form-base-color);
     padding-top: 10px;
   }
-  &__author {
-    font-family: @base-font-family;
+  .reviews__author {
+    .font-base-pattern(@base-font-family, 18px, 30px, @bold, #000000);
     text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
     margin-bottom: -10px;
     padding-top: 5px;
   }
-  &__inputs {
+  .reviews__inputs {
     margin: 0 auto;
     width: 75px;
     height: 20px;
   }
-}

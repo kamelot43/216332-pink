@@ -3,49 +3,37 @@
   height: 380px;
   outline: 1px solid orange;
   background-color: #f2f2f2;
-  &__option {
+}
+  .pricelist__option {
     border-bottom: 1px solid #e5e5e5;
     height: 58px;
-    font-family: @base-font-family;
-    font-weight: 500;
+    .font-base-pattern(@base-font-family, 14px, 30px, @regular, @form-base-color);
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 30px;
-    color: #283645;
     padding-left: 45px;
     background-color: #ffffff;
   }
-  &__items {
+  .pricelist__items {
     width: @base-width;
     border-collapse: collapse;
   }
-  &__title {
+  .pricelist__title {
     background-color: #283645;
     border-bottom: 1px solid black;
     height: 95px;
     width: 320px;
     text-align: center;
   }
-  &__value {
-    font-family: @base-font-family;
-    font-weight: bold;
-    font-size: 18 px;
-    line-height: 30px;
-    color: #ffffff;
+  .pricelist__value {
+    .font-base-pattern(@base-font-family, 18px, 30px, @bold, #ffffff);
     text-transform: uppercase;
   }
-  &__price {
-    font-family: @base-font-family;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
-    color: #ffffff;
+  .pricelist__price {
+    .font-base-pattern(@base-font-family, 24px, 30px, @regular, #ffffff);
     text-transform: uppercase;
   }
-  &__inputs {
+  .pricelist__inputs {
     margin: 0 auto;
     width: 75px;
     height: 20px;
     padding-top: 38px;
   }
-}

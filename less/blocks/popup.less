@@ -9,22 +9,13 @@ outline: 2px solid pink;
   outline: 1px dotted blue;
 }
 .popup__title {
-  font-family: @base-font-family;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: black;
+  .font-base-pattern(@base-font-family, 18px, 30px, @bold, black);
   text-align: center;
 }
 .popup__message {
-  font-family: @base-font-family;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #283645;
-
-&:nth-child(2){
-  text-align: center;
+  .font-base-pattern(@base-font-family, 14px, 24px, @regular, @form-base-color);
 }
 
+.popup__message:nth-child(2) {
+  text-align: center;
 }

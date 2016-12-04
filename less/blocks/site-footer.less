@@ -5,11 +5,7 @@
   margin-top: -22px;
 }
   .site-footer__question {
-    font-family: @base-font-family;
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 30px;
-    color: #283645;
+    .font-base-pattern(@base-font-family, 24px, 30px, @regular, @form-base-color);
     text-align: center;
     padding-top: 40px;
   }
@@ -31,11 +27,7 @@
     }
   }
   .site-footer__action {
-    font-family: @base-font-family;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    color: #283645;
+    .font-base-pattern(@base-font-family, 18px, 20px, @bold, @form-base-color);
     margin-top: 0;
     padding-top: 5px;
     margin-bottom: 9px;
@@ -44,11 +36,7 @@
     padding-top: 10px;
   }
   .site-footer__contact {
-    font-family: @base-font-family;
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 24px;
-    color: #d22856;
+    .font-base-pattern(@base-font-family, 24px, 24px, @light, @label-color);
   }
 .site-footer--form {
   width: 280px;
@@ -64,10 +52,6 @@
   padding-left: 10px;
 }
 .site-footer__copyright {
-    font-family: @base-font-family;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #283645;
+    .font-base-pattern(@base-font-family, 14px, 18px, @regular, @form-base-color);
     text-align: center;
 }

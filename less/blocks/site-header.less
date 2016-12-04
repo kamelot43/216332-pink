@@ -4,11 +4,12 @@
   outline: 1px solid red;
   width: @base-width;
   min-height: 725px;
-  &__general-img {
+}
+  .site-header__general-img {
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
   }
-  &__challenge {
+  .site-header__challenge {
     width: @base-width;
     height: 175px;
     outline: 1px dotted pink;
@@ -16,16 +17,11 @@
     background-repeat: no-repeat;
     margin-top: -22px;
   }
-  &__descr {
-    font-family: @base-font-family;
-    font-size: 24px;
-    font-weight: 300;
+  .site-header__descr {
+    .font-base-pattern(@base-font-family, 24px, 28px, @regular, #ffffff);
     text-align: center;
-    color: #ffffff;
-    line-height: 28px;
     padding-top: 30px;
   }
-  &--form {
+  .site-header--form {
     min-height: 495px;
   }
-}
