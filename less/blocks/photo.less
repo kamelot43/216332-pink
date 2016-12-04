@@ -1,6 +1,34 @@
 .photo {
+
   width: @base-width;
-  min-height: 335px;
+  min-height: 325px;
   outline: 2px solid green;
   margin-bottom: 15px;
+}
+.photo__user {
+  .font-base-pattern(@base-font-family, 16px, 24px, @bold, @form-base-color);
+}
+.photo__content {
+  position: relative;
+  .wrapper();
+  outline: 2px dotted blue;
+  padding-left: 10px;
+}
+.photo__picture {
+  .wrapper();
+  outline: 1px dotted orange;
+}
+.photo__time {
+  .font-base-pattern(@base-font-family, 12px, 24px, 200, @form-base-color);
+  text-transform: uppercase;
+}
+.photo__title {
+  .font-base-pattern(@base-font-family, 14px, 24px, @regular, @form-base-color);
+  text-align: left;
+}
+.photo__likes {
+  .font-base-pattern(@base-font-family, 14px, 24px, @regular, @label-color);
+  text-transform: uppercase;
+  padding-left: 25px;
+
 }
