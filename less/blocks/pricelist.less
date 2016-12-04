@@ -9,7 +9,6 @@
 .pricelist__option {
   border-bottom: 1px solid #e5e5e5;
   height: 58px;
-  .font-base-pattern(@base-font-family, 14px, 30px, @regular, @form-base-color);
   text-transform: uppercase;
   padding-left: 45px;
   background-color: #ffffff;
@@ -33,12 +32,14 @@
 
 
 .pricelist__value {
-  .font-base-pattern(@base-font-family, 18px, 30px, @bold, #ffffff);
   text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .pricelist__price {
-  .font-base-pattern(@base-font-family, 24px, 30px, @regular, #ffffff);
+  color: #ffffff;
+  font-size: 24px;
   text-transform: uppercase;
 }
 

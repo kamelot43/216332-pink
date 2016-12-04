@@ -16,13 +16,15 @@
   margin-bottom: 25px;
 }
 
-::-webkit-input-placeholder {
-  .font-base-pattern(@base-font-family, 18px, 30px, @regular, 283645);
+.user-name__input placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
   text-align: left;
 }
 
 .user-name__label {
   padding-left: 25px;
-  .font-base-pattern(@base-font-family, 14px, 30px, @regular, @label-color );
+  color: @label-color;
   text-transform: uppercase;
 }

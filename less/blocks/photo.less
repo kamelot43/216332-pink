@@ -1,12 +1,12 @@
 .photo {
-
   width: @base-width;
   min-height: 325px;
   outline: 2px solid green;
   margin-bottom: 15px;
 }
 .photo__user {
-  .font-base-pattern(@base-font-family, 16px, 24px, @bold, @form-base-color);
+  font-size: 16px;
+  font-weight: @bold;
 }
 .photo__content {
   position: relative;
@@ -20,16 +20,19 @@
   outline: 1px dotted orange;
 }
 .photo__time {
-  .font-base-pattern(@base-font-family, 12px, 24px, 200, @form-base-color);
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: @light;
 }
 .photo__title {
-  .font-base-pattern(@base-font-family, 14px, 24px, @regular, @form-base-color);
   text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: @light;
 }
 .photo__likes {
-  .font-base-pattern(@base-font-family, 14px, 24px, @regular, @label-color);
+  color: @label-color;
   text-transform: uppercase;
   padding-left: 25px;
-
 }
