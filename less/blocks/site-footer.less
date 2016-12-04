@@ -1,12 +1,10 @@
 .site-footer {
   width: @base-width;
-  min-height: 615px;
+  min-height: 250px;
   outline: 1px solid green;
-  margin-top: -22px;
 }
 
 .site-footer__question {
-  .font-base-pattern(@base-font-family, 24px, 30px, @regular, @form-base-color);
   text-align: center;
   padding-top: 40px;
 }
@@ -19,19 +17,16 @@
 }
 
 .site-footer__item {
-  height: 80px;
+  min-height: 80px;
   width: 240px;
   outline: 1px dotted pink;
   display: inline-block;
   margin: 0;
   text-align: center;
-  &:nth-child(3) {
-    height: 85px;
-  }
 }
 
 .site-footer__action {
-  .font-base-pattern(@base-font-family, 18px, 20px, @bold, @form-base-color);
+  font-weight: @bold;
   margin-top: 0;
   padding-top: 5px;
   margin-bottom: 9px;
@@ -42,25 +37,18 @@
 }
 
 .site-footer__contact {
-  .font-base-pattern(@base-font-family, 24px, 24px, @light, @label-color);
+  color: @label-color;
 }
 
-.site-footer--form {
-  width: 280px;
-  min-height: 205px;
-  outline: 3px solid orange;
-  margin: 0 auto;
-}
+
 
 .site-footer__logo {
   width: 160px;
   margin: 0 auto;
   outline: 2px dotted pink;
-  padding-top: 44px;
   padding-left: 10px;
 }
 
 .site-footer__copyright {
-  .font-base-pattern(@base-font-family, 14px, 18px, @regular, @form-base-color);
   text-align: center;
 }

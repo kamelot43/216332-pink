@@ -1,9 +1,7 @@
 .site-nav__items {
   outline: 1px dotted yellow;
   width: @base-width;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .items-base();
 }
 
 .site-nav__link {
@@ -15,39 +13,6 @@
   text-align: center;
   text-transform: uppercase;
   .font-base-pattern(@base-font-family, 18px, 32px, @bold, #d4d6d8);
-}
-
-.site-nav__link--pink {
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 20px;
-  font-size: 0;
-  text-align: left;
-  padding-left: 20px;
-  padding: 19px 0;
-}
-
-.site-nav__items {
-  outline: 1px dotted yellow;
-  width: @base-width;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.site-nav__link {
-  display: block;
-  padding: 15px 0px;
-  border: 1px solid #000000;
-  margin-bottom: -1px;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  .font-base-pattern(@base-font-family,
-  18px,
-  32px,
-  @bold,
-  #d4d6d8);
 }
 
 .site-nav__link--pink {

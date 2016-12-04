@@ -6,7 +6,7 @@
   outline: 1px solid blue;
   width: @base-width;
   height: 995px;
-  margin-top: -22px;
+
 }
 
 .features__proposal-container {
@@ -16,17 +16,9 @@
 }
 
 .features__proposal {
-  .font-base-pattern(@base-font-family,
-  24px,
-  30px,
-  @light,
-  @form-base-color);
+  .font-base-pattern(@base-font-family, 24px, 30px, @light, @form-base-color);
   text-align: center;
-}
-
-.features__proposal--clone {
   padding-top: 35px;
-  padding-bottom: 0px;
 }
 
 .features__items {
@@ -39,7 +31,7 @@
   outline: 1px dotted green;
   margin: 0;
   width: 280px;
-  height: 140px;
+  min-height: 140px;
   display: inline-block;
 }
 
@@ -49,8 +41,6 @@
   18px,
   @bold,
   #000000);
-  margin-top: -1px;
-  margin-bottom: -5px;
   text-align: center;
 }
 
@@ -62,5 +52,4 @@
   @regular,
   @form-base-color);
   text-align: center;
-  padding-top: 5px;
 }

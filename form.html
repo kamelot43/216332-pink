@@ -14,15 +14,15 @@
     <div class="site-header__wrapper">
       <!--Элемент визуализации-->
       <h1 class="visually-hidden">Приложение "Pink"</h1>
+      <div class="logo">
+        <!--Кнопка открывающая скрытый контент -->
+        <button class="button button--close-menu " type="button">Закрыть меню</button>
+      </div>
 
       <!--Навигация-->
       <nav class="site-nav site-nav--closed">
-        <!--Кнопка открывающая скрытый контент -->
-        <button class="button button--close-menu " type="button">Закрыть меню</button>
+
         <ul class="site-nav__items">
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--pink">Пинк</a>
-          </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
           </li>
@@ -49,7 +49,7 @@
     <!--Центровщик-->
     <div class="site-main__wrapper">
       <div class="slogan">
-        <p class="slogan__about">Поделитесь своей историей и получите шанс выиграть ценный приз --1000 миль на вашу бонусную карту</p>
+        <p class="slogan__about">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
       </div>
       <!--Форма-->
 
@@ -147,7 +147,7 @@
         <!--Блок впечатления пользователя-->
         <fieldset class="user-impression">
           <legend class="user-impression__title">Опишите свои эмоции</legend>
-          <textarea class="user-impression__textarea" name="user-impression" id="user-impression" cols="40" rows="17" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
+          <textarea class="user-impression__textarea" name="user-impression" id="user-impression"  placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
         </fieldset>
         <!--Кнопка отправки формы-->
         <button class="button button--submit-form" type="submit">Отправить форму</button>
@@ -155,11 +155,11 @@
       </form>
     </div>
   </main>
-  <footer class="site-footer--form">
+  <footer class="site-footer">
     <!--Центровщик-->
     <div class="site-footer__wrapper">
       <div class="site-footer__logo">
-        <a href="#">
+        <a href="index.html">
           <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
         </a>
       </div>
@@ -168,11 +168,11 @@
         <a class="social__link social__link--fb" href="#">FB</a>
         <a class="social__link social__link--yt" href="#">YouTube</a>
       </div>
-      <p class="site-footer__copyright">Разработано:
+      <div class="site-footer__copyright">Разработано:
         <a href="#">
           <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
         </a>
-      </p>
+      </div>
     </div>
   </footer>
 

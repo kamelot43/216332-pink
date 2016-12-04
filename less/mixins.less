@@ -14,12 +14,9 @@
   width: 280px;
 }
 .bg-green-btn () {
-  display: inline-block;
   font-family: @base-font-family;
   width: 280px;
   background-color:#2aab6d;
-  border: none;
-  cursor: pointer;
   font-size: 18px;
   line-height: 30px;
   padding: 16px 0;
@@ -27,6 +24,16 @@
   font-weight: 700;
   color: white;
 }
+  .bg-elipse-btn {
+  .font-base-pattern(@base-font-family, 18px, 18px, @bold, #ffffff);
+  width: 280px;
+  padding: 16px 0;
+  border-radius: 30px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
 .font-base-pattern (@f-family, @f-size, @line-height, @f-weight, @color) {
   font-family:@f-family;
   font-size: @f-size;
@@ -34,7 +41,7 @@
   font-weight: @f-weight;
   color: @color;
 }
-.slider-controls () {
+.slider-label-controls () {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -44,6 +51,15 @@
   border: 3px solid #283645;
   border-radius: 50%;
   cursor: pointer;
+}
+.slider-controls-styles {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+  outline: 2px solid green;
 }
 .wrapper(@width:280px) {
   width:@width;
