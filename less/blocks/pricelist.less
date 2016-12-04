@@ -5,45 +5,53 @@
   outline: 1px solid orange;
   background-color: #f2f2f2;
 }
-  .pricelist__option {
-    border-bottom: 1px solid #e5e5e5;
-    height: 58px;
-    .font-base-pattern(@base-font-family, 14px, 30px, @regular, @form-base-color);
-    text-transform: uppercase;
-    padding-left: 45px;
-    background-color: #ffffff;
-  }
-  .pricelist__items {
-    width: @base-width;
-    border-collapse: collapse;
-  }
-  .pricelist__title {
-    background-color: #283645;
-    border-bottom: 1px solid black;
-    height: 95px;
-    width: 320px;
-    text-align: center;
-  }
-  .pricelist__value {
-    .font-base-pattern(@base-font-family, 18px, 30px, @bold, #ffffff);
-    text-transform: uppercase;
-  }
-  .pricelist__price {
-    .font-base-pattern(@base-font-family, 24px, 30px, @regular, #ffffff);
-    text-transform: uppercase;
-  }
-  .pricelist input[type="radio"] {
+
+.pricelist__option {
+  border-bottom: 1px solid #e5e5e5;
+  height: 58px;
+  .font-base-pattern(@base-font-family, 14px, 30px, @regular, @form-base-color);
+  text-transform: uppercase;
+  padding-left: 45px;
+  background-color: #ffffff;
+}
+
+.pricelist__items {
+  width: @base-width;
+  border-collapse: collapse;
+}
+
+.pricelist__title {
+  background-color: #283645;
+  border-bottom: 1px solid black;
+  height: 95px;
+  width: 320px;
+  text-align: center;
+}
+
+.pricelist__value {
+  .font-base-pattern(@base-font-family, 18px, 30px, @bold, #ffffff);
+  text-transform: uppercase;
+}
+
+.pricelist__price {
+  .font-base-pattern(@base-font-family, 24px, 30px, @regular, #ffffff);
+  text-transform: uppercase;
+}
+
+.pricelist input[type="radio"] {
   display: none;
 }
-  .pricelist__label {
-    .slider-controls ();
-  }
-  .pricelist__controls {
-    position: absolute;
-    bottom: 55px;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    text-align: center;
-    outline: 2px solid green;
-  }
+
+.pricelist__label {
+  .slider-controls ();
+}
+
+.pricelist__controls {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+  outline: 2px solid green;
+}
