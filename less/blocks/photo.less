@@ -1,0 +1,38 @@
+.photo {
+  width: @base-width;
+  min-height: 325px;
+  outline: 2px solid green;
+  margin-bottom: 15px;
+}
+.photo__user {
+  font-size: 16px;
+  font-weight: @bold;
+}
+.photo__content {
+  position: relative;
+  .wrapper();
+  outline: 2px dotted blue;
+  padding-left: 10px;
+  background-color: #f2f2f2;
+}
+.photo__picture {
+  .wrapper();
+  outline: 1px dotted orange;
+}
+.photo__time {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: @light;
+}
+.photo__title {
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: @light;
+}
+.photo__likes {
+  color: @label-color;
+  text-transform: uppercase;
+  padding-left: 25px;
+}
