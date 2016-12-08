@@ -1,0 +1,73 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+}
+.button--download {
+  .bg-elipse-btn();
+  margin-top: 22px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+}
+
+.button--close-menu {
+  background-image: url("../img/icon-menu-burger.svg");
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background-color: #283645;
+  outline: 1px solid red;
+  background-position:center;
+}
+.button--submit-form {
+  .bg-green-btn ();
+  margin-left: 20px;
+}
+
+.button--popup {
+  .bg-green-btn ();
+}
+.button--likes {
+  background-image: url("../img/icon-heart.svg");
+  background-position: center;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  outline: 1px solid red;
+}
+
+.button--photo-filter-1 {
+  background-image: url("../img/icon-editor-crop.svg");
+  .button--photo-filter ();
+}
+
+.button--photo-filter-2 {
+  background-image: url("../img/icon-editor-fill.svg");
+  .button--photo-filter ();
+}
+
+.button--photo-filter-3 {
+  background-image: url("../img/icon-editor-contrast.svg");
+  .button--photo-filter ();
+}
+
+.button--cancel-post,
+.button--post {
+  .bg-elipse-btn();
+  background-color: white;
+  border: 2px solid @label-color;
+  color: @label-color;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.button--cancel-post {
+  opacity: 0.3;
+}
