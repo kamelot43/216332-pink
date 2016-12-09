@@ -1,20 +1,20 @@
 .site-header {
   position: relative;
-  background-color: #283645;
-  outline: 1px solid red;
   width: @base-width;
   min-height: 725px;
+  background-color: rgba(152, 191, 105, 0.3);
 }
 
 .site-header__general-img {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  //background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  padding-bottom: 400px;
+  background-color: rgba(207, 52, 106, 0.3);
 }
 
 .site-header__challenge {
   width: @base-width;
   height: 175px;
-  outline: 1px dotted pink;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   margin-top: -22px;
@@ -23,8 +23,8 @@
 .site-header__descr {
   color: #ffffff;
   font-size: 24px;
-  font-weight: @light;
-  text-align: center;
+  font-weight: 300;
+  text-align: @light;
   padding-top: 30px;
 }
 
@@ -39,4 +39,34 @@
   font-size: 0;
   text-align: left;
   padding: 19px 0;
+}
+
+@media @tablet-widths {
+  .site-header {
+    width: 700px;
+  }
+  .site-header__logo {
+    min-height: 73px;
+    min-width: 100%;
+  }
+  .site-header__general-img {
+    height: 220px;
+  }
+}
+
+@media @desktop-widths {
+  .site-header {
+    width: 1200px;
+    position: relative;
+  }
+  .site-header__logo {
+    position: absolute;
+    min-width: 100px;
+    min-height: 40px;
+  }
+  .site-header__general-img {
+    padding-bottom: 775px;
+    width: 100%;
+    height: 0;
+  }
 }

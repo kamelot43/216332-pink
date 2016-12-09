@@ -1,14 +1,49 @@
+body > * {
+  outline: 2px solid deeppink;
+}
+
+body > * > * {
+  outline: 2px dashed lime;
+  outline-offset: -2px;
+}
+
+body > * > * > * {
+  outline: 2px dotted dodgerblue;
+  outline-offset: -4px;
+}
+
 body {
-  font-family: "Open Sans","Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: @form-base-color;
-  font-weight: @regular;
-  width: @base-width;
+  color: #283645;
+  font-weight: 400;
+  width: 320px;
   margin: 0 auto;
-  margin-top: 50px;
-  z-index: 10;
+  margin-top: 30px;
 }
+
+@media @tablet-widths {
+  body {
+    width: 700px;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  iframe {
+    height: 360px;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    width: 1200px;
+  }
+  iframe {
+    height: 500px;
+  }
+}
+
 .visually-hidden {
   display: none;
 }
