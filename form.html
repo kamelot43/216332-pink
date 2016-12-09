@@ -2,6 +2,24 @@
 <html lang="ru">
 
 <head>
+<style>
+  BODY {
+    background: url('img/pink-form-mobile.jpg')50% no-repeat;
+  }
+
+  @media (min-width: 700px) {
+    BODY {
+      background-image: url('img/pink-form-tablet.jpg');
+      background-position: 40px 0px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    BODY {
+      background-image: url('img/pink-form-desktop.jpg');
+    }
+  }
+</style>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Пинк.Форма</title>
@@ -9,13 +27,13 @@
 
 <body>
   <!-- Шапка сайта -->
-  <header class="site-header site-header--form">
+  <header class="site-header">
     <!--Центровщик-->
     <div class="site-header__wrapper">
       <!--Элемент визуализации-->
       <h1 class="visually-hidden">Приложение "Pink"</h1>
       <div class="site-header__logo">
-        <a href="index.html">
+        <a href="index.html" class="visually-hidden">
           <img src="img/logo-pink-white-mobile.svg">
         </a>
       </div>
@@ -26,21 +44,21 @@
 
         <ul class="site-nav__items">
           <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">Главная</a>
+            <a class="site-nav__link" href="index.html">0</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="photo.html">Фотографии</a>
+            <a class="site-nav__link" href="photo.html">1</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link">Конкурс</a>
+            <a class="site-nav__link">2</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="http://htmlacademy.ru/">HTML ACADEMY</a>
+            <a class="site-nav__link" href="http://htmlacademy.ru/">3</a>
           </li>
         </ul>
       </nav>
       <div class="site-header__challenge">
-        <h3 class="site-header__descr">Конкурс на самое безбашенное<br> путешествие с Пинк</h3>
+        <h3 class="site-header__descr"><!--Конкурс на самое безбашенное<br> путешествие с Пинк--></h3>
       </div>
     </div>
   </header>
@@ -51,7 +69,7 @@
     <!--Центровщик-->
     <div class="site-main__wrapper">
       <div class="slogan">
-        <p class="slogan__about">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
+        <div class="slogan__about"><!--Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту--></div>
       </div>
       <!--Форма-->
 
@@ -162,7 +180,7 @@
     <div class="site-footer__wrapper">
       <div class="site-footer__logo">
         <a href="index.html">
-          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
+          <img src="img/logo-pink-blue-mobile.svg" class="visually-hidden" alt="Логотип Пинк">
         </a>
       </div>
       <div class="social">
