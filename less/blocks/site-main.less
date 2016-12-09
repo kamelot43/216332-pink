@@ -1,5 +1,17 @@
 .site-main {
-  width: @base-width;
-  min-height: 2225px;
-  outline: 3px solid red;
+  width: 320px;
+  min-height: 2035px;
+  outline: 3px solid green;
+}
+
+@media @tablet-widths {
+  .site-main {
+    min-width: 700px;
+  }
+}
+
+@media @desktop-widths {
+  .site-main {
+    width: 1200px;
+  }
 }
