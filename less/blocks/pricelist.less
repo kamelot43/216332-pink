@@ -2,8 +2,7 @@
   position: relative;
   width: @base-width;
   height: 380px;
-  outline: 1px solid orange;
-  background-color: #f2f2f2;
+  background-color: rgba(120, 212, 0, 0.3);
 }
 
 .pricelist__option {
@@ -11,8 +10,11 @@
   height: 58px;
   text-transform: uppercase;
   padding-left: 45px;
-  background-color: #ffffff;
-  width: 320px;
+  width: @base-width;
+}
+
+.pricelist__option:nth-child (n+1) {
+  display: none;
 }
 
 .pricelist__items {
@@ -22,14 +24,10 @@
 }
 
 .pricelist__title {
-  background-color: #283645;
-  border-bottom: 1px solid black;
   height: 95px;
-  width: 320px;
   text-align: center;
   width: 320px;
 }
-
 
 .pricelist__value {
   text-transform: uppercase;
@@ -52,5 +50,20 @@
 }
 
 .pricelist__controls {
-.slider-controls-styles();
+  .slider-controls-styles();
+}
+
+@media @tablet-widths {
+  .pricelist {
+    min-width: 100%;
+  }
+  .pricelist__controls {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+  .pricelist {
+    height: 540px;
+  }
 }

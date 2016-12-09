@@ -1,12 +1,11 @@
 .site-footer {
   width: @base-width;
   min-height: 250px;
-  outline: 1px solid green;
 }
 
 .site-footer__question {
   text-align: center;
-  padding-top: 40px;
+  min-height: 110px;
 }
 
 .site-footer__items {
@@ -17,9 +16,8 @@
 }
 
 .site-footer__item {
-  min-height: 80px;
+  min-height: 90px;
   width: 240px;
-  outline: 1px dotted pink;
   display: inline-block;
   margin: 0;
   text-align: center;
@@ -37,18 +35,112 @@
 }
 
 .site-footer__contact {
-  color: @label-color;
+  color: #d22856;
 }
-
-
 
 .site-footer__logo {
   width: 160px;
   margin: 0 auto;
-  outline: 2px dotted pink;
   padding-left: 10px;
 }
 
 .site-footer__copyright {
   text-align: center;
+}
+
+@media @tablet-widths {
+  .site-footer {
+    width: 700px;
+    min-height: 900px;
+  }
+  .site-footer__content {
+    display: block;
+    min-height: 200px;
+    background: rgba(12, 235, 112, 0.3);
+  }
+  .site-footer__logo {
+    width: 33%;
+    float: left;
+    padding-left: 0;
+    height: 200px;
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
+  }
+  .site-footer__question {
+    width: 100%;
+    background: rgba(88, 134, 116, 0.3);
+    min-height: 150px;
+  }
+  .site-footer__item {
+    position: relative;
+    background: rgba(161, 128, 204, 0.3);
+  }
+  .site-footer__item:first-child {
+    top: 20px;
+    margin-left: -160px;
+  }
+  .site-footer__item:nth-child(2) {
+    margin-top: -130px;
+    left: 155px;
+  }
+  .site-footer__copyright {
+    width: 33%;
+    height: 200px;
+    float: left;
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
+  }
+}
+
+@media @desktop-widths {
+  .site-footer {
+    width: 100%;
+    min-height: 1000px;
+  }
+  .site-footer__question {
+    position: relative;
+    top: 50px;
+  }
+  .site-footer__items {
+    min-height: 150px;
+    width: 900px;
+    position: relative;
+    top: 60px;
+    margin-bottom: 65px;
+  }
+  .site-footer__item {
+    display: inline-block;
+    background: rgba(161, 128, 204, 0.3);
+    min-height: 130px;
+    margin-left: 70px;
+    min-width: 250px;
+  }
+  .site-footer__item:first-child {
+    top: 0;
+    margin-left: 0;
+  }
+  .site-footer__item:nth-child(2) {
+    margin-top: 0;
+    left: 0;
+  }
+  .site-footer__content {
+    display: block;
+    min-height: 200px;
+    background: rgba(12, 235, 112, 0.3);
+  }
+  .site-footer__logo {
+    width: 400px;
+    float: left;
+    padding-left: 0;
+    height: 200px;
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
+  }
+  .site-footer__copyright {
+    width: 400px;
+    height: 200px;
+    float: left;
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
+  }
 }

@@ -1,46 +1,88 @@
 .features {
-  background-image: url("../img/iphone-screen-mobile@1x.png");
+  //background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: 85px 720px;
   background-repeat: no-repeat;
-  background-color: #f2f2f2;
-  outline: 1px solid blue;
   width: @base-width;
-  height: 995px;
-
+  min-height: 1030px;
 }
 
 .features__proposal-container {
-  outline: 1px solid yellow;
   height: 220px;
-  background-color: white;
 }
 
 .features__proposal {
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  padding-top: 35px;
+  min-height: 100px;
+  background-color: rgba(50, 187, 187, 0.3);
 }
 
 .features__items {
   .items-base();
-  padding-left: 18px;
-  margin-top: 75px;
+  margin-top: 60px;
+  background-color: rgba(241, 203, 255, 0.3);
 }
 
 .features__item {
-  outline: 1px dotted green;
   margin: 0;
-  width: 280px;
-  min-height: 140px;
+  min-width: 325px;
+  min-height: 120px;
   display: inline-block;
+  background: rgba(166, 42, 85, 0.3);
+  margin-top: 10px;
 }
 
 .features__title {
-  font-weight: @bold;
+  font-weight: 700;
   text-align: center;
 }
 
 .features__description {
   text-align: center;
+}
+
+@media @tablet-widths {
+  .features {
+    position: relative;
+    margin-top: 100px;
+    min-width: 100%;
+    min-height: 780px;
+  }
+  .features__proposal-container {
+    height: 220px;
+    width: 700px;
+  }
+  .features__items {
+    min-height: 440px;
+    width: 370px;
+    float: right;
+    margin-top: 75px;
+  }
+  .features__item {
+    display: block;
+    background: rgba(166, 42, 85, 0.3);
+    min-height: 130px;
+  }
+  .features__item:first-child {
+    margin-top: 0px;
+  }
+}
+
+@media @desktop-widths {
+  .features {
+    min-height: 840px;
+  }
+  .features__proposal-container {
+    width: 100%;
+  }
+  .features__items {
+    float: none;
+    min-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+    min-height: 200px;
+  }
+  .features__item {
+    min-height: 200px;
+    display: inline-block;
+  }
 }
