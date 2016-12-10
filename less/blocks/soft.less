@@ -2,13 +2,12 @@
   width: @base-width;
   height: 340px;
   border: none;
-  margin: 0;
-  padding: 0;
+  .items-base();
+  background: rgba(245, 236, 98, 0.5);
 }
 
 .soft__items {
   .items-base();
-  list-style: none;
 }
 
 .soft__title {
@@ -31,4 +30,16 @@
     bottom: 900px;
     outline: 1px solid rgba(245, 236, 98, 1);
   }
+}
+@media @desktop-widths {
+  .soft {
+    width: 500px;
+position: relative;
+background: rgba(245, 236, 98, 0.5);
+    bottom: 800px;
+outline: 1px solid #f5ec62;
+left: 600px;
+height: 350px;
+
+}
 }
