@@ -46,7 +46,6 @@
   height: 20px;
   outline: 1px solid red;
 }
-
 .button--photo-filter-1 {
   background-image: url("../img/icon-editor-crop.svg");
   .button--photo-filter ();
@@ -79,6 +78,12 @@
   color: @label-color;
   margin-left: 15px;
   margin-bottom: 20px;
+  @media @desktop-widths {
+    position: relative;
+    top:80px;
+    width: 170px;
+    margin: 0;
+  }
 }
 .button--post {
   @media @tablet-widths {
