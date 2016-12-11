@@ -1,20 +1,35 @@
 .photo {
   width: @base-width;
-  min-height: 325px;
+  min-height: 280px;
+  outline: 2px solid rgba(85, 7, 110, 1);
   margin-bottom: 15px;
+
 }
+
 .photo__user {
   font-size: 16px;
   font-weight: 700;
+  padding-top: 10px;
 }
 .photo__content {
   position: relative;
   .wrapper();
   padding-left: 10px;
   background-color: #f2f2f2;
+  background: rgba(85, 7, 110, 0.3);
+  outline: 1px solid rgba(85, 7, 110, 1);
 }
 .photo__picture {
 .wrapper();
+min-height:180px;
+width: 280px;
+margin-bottom: 10px;
+outline: 1px solid rgba(132, 32, 32, 1);
+background: rgba(132, 32, 32, 0.3);
+
+}
+.photo__picture--panorama {
+  height:160px;
 }
 .photo__time {
   text-transform: uppercase;
@@ -27,25 +42,13 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: @light;
+  margin: 0;
+  padding: 0;
 }
 .photo__likes {
   color: @label-color;
   text-transform: uppercase;
   padding-left: 25px;
-}
-.photo-editor {
-  width: 320px;
-  height: 900px;
-  margin-top: -11px;
-}
-.photo-editor__preview {
-  .wrapper();
-  margin-top: -15px;
-  margin-bottom: 45px;
-}
-.photo-editor__input {
-  width: 260px;
-  margin-top: 40px;
-  margin-left: 25px;
-  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 17px;
 }
