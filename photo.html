@@ -9,7 +9,7 @@
 
   @media (min-width: 660px) {
     BODY {
-      background-image: url('preview/pink-photo-tablet.png');
+      background-image: url('preview/pink-photo-tablet.jpg');
       background-position: 40px 0px;
     }
   }
@@ -74,9 +74,9 @@
         <h2 class="visually-hidden">Посты пользователей</h2>
 
         <!--Фотокарточка №1-->
-        <article class="photo">
+        <article class="photo photo--panorama">
           <div class="photo__picture--panorama">
-            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид с моста">
+            <!--<img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид с моста">-->
           </div>
           <div class="photo__content">
             <div class="photo__user">Анна <span class="photo__time">(5 минут назад)</span>
@@ -86,6 +86,7 @@
           </div>
         </article>
 
+        <section class="photo-gallery__flex">
         <!--Фотокарточка №2-->
         <article class="photo">
           <div class="photo__picture">
@@ -164,6 +165,7 @@
           </div>
         </article>
       </section>
+    </section>
 
 
       <section class="photo-editor">

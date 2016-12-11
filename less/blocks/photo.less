@@ -3,7 +3,28 @@
   min-height: 280px;
   outline: 2px solid rgba(85, 7, 110, 1);
   margin-bottom: 15px;
+@media @tablet-widths {
+  height: 460px;
+}
+}
+.photo-gallery__flex {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
 
+}
+
+
+
+.photo--panorama {
+  @media @tablet-widths {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    height: 650px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
 }
 
 .photo__user {
@@ -14,10 +35,13 @@
 .photo__content {
   position: relative;
   .wrapper();
-  padding-left: 10px;
+
   background-color: #f2f2f2;
   background: rgba(85, 7, 110, 0.3);
   outline: 1px solid rgba(85, 7, 110, 1);
+  @media @tablet-widths {
+    .wrapper(88%);
+  }
 }
 .photo__picture {
 .wrapper();
@@ -26,10 +50,19 @@ width: 280px;
 margin-bottom: 10px;
 outline: 1px solid rgba(132, 32, 32, 1);
 background: rgba(132, 32, 32, 0.3);
-
+@media @tablet-widths {
+  height: 300px;
+  margin-top: 5px;
+}
 }
 .photo__picture--panorama {
   height:160px;
+  background: rgba(132, 32, 32, 0.4);
+  outline: 2px solid rgba(132, 32, 32, 1);
+  @media @tablet-widths {
+    width: 700px;
+    height: 510px;
+  }
 }
 .photo__time {
   text-transform: uppercase;
