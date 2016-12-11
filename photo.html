@@ -2,6 +2,24 @@
 <html lang="ru">
 
 <head>
+<style>
+  BODY {
+    background: url('preview/pink-photo-mobile.jpg')50% 0% no-repeat;
+  }
+
+  @media (min-width: 660px) {
+    BODY {
+      background-image: url('preview/pink-photo-tablet.png');
+      background-position: 40px 0px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    BODY {
+      background-image: url('preview/pink-photo-desktop.jpg');
+    }
+  }
+</style>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Пинк.Фотогалерея.</title>
@@ -58,7 +76,7 @@
         <!--Фотокарточка №1-->
         <article class="photo">
           <div class="photo__picture--panorama">
-            <img src="img/panorama-mobile@1x.jpg" alt="Панорамный вид с моста">
+            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид с моста">
           </div>
           <div class="photo__content">
             <div class="photo__user">Анна <span class="photo__time">(5 минут назад)</span>
@@ -71,7 +89,8 @@
         <!--Фотокарточка №2-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль"> </div>
+            <!--<img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Белый автомобиль">-->
+           </div>
           <div class="photo__content">
             <div class="photo__user">Левон <span class="photo__time">(5 часов назад)</span>
             </div>
@@ -83,7 +102,7 @@
         <!--Фотокарточка №3-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
+            <!--<img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">-->
           </div>
           <div class="photo__content">
             <div class="photo__user">Антон <span class="photo__time">(12 часов назад)</span>
@@ -96,7 +115,7 @@
         <!--Фотокарточка №4-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="img/photo-3-mobile@1x.jpg" alt="Стеклянный потолок">
+            <!--<img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Стеклянный потолок">-->
           </div>
           <div class="photo__content">
             <div class="photo__user">Борис <span class="photo__time">(20 часов назад)</span>
@@ -109,7 +128,7 @@
         <!--Фотокарточка №5-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="img/photo-4-mobile@1x.jpg" alt="Прилавок с бахчой">
+            <!--<img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Прилавок с бахчой">-->
           </div>
           <div class="photo__content">
             <div class="photo__user">Сергей <span class="photo__time">(25 часов назад)</span>
@@ -122,7 +141,7 @@
         <!--Фотокарточка №6-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="img/photo-5-mobile@1x.jpg" alt="Вид с горы">
+            <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Вид с горы">
           </div>
           <div class="photo__content">
             <div class="photo__user">Максим <span class="photo__time">(40 часов назад)</span>
@@ -135,7 +154,7 @@
         <!--Фотокарточка №7-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета">
+            <!--<img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Вид из окна самолета">-->
           </div>
           <div class="photo__content">
             <div class="photo__user">Надежда <span class="photo__time">(45 часов назад)</span>
@@ -151,10 +170,10 @@
         <!--Элемент визуализации-->
         <h2 class="visually-hidden">Фоторедактор</h2>
         <div class="slogan">
-          <p class="slogan__about">Затмите их всех!Выкладывайте все,что накопилось в телефоне!</p>
+          <p class="slogan__about">Затмите их всех!<br>Выкладывайте все,что накопилось в<br> телефоне!</p>
         </div>
         <div class="photo-editor__preview">
-          <img src="img/photo-7-mobile@1x.jpg" alt="Картинка блока фоторедактора">
+          <!--<img src="img/photo-7-mobile@1x.jpg" alt="Картинка блока фоторедактора">-->
         </div>
         <button class="button button--photo-filter-1" type="button">Фильтр</button>
         <button class="button button--photo-filter-2" type="button">Фильтр</button>
@@ -163,8 +182,10 @@
 
         <input class="photo-editor__input" type="range" min="1" max="100">
         <br>
+        <div class="photo-editor__btn">
         <button class="button button--post" type="button">Запостить</button>
         <button class="button button--cancel-post" type="button">Отмена</button>
+      </div>
       </section>
     </div>
   </main>
