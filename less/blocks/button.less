@@ -50,16 +50,25 @@
 .button--photo-filter-1 {
   background-image: url("../img/icon-editor-crop.svg");
   .button--photo-filter ();
+  @media @tablet-widths {
+    margin: 0;
+  }
 }
 
 .button--photo-filter-2 {
   background-image: url("../img/icon-editor-fill.svg");
   .button--photo-filter ();
+  @media @tablet-widths {
+    margin: 0;
+  }
 }
 
 .button--photo-filter-3 {
   background-image: url("../img/icon-editor-contrast.svg");
   .button--photo-filter ();
+  @media @tablet-widths {
+    margin: 0;
+  }
 }
 
 .button--cancel-post,
@@ -70,6 +79,11 @@
   color: @label-color;
   margin-left: 15px;
   margin-bottom: 20px;
+}
+.button--post {
+  @media @tablet-widths {
+    margin-top: 30px;
+  }
 }
 
 .button--cancel-post {
