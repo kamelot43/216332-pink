@@ -2,24 +2,24 @@
 <html lang="ru">
 
 <head>
-<style>
-  BODY {
-    background: url('img/pink-form-mobile.jpg')50% 0% no-repeat;
-  }
-
-  @media (min-width: 700px) {
+  <style>
     BODY {
-      background-image: url('img/pink-form-tablet.jpg');
-      background-position: 40px 0px;
+      background: url('img/pink-form-mobile.jpg')50% 0% no-repeat;
     }
-  }
 
-  @media (min-width: 1000px) {
-    BODY {
-      background-image: url('img/pink-form-desktop.jpg');
+    @media (min-width: 660px) {
+      BODY {
+        background-image: url('img/pink-form-tablet.jpg');
+        background-position: 40px 0px;
+      }
     }
-  }
-</style>
+
+    @media (min-width: 960px) {
+      BODY {
+        background-image: url('img/pink-form-desktop.jpg');
+      }
+    }
+  </style>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Пинк.Форма</title>
@@ -69,8 +69,10 @@
     <!--Центровщик-->
     <div class="site-main__wrapper">
       <div class="slogan">
-        <div class="slogan__about"><!--Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту-->
-        <!--Пожалуйста заполните форму ниже--></div>
+        <div class="slogan__about">
+          <!--Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту-->
+          <!--Пожалуйста заполните форму ниже-->
+        </div>
       </div>
 
       <!--Форма-->
@@ -98,7 +100,8 @@
 
         <!--Блок достижений-->
         <fieldset class="achievement">
-          <legend class="achievement__title"><!--Ваши безбашенные<br> достижения в путешествии--></legend>
+          <legend class="achievement__title">
+            <!--Ваши безбашенные<br> достижения в путешествии--></legend>
 
           <ul class="achievement__items">
             <li class="achievement__item">
@@ -133,7 +136,9 @@
         <fieldset class="feedback">
           <!--Элемент визуализации-->
           <h3 class="visually-hidden">Обратная связь с пользователем</h3>
-          <legend class="feedback__title visually-hidden"><!--Контактная информация--></legend>
+          <legend class="feedback__title visually-hidden">
+            <!--Контактная информация-->
+          </legend>
           <ul class="feedback__items">
             <li class="feedback__item">
               <label class="feedback__label" for="feedback-input-1"><!--Номер телефона:--></label>
@@ -150,7 +155,9 @@
         <!--Блок о приложении пользователя-->
         <fieldset class="soft">
           <!--Элемент визуализации-->
-          <legend class="soft__title"><!--С каким приложение путешествовали?--></legend>
+          <legend class="soft__title">
+            <!--С каким приложение путешествовали?-->
+          </legend>
           <ul class="soft__items">
             <li class="soft__item">
               <input class="soft__input" type="radio" name="soft" id="soft-input-1">
@@ -169,7 +176,9 @@
 
         <!--Блок впечатления пользователя-->
         <fieldset class="user-impression">
-          <legend class="user-impression__title"><!--Опишите свои эмоции--></legend>
+          <legend class="user-impression__title">
+            <!--Опишите свои эмоции-->
+          </legend>
           <textarea class="user-impression__textarea" name="user-impression" id="user-impression" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
         </fieldset>
         <!--Кнопка отправки формы-->
