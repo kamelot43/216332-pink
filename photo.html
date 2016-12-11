@@ -142,7 +142,7 @@
         <!--Фотокарточка №6-->
         <article class="photo">
           <div class="photo__picture">
-            <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Вид с горы">
+            <!--<img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Вид с горы">-->
           </div>
           <div class="photo__content">
             <div class="photo__user">Максим <span class="photo__time">(40 часов назад)</span>
@@ -167,8 +167,8 @@
       </section>
     </section>
 
-
-      <section class="photo-editor">
+      <!--Сработает в моб.версии-->
+      <section class="photo-editor photo-editor--mobile ">
         <!--Элемент визуализации-->
         <h2 class="visually-hidden">Фоторедактор</h2>
         <div class="slogan">
@@ -188,6 +188,47 @@
         <button class="button button--post" type="button">Запостить</button>
         <button class="button button--cancel-post" type="button">Отмена</button>
       </div>
+      </section>
+
+      <!--Сработает в планшетн.версии-->
+      <section class="photo-editor photo-editor--tablet">
+        <!--Элемент визуализации-->
+        <h2 class="visually-hidden">Фоторедактор</h2>
+        <div class="slogan">
+          <p class="slogan__about">Затмите их всех!<br>Выкладывайте все,что накопилось в<br> телефоне!</p>
+        </div>
+        <section class="photo-editor__flex">
+          <div class="photo-editor__column">
+        <div class="photo-editor__preview">
+          <!--<img src="img/photo-7-mobile@1x.jpg" alt="Картинка блока фоторедактора">-->
+        </div>
+      </div>
+      <div class="photo-editor__column">
+        <ul class="photo-editor__items">
+          <li class="photo-editor__item">
+        <button class="button button--photo-filter-1" type="button">Фильтр</button>
+        <input class="photo-editor__input" type="range" min="1" max="100">
+      </li>
+
+        <li class="photo-editor__item">
+        <button class="button button--photo-filter-2" type="button">Фильтр</button>
+        <input class="photo-editor__input" type="range" min="1" max="100">
+      </li>
+
+        <li class="photo-editor__item">
+        <button class="button button--photo-filter-3" type="button">Фильтр</button>
+        <input class="photo-editor__input" type="range" min="1" max="100">
+      </li>
+      </ul>
+
+
+        <br>
+        <div class="photo-editor__btn">
+        <button class="button button--post" type="button">Запостить</button>
+        <button class="button button--cancel-post" type="button">Отмена</button>
+      </div>
+    </div>
+    </section>
       </section>
     </div>
   </main>
