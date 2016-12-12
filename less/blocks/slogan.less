@@ -4,15 +4,25 @@
   min-height: 120px;
   padding-top: 25px;
   background: rgba(127, 220, 136, 0.3);
+  @media @tablet-widths {
+    width: 100%;
+    min-height: 160px;
+  }
 }
 
 .slogan__about {
   text-align: center;
 }
 
-@media @tablet-widths {
-  .slogan {
-    width: 100%;
-    min-height: 160px;
+.slogan__about--tablet {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.slogan__about--mobile {
+  @media @tablet-widths {
+    display: none;
   }
 }
