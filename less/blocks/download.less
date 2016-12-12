@@ -3,17 +3,60 @@
   min-height: 270px;
   outline: 1px solid red;
   padding-top: 400px;
+  @media @tablet-widths {
+    position: relative;
+    min-height: 620px;
+    width: 370px;
+    padding-top: 0;
+    background: rgba(157, 15, 107, 0.4);
+  }
+  @media @desktop-widths {
+    width: 550px;
+    min-height: 770px;
+    padding-top: 0;
+  }
+}
+
+.download__slogan {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background: rgba(2, 157, 15, 0.4);
+  }
+  @media @desktop-widths {
+    display: block;
+    width: 100%;
+    height: 320px;
+    background: rgba(12, 222, 112, 0.3);
+  }
 }
 
 .download__items {
   .items-base();
   margin-bottom: 20px;
   background: rgba(2, 157, 15, 0.4);
+  @media @desktop-widths {
+    width: 100%;
+    height: 150px;
+    background: rgba(235, 12, 181, 0.3);
+  }
 }
 
 .download__item {
   display: inline-block;
   margin-left: 40px;
+  @media @desktop-widths {
+    background: rgba(16, 0, 212, 0.3);
+    margin-top: 60px;
+  }
+}
+
+.download__item:first-child {
+  @media @desktop-widths {
+    margin-left: 160px;
+  }
 }
 
 .download__link {
@@ -41,48 +84,5 @@
   text-align: center;
   color: #ffffff;
   min-height: 80px;
-  background: rgba(2, 157, 15, 0.4);
-}
-
-@media @tablet-widths {
-  .download {
-    position: relative;
-    min-height: 620px;
-    width: 370px;
-    padding-top: 0;
-    background: rgba(157, 15, 107, 0.4);
-  }
-  .download__slogan {
-    width: 100%;
-    height: 250px;
-    background: rgba(2, 157, 15, 0.4);
-  }
-}
-
-@media @desktop-widths {
-  .download {
-    width: 550px;
-    min-height: 770px;
-    padding-top: 0;
-  }
-  .download__items {
-    width: 100%;
-    height: 150px;
-    background: rgba(235, 12, 181, 0.3);
-  }
-  .download__item {
-    background: rgba(16, 0, 212, 0.3);
-    margin-top: 60px;
-  }
-  .download__item:first-child {
-    margin-left: 160px;
-  }
-  .download__slogan {
-    width: 100%;
-    height: 320px;
-    background: rgba(12, 222, 112, 0.3);
-  }
-  .download__support {
-    background: rgba(12, 222, 112, 0.3);
-  }
+  background: rgba(12, 222, 112, 0.4);
 }
