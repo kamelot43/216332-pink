@@ -39,6 +39,18 @@
   .slider-controls-styles ();
   bottom: 127px;
 }
+.reviews__author--mobile {
+  @media @tablet-widths {
+    display: none;
+  }
+}
+.reviews__author--tablet {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
 
 @media @tablet-widths {
   .reviews {
@@ -57,21 +69,23 @@
   .reviews__author {
     position: absolute;
     height: 120px;
-    width: 300px;
+    width: 250px;
     left: 30%;
-    background: red;
-    bottom: 0;
     margin: 0;
     background: rgba(150, 38, 77, 0.3);
+    top: 150px;
   }
   .reviews__controls {
     display: none
   }
   .reviews__comment {
-    min-height: 120px;
-    min-width: 700px;
-    background: rgba(150, 38, 77, 0.3);
-    padding-top: 20px;
+      min-height: 120px;
+      .wrapper(600px);
+      background: rgba(150, 38, 77, 0.3);
+      padding-top: 20px;
+      text-align: center;
+      position: relative;
+      top: 20px;
   }
 }
 

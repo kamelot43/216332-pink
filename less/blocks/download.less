@@ -20,10 +20,14 @@
 .download__slogan {
   display: none;
   @media @tablet-widths {
+    position: relative;
+    top:100px;
     display: block;
-    width: 100%;
+    .wrapper(200px);
     height: 250px;
     background: rgba(2, 157, 15, 0.4);
+    font-size: 35px;
+    text-align: center;
   }
   @media @desktop-widths {
     display: block;
