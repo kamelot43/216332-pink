@@ -1,12 +1,29 @@
 .site-footer {
   width: @base-width;
   min-height: 320px;
+  @media @tablet-widths {
+    width: 700px;
+    min-height: 200px;
+  }
+  @media @desktop-widths {
+    width: 100%;
+    min-height: 200px;
+  }
 }
 
 .site-footer__question {
   text-align: center;
   min-height: 60px;
   padding-top: 60px;
+  @media @tablet-widths {
+    width: 100%;
+    background: rgba(88, 134, 116, 0.3);
+    min-height: 150px;
+    padding-top: 0;
+  }
+  @media @desktop-widths {
+    position: relative;
+  }
 }
 
 .site-footer__items {
@@ -14,6 +31,41 @@
   margin: 0 auto;
   width: 240px;
   margin-bottom: 45px;
+  @media @desktop-widths {
+    /*min-height: 150px;
+
+    top: 40px;
+    margin-bottom: 65px;*/
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    width: 900px;
+  }
+}
+.site-footer__item:first-child {
+  @media @tablet-widths {
+    right: 160px;
+  }
+  /*@media @desktop-widths {
+    top: 0;
+    right: 60px;
+  }*/
+}
+
+.site-footer__item:nth-child(2) {
+  @media @tablet-widths {
+    left: 155px;
+    bottom: 90px;
+  }
+  @media @desktop-widths {
+    left: 0;
+  }
+}
+
+.site-footer__item:nth-child(3) {
+  @media @tablet-widths {
+    bottom: 80px;
+  }
 }
 
 .site-footer__item {
@@ -22,7 +74,26 @@
   display: inline-block;
   margin: 0;
   text-align: center;
+  @media @tablet-widths {
+    position: relative;
+    background: rgba(161, 128, 204, 0.3);
+  }
+  @media @desktop-widths {
+    /*position: relative;
+    background: rgba(161, 128, 204, 0.3);
+
+    margin-left: 70px;
+    */
+    min-height: 130px;
+    min-width: 200px;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 }
+
+
 
 .site-footer__action {
   font-weight: @bold;
@@ -45,51 +116,35 @@
   padding-left: 10px;
   height: 100px;
   margin-bottom: 20px;
+  @media @tablet-widths {
+    width: 33%;
+    float: left;
+    padding-left: 0;
+    height: 200px;
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
+  }
+  @media @desktop-widths {
+    width: 400px;
+    float: left;
+    padding-left: 0;
+    height: 200px;
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
+  }
 }
 
 .site-footer__copyright {
   text-align: center;
-}
-
-@media @tablet-widths {
-  .site-footer {
-    width: 700px;
-    min-height: 200px;
-  }
-
-  .site-footer__content {
-    display: block;
-    min-height: 200px;
-    background: rgba(12, 235, 112, 0.3);
-  }
-  .site-footer__logo {
+  @media @tablet-widths {
     width: 33%;
-    float: left;
-    padding-left: 0;
     height: 200px;
+    float: left;
     background: rgba(235, 12, 181, 0.3);
     outline: 1px solid orange;
   }
-  .site-footer__question {
-    width: 100%;
-    background: rgba(88, 134, 116, 0.3);
-    min-height: 150px;
-    padding-top: 0;
-  }
-  .site-footer__item {
-    position: relative;
-    background: rgba(161, 128, 204, 0.3);
-  }
-  .site-footer__item:first-child {
-    top: 20px;
-    margin-left: -160px;
-  }
-  .site-footer__item:nth-child(2) {
-    margin-top: -130px;
-    left: 155px;
-  }
-  .site-footer__copyright {
-    width: 33%;
+  @media @desktop-widths {
+    width: 400px;
     height: 200px;
     float: left;
     background: rgba(235, 12, 181, 0.3);
@@ -97,55 +152,15 @@
   }
 }
 
-@media @desktop-widths {
-  .site-footer {
-    width: 100%;
-    min-height: 200px;
-  }
-
-  .site-footer__question {
-    position: relative;
-  }
-  .site-footer__items {
-    min-height: 150px;
-    width: 900px;
-    position: relative;
-    top: 40px;
-    margin-bottom: 65px;
-  }
-  .site-footer__item {
-    display: inline-block;
-    background: rgba(161, 128, 204, 0.3);
-    min-height: 130px;
-    margin-left: 70px;
-    min-width: 250px;
-  }
-  .site-footer__item:first-child {
-    top: 0;
-    margin-left: 0;
-  }
-  .site-footer__item:nth-child(2) {
-    margin-top: 0;
-    left: 0;
-  }
-  .site-footer__content {
+.site-footer__content {
+  @media @tablet-widths {
     display: block;
     min-height: 200px;
     background: rgba(12, 235, 112, 0.3);
   }
-  .site-footer__logo {
-    width: 400px;
-    float: left;
-    padding-left: 0;
-    height: 200px;
-    background: rgba(235, 12, 181, 0.3);
-    outline: 1px solid orange;
-  }
-  .site-footer__copyright {
-    width: 400px;
-    height: 200px;
-    float: left;
-    background: rgba(235, 12, 181, 0.3);
-    outline: 1px solid orange;
+  @media @desktop-widths {
+    display: block;
+    min-height: 200px;
+    background: rgba(12, 235, 112, 0.3);
   }
 }
