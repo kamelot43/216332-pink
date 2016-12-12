@@ -12,6 +12,12 @@
   padding-left: 45px;
   width: 100%;
   outline: 1px solid rgba(120, 212, 0, 1);
+  @media @tablet-widths {
+    width: 100px;
+  }
+  @media @desktop-widths {
+    width: 180px;
+}
 }
 
 .pricelist__option:nth-child (n+1) {
@@ -21,14 +27,47 @@
 .pricelist__items {
   width: @base-width;
   border-collapse: collapse;
-  z-index: 2;
+  @media @tablet-widths {
+    position: relative;
+    width: 650px;
+    margin-left: 40px;
+    top: 40px;
+    @media @desktop-widths {
+      width: 1200px;
+      left: 100px;
+      top: 100px;
+    }
+
+  }
 }
+.pricelist__items--mobile{
+  @media @tablet-widths {
+    display: none;
+  }
+}
+.pricelist__items--tablet {
+  display: none;
+    @media @tablet-widths {
+      display: block;
+    }
+}
+
+
+
 
 .pricelist__title {
   height: 110px;
   text-align: center;
   width: 100%;
   outline: 1px solid rgba(120, 212, 0, 1);
+    @media @tablet-widths {
+      width: 100px;
+      height: 70px;
+    }
+    @media @desktop-widths {
+      width: 180px;
+      height: 100px
+}
 }
 
 .pricelist__value {
