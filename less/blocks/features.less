@@ -21,6 +21,12 @@
   .items-base();
   margin-top: 60px;
   background-color: rgba(241, 203, 255, 0.3);
+  @media @desktop-widths  {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin: 0;
+  }
 }
 
 .features__item {
@@ -30,6 +36,12 @@
   display: inline-block;
   background: rgba(166, 42, 85, 0.3);
   margin-top: 10px;
+  @media @desktop-widths {
+    height:250px;
+    display: block;
+    width: 200px;
+    margin: 0;
+  }
 }
 
 .features__title {
