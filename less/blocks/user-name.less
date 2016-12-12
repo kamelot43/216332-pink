@@ -3,6 +3,18 @@
   min-height: 365px;
   margin: 0 auto;
   background: rgba(101, 196, 249, 0.4);
+  @media @tablet-widths {
+    width: 650px;
+    border: none;
+    margin-top: 70px;
+    min-height: 345px;
+  }
+  @media @desktop-widths {
+    position: relative;
+    margin: 0;
+    width: 450px;
+    left: 100px;
+  }
 }
 
 .user-name__items {
@@ -14,7 +26,16 @@
   width: 280px;
   height: 55px;
   margin-bottom: 25px;
+  @media @tablet-widths {
+    width: 530px;
+    margin-bottom: 50px;
+  }
+  @media @desktop-widths {
+    width: 330px;
+    margin-bottom: 40px;
+  }
 }
+
 .user-name__label:first-child {
   margin-top: 40px;
 }
@@ -30,30 +51,4 @@
   padding-left: 25px;
   color: @label-color;
   text-transform: uppercase;
-}
-
-@media @tablet-widths {
-  .user-name {
-    width: 650px;
-    border: none;
-    margin-top: 70px;
-    min-height: 345px;
-  }
-  .user-name__input {
-    width: 530px;
-    margin-bottom: 50px;
-  }
-}
-
-@media @desktop-widths {
-  .user-name {
-    position: relative;
-    margin: 0;
-    width: 450px;
-    left: 100px;
-  }
-  .user-name__input {
-    width: 330px;
-    margin-bottom: 40px;
-  }
 }

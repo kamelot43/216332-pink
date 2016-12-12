@@ -5,21 +5,18 @@
   outline: 1px dotted green;
   text-transform: uppercase;
   padding-top: 26px;
-}
-
-@media @tablet-widths {
-  .user-form {
-    height: 2150px;
-  }
-}
-
-@media @desktop-widths {
-  .user-form__footnote {
+  @media @desktop-widths {
     position: relative;
     bottom: 250px;
     left: 200px;
   }
-  .user-form {
+}
+
+.user-form {
+  @media @tablet-widths {
+    height: 2150px;
+  }
+  @media @desktop-widths {
     height: 1340px;
   }
 }

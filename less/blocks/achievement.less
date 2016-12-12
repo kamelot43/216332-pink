@@ -5,6 +5,20 @@
   padding: 0;
   border: none;
   background: rgba(219, 111, 49, 0.5);
+  @media @tablet-widths {
+    position: relative;
+    width: 700px;
+    background: rgba(195, 29, 33, 0.3);
+    outline: 1px solid #c31d21;
+    top: 730px;
+    height: 560px;
+  }
+  @media @desktop-widths {
+    width: 950px;
+    height: 250px;
+    margin: 0 auto;
+    top: 270px;
+  }
 }
 
 .achievement__items {
@@ -14,7 +28,6 @@
 .achievement__title {
   .legend-style ();
   margin: 0;
-  //background-color: #f2f2f2;
 }
 
 .achievement__label {
@@ -26,27 +39,7 @@
 
 .achievement__item {
   margin-top: 50px;
-}
-
-@media @tablet-widths {
-  .achievement {
-    position: relative;
-    width: 700px;
-    background: rgba(195, 29, 33, 0.3);
-    outline: 1px solid #c31d21;
-    top: 730px;
-    height: 560px;
-  }
-}
-
-@media @desktop-widths {
-  .achievement {
-    width: 950px;
-    height: 250px;
-    margin: 0 auto;
-    top: 270px;
-  }
-  .achievement__item {
+  @media @desktop-widths {
     display: inline-block;
     width: 250px;
     height: 50px;
