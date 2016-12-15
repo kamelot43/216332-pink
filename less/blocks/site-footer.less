@@ -22,7 +22,12 @@
     padding-top: 0;
   }
   @media @desktop-widths {
-    position: relative;
+    //position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    line-height: 30px;
+    align-items: center;
   }
 }
 
@@ -68,16 +73,12 @@
   margin: 0;
   text-align: center;
   @media @tablet-widths {
-    position: relative;
+    //position: relative;
     background: rgba(161, 128, 204, 0.3);
   }
   @media @desktop-widths {
     min-height: 130px;
     min-width: 200px;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
   }
 }
 
@@ -111,10 +112,13 @@
     outline: 1px solid orange;
   }
   @media @desktop-widths {
-    width: 400px;
-    float: left;
+    width: 33%;
+    //float: left;
     padding-left: 0;
-    height: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(235, 12, 181, 0.3);
     outline: 1px solid orange;
   }
@@ -124,15 +128,21 @@
   text-align: center;
   @media @tablet-widths {
     width: 33%;
-    height: 200px;
-    float: left;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //float: left;
     background: rgba(235, 12, 181, 0.3);
     outline: 1px solid orange;
   }
   @media @desktop-widths {
-    width: 400px;
-    height: 200px;
-    float: left;
+    width: 33%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //float: left;
     background: rgba(235, 12, 181, 0.3);
     outline: 1px solid orange;
   }
@@ -145,8 +155,30 @@
     background: rgba(12, 235, 112, 0.3);
   }
   @media @desktop-widths {
-    display: block;
+    //display: block;
+    display: flex;
+
     min-height: 200px;
     background: rgba(12, 235, 112, 0.3);
+  }
+}
+.site-footer__social {
+  margin-bottom: 40px;
+  @media @tablet-widths {
+    width: 33%;
+    height: 200px;
+    float: left;
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
+  }
+  @media @desktop-widths {
+    width: 33%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(235, 12, 181, 0.3);
+    outline: 1px solid orange;
   }
 }

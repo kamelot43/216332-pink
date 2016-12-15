@@ -1,41 +1,59 @@
 .study {
   display: none;
   @media @tablet-widths {
-    display: block;
+    //display: block;
     min-height: 340px;
     background: rgba(120, 212, 0, 0.3);
   }
   @media @desktop-widths {
+    display: flex;
     min-height: 470px;
+    justify-content: flex-end;
   }
 }
 
 .study__content {
-  padding-top: 50px;
-  min-height: 230px;
-  width: 400px;
-  float: right;
+  //padding-top: 50px;
+  //min-height: 230px;
+  //width: 400px;
+  //float: right;
   background: rgba(16, 0, 212, 0.3);
   @media @desktop-widths {
-    min-width: 750px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     min-height: 250px;
-    padding-top: 150px;
+
+    //padding-top: 150px;
+  }
+}
+
+.study__descr {
+  @media @desktop-widths {
+    padding-left: 2%;
+    padding-bottom: 10%;
+    width: 80%;
   }
 }
 
 .study__link,
 .study__descr {
   @media @tablet-widths {
-    padding-left: 35px;
-    padding-bottom: 20px;
+  //  padding-left: 35px;
+    //padding-bottom: 20px;
   }
 }
 
 .study__title {
   @media @tablet-widths {
-    padding-left: 30px;
-    padding-bottom: 30px;
+    //padding-left: 30px;
+    //padding-bottom: 30px;
     font-size: 35px;
-    width: 200px;
+    //width: 200px;
+  }
+  @media @desktop-widths {
+    padding-top: 15%;
+    padding-left: 2%;
+    padding-bottom: 5%;
   }
 }
