@@ -1,9 +1,13 @@
 .download {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(161, 128, 236, 0.3);
-  min-height: 270px;
+  min-height: 670px;
   outline: 1px solid red;
-  padding-top: 400px;
+  justify-content: flex-end;
+  //padding-top: 400px;
   @media @tablet-widths {
+    justify-content: flex-start;
     display: flex;
     flex-direction: column;
     padding-top: 0;
@@ -48,7 +52,9 @@
   }
 }
 .download__content {
+  display: none;
   @media @tablet-widths {
+    display: block;
     height: 140px;
     width: 200px;
   }
@@ -60,6 +66,12 @@
 
 
 .download__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //width: 100%;
+  height: 100px;
+background: rgba(2, 157, 15, 0.4);
   @media @tablet-widths {
     display: flex;
     justify-content: center;
@@ -87,6 +99,10 @@
   }
 }
 .download__btn {
+  display: flex;
+ justify-content: center;
+ height: 90px;
+ align-items: flex-end;
   @media @tablet-widths {
     display: flex;
    justify-content: center;

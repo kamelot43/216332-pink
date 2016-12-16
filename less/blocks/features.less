@@ -1,5 +1,6 @@
 .features {
-  background-position: 85px 720px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: center bottom;
   background-repeat: no-repeat;
   width: @base-width;
   min-height: 1030px;
@@ -7,6 +8,7 @@
     //position: relative;
     //display: flex;
     //flex-direction: column;
+    background-image: none;
     min-width: 100%;
     min-height: 780px;
   }
@@ -16,6 +18,12 @@
 }
 
 .features__proposal-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgba(2, 157, 15, 0.4);
   height: 220px;
   @media @tablet-widths {
     display: flex;
@@ -24,9 +32,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     background: rgba(2, 157, 15, 0.4);
+    height: 220px;
     //position: relative;
     //top: 55px;
-    height: 220px;
+
     //width: 700px;
 
   }
@@ -43,9 +52,11 @@
 }
 
 .features__proposal {
-  min-height: 50px;
-  padding-left: 60px;
-  padding-top: 40px;
+  text-align: center;
+  font-size: 25px;
+  //min-height: 50px;
+  //padding-left: 60px;
+  //padding-top: 40px;
   background-color: rgba(50, 187, 187, 0.3);
   @media @tablet-widths {
     text-align: center;
@@ -58,12 +69,20 @@
   //.items-base();
   //margin-top: 60px;
   background-color: rgba(241, 203, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  //align-items: flex-end;
+  flex-direction: column;
+  height: 450px;
+  margin-top: 55px;
+
   @media @tablet-widths {
     //min-height: 440px;
     //width: 370px;
     //float: right;
     //margin-top: 75px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
+    margin-top: 0;
     background-position:10% 10%;
     background-size: 40%;
     background-repeat: no-repeat;
@@ -98,22 +117,33 @@
   }
 }
 
-
 .features__item {
+
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  flex-direction: column;
   //margin: 0;
-  min-width: 325px;
-  min-height: 120px;
-  width: 350px;
+  //min-width: 325px;
+  margin-bottom: 30px;
+  min-height: 110px;
+  //width: 350px;
+  //margin-top: 25px;
   //display: inline-block;
   background: rgba(166, 42, 85, 0.3);
+  outline: 1px solid red;
   //margin-top: 10px;
   @media @tablet-widths {
     //display: flex;
-    //justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
     //flex-direction: column;
   //  display: block;
+  min-height: 120px;
     background: rgba(166, 42, 85, 0.3);
-    margin-top: 25px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    width: 350px;
 
 
   }
@@ -130,9 +160,7 @@
   }
 }
 .features__pic {
-  @media @tablet-widths  {
-    display: none;
-  }
+  display: none;
   @media @desktop-widths {
     display: block;
   margin:0 auto;
@@ -144,7 +172,6 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  padding-top: 5px;
   @media @tablet-widths {
     font-size: 20px;
     //width: 250px;
