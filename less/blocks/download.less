@@ -4,6 +4,9 @@
   outline: 1px solid red;
   padding-top: 400px;
   @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
     //position: relative;
     min-height: 620px;
     width: 370px;
@@ -26,6 +29,9 @@
     //top: 100px;
     //display: block;
     //.wrapper(200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     height: 250px;
     background: rgba(2, 157, 15, 0.4);
     font-size: 35px;
@@ -42,6 +48,10 @@
   }
 }
 .download__content {
+  @media @tablet-widths {
+    height: 140px;
+    width: 200px;
+  }
   @media @desktop-widths {
     height: 170px;
     width: 240px;
@@ -50,9 +60,14 @@
 
 
 .download__items {
-  //.items-base();
-  //margin-bottom: 20px;
+  @media @tablet-widths {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //width: 100%;
+    height: 140px;
   background: rgba(2, 157, 15, 0.4);
+}
   @media @desktop-widths {
     display: flex;
     justify-content: center;
@@ -72,10 +87,15 @@
   }
 }
 .download__btn {
+  @media @tablet-widths {
+    display: flex;
+   justify-content: center;
+   height: 70px;
+   align-items: flex-end;
+  }
   @media @desktop-widths {
     display: flex;
    justify-content: center;
-
    height: 100px;
    align-items: flex-end;
   }
