@@ -65,6 +65,9 @@
   @media @tablet-widths  {
     padding: 0;
     order: 2;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: @bold;
   }
 }
 .reviews__comment {
@@ -85,12 +88,6 @@
   bottom: 117px;
 }
 
-.reviews__author--biography {
-  display: none;
-  @media @tablet-widths {
-    display: block;
-  }
-}
 
 
 @media @tablet-widths {
@@ -147,9 +144,12 @@
   font-weight: @regular;
   text-align: center;
     @media @tablet-widths {
-      padding-left: 7%;
-      padding-top: 6%;
-      margin-bottom: 7%;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 6%;
+    margin-bottom: 5%;
+    width: 630px;
+    padding-left: 4%;
     }
     @media @desktop-widths  {
       padding-left: 7%;
@@ -157,4 +157,14 @@
       margin-bottom: 7%;
       text-align: center;
     }
+}
+.reviews__author--biography {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: @regular;
+
+  }
 }
