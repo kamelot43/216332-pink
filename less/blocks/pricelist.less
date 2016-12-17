@@ -1,5 +1,5 @@
 .pricelist {
-  //position: relative;
+  position: relative;
   width: @base-width;
   min-height: 370px;
   background-color: rgba(120, 212, 0, 0.3);
@@ -8,7 +8,7 @@
 
 .pricelist__cell {
   //display: inline-block;
-  width: 30px;
+  width: 40px;
   border-bottom: 1px solid #e5e5e5;
   height: 58px;
   //width: 75px;
@@ -18,7 +18,7 @@
   //display: inline-block;
   border-bottom: 1px solid #e5e5e5;
   height: 58px;
-  width: 100px;
+  width: 50px;
   text-transform: uppercase;
   //padding-left: 45px;
   //width: 100%;
@@ -38,8 +38,8 @@
 
 .pricelist__items {
   position: relative;
-  //left:-60%;
-  width: 850px;
+  //left:-75%;
+  width: 900px;
   border-collapse: collapse;
   @media @tablet-widths {
     position: relative;
@@ -54,17 +54,7 @@
 
   }
 }
-.pricelist__items--mobile{
-  @media @tablet-widths {
-    display: none;
-  }
-}
-.pricelist__items--tablet {
-  display: none;
-    @media @tablet-widths {
-      display: block;
-    }
-}
+
 
 
 
@@ -108,6 +98,7 @@
 
 .pricelist__controls {
   .slider-controls-styles();
+  bottom: 15px;
 }
 
 @media @tablet-widths {
@@ -123,4 +114,20 @@
   .pricelist {
     height: 540px;
   }
+}
+
+#pricelist-input-1:checked ~ .pricelist__items {
+  left:0;
+}
+#pricelist-input-2:checked ~ .pricelist__items {
+  left:-86%;
+}
+#pricelist-input-3:checked ~ .pricelist__items {
+  left:-180%;
+}
+
+#pricelist-input-1:checked ~ .pricelist-input-1,
+#pricelist-input-2:checked ~ .pricelist-input-2,
+#pricelist-input-3:checked ~ .pricelist-input-3 {
+  background: #c1c1c1;
 }

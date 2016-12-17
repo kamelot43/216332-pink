@@ -28,6 +28,8 @@
 .achievement__title {
   .legend-style ();
   margin: 0;
+  line-height: 18px;
+  padding-top: 42px;
 }
 
 .achievement__label {
@@ -38,12 +40,15 @@
 }
 
 .achievement__item {
-  margin-top: 50px;
+  margin-top: 52px;
   @media @desktop-widths {
     display: inline-block;
     width: 250px;
     height: 50px;
     background: rgba(219, 111, 49, 0.4);
-    margin-top: 50px;
+
   }
+}
+.achievement__item:first-child {
+  margin-top: 45px;
 }
