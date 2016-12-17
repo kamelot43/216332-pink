@@ -18,11 +18,11 @@
 }
 
 .features__proposal-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //flex-wrap: wrap;
+  //flex-direction: column;
   background: rgba(2, 157, 15, 0.4);
   height: 220px;
   @media @tablet-widths {
@@ -53,7 +53,10 @@
 
 .features__proposal {
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: @light;
+  height: 70px;
   //min-height: 50px;
   //padding-left: 60px;
   //padding-top: 40px;
@@ -62,6 +65,13 @@
     text-align: center;
     padding-top: 0;
     font-size: 35px;
+  }
+}
+.features__proposal:nth-child(1) {
+  padding-top: 12%;
+  padding-bottom: 5%;
+  @media @tablet-widths {
+    padding: 0;
   }
 }
 
@@ -119,10 +129,10 @@
 
 .features__item {
 
-  display: flex;
-  align-items: center;
+  //display: flex;
+  //align-items: center;
   //justify-content: center;
-  flex-direction: column;
+  //flex-direction: column;
   //margin: 0;
   //min-width: 325px;
   margin-bottom: 30px;
@@ -134,10 +144,10 @@
   outline: 1px solid red;
   //margin-top: 10px;
   @media @tablet-widths {
-    //display: flex;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    //flex-direction: column;
+    flex-direction: column;
   //  display: block;
   min-height: 120px;
     background: rgba(166, 42, 85, 0.3);
@@ -169,13 +179,17 @@
 }
 
 .features__title {
-  font-weight: 700;
+  font-weight: @bold;
   text-align: center;
-  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 15px;
+
   @media @tablet-widths {
     font-size: 20px;
     //width: 250px;
     text-align: start;
+    margin: 0;
     padding-top: 2%;
     padding-bottom: 2%;
     //text-align: left;
@@ -191,7 +205,11 @@
 
 
 .features__description {
-  width: 300px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: @regular;
+  width: 270px;
+  margin: 0 auto;
   background: rgba(51, 204, 255, 0.3);
   //margin-left: 20px;
   //margin-top: 10px;
