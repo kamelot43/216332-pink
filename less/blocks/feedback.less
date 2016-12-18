@@ -15,8 +15,8 @@
   }
   @media @desktop-widths {
     width: 950px;
-    bottom: 200px;
-    height: 200px;
+  bottom: 200px;
+  height: 170px;
   }
 }
 
@@ -29,6 +29,9 @@
   align-items: center;
   flex-direction: column;
   margin-top: 25px;
+    @media @desktop-widths {
+      flex-direction: row;
+    }
 }
 
 }
@@ -47,7 +50,9 @@
   }
   @media @desktop-widths {
     width: 330px;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
   }
 }
 
@@ -55,6 +60,11 @@
   padding-left: 25px;
   color: #d22856;
   text-transform: uppercase;
+  @media @desktop-widths {
+    padding-left: 55px;
+padding-top: 20px;
+  }
+
 }
 
 .feedback__item {
@@ -67,7 +77,9 @@
   margin-bottom: 25px;
 }
   @media @desktop-widths {
-    display: inline-block;
+    //display: inline-block;
+    width: 470px;
+    outline: 2px solid red;
   }
 }
 .feedback__title {
