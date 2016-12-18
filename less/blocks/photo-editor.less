@@ -2,15 +2,17 @@
   width: 100%;
   min-height: 700px;
   outline: 2px solid orange;
-  margin-top: -11px;
+
 }
 
 .photo-editor__preview {
   .wrapper();
-  margin-top: 55px;
-  margin-bottom: 45px;
-  height: 375px;
+  width: 280px;
+  margin-top: 50px;
+  //margin-bottom: 45px;
+  height: auto;
   background: rgba(132, 32, 32, 0.3);
+  opacity: 0.7;
   @media @tablet-widths {
     margin-top: 0;
     height: 400px;
@@ -19,12 +21,32 @@
     margin-left: 20px;
   }
 }
+.photo-editor__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-editor__col-1 {
+  outline: 2px solid red;
+}
+.photo-editor__col-2 {
+  outline: 2px solid green;
+}
+.photo-editor__filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 90px;
+}
+
+
 
 .photo-editor__input {
   width: 260px;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-left: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   @media @tablet-widths {
     .items-base();
     width: 200px;
@@ -34,33 +56,21 @@
 }
 
 .photo-editor__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
-  height: 170px;
+  height: 145px;
   background: rgba(132, 32, 32, 0.3);
 }
-
-.photo-editor__flex {
-  @media @tablet-widths {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 60px;
-  }
-  @media @desktop-widths {
-    justify-content: center;
-  }
+.photo-editor__base-range {
+  margin-bottom: 37px;
 }
 
-.photo-editor__column {
-  @media @tablet-widths {
-    width: 320px;
-    height: 400px;
-    outline: 2px solid green;
-  }
-  @media @desktop-widths {
-    width: 410px;
-  }
-}
+
+
+
 
 .photo-editor__items {
   @media @tablet-widths {
@@ -74,18 +84,5 @@
     height: 70px;
     outline: 2px solid rgba(2, 125, 42, 1);
     background: rgba(2, 125, 42, 0.3);
-  }
-}
-
-.photo-editor--mobile {
-  @media @tablet-widths {
-    display: none;
-  }
-}
-
-.photo-editor--tablet {
-  display: none;
-  @media @tablet-widths {
-    display: block;
   }
 }
