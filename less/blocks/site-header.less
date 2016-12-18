@@ -16,7 +16,13 @@
   width: @base-width;
   height: 175px;
   @media @tablet-widths {
-    width: 700px;
+    //display: flex;
+    //justify-content: center;
+    //align-self: center;
+    width: 100%;
+
+
+    //width: 700px;
     min-height: 330px;
     background: rgba(226, 244, 105, 0.3);
   }
@@ -35,6 +41,14 @@
   text-align:center;
   padding-top: 25px;
   text-align: center;
+  @media @tablet-widths {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: @light;
+    width: 500px;
+    margin: auto;
+    padding-top: 79px;
+  }
 }
 
 .site-header--form {

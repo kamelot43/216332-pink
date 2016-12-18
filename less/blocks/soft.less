@@ -24,17 +24,24 @@
 
 .soft__items {
   .items-base();
+    @media @tablet-widths {
+  margin-left: 70px;
+}
 }
 
 .soft__title {
   .legend-style ();
   padding-top: 55px;
+  @media @tablet-widths {
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .soft__label {
   font-size: 18px;
   line-height: 30px;
-  
+
   text-align: center;
   padding-left: 65px;
 }

@@ -6,7 +6,7 @@
   @media @tablet-widths {
     width: 650px;
     border: none;
-    margin-top: 70px;
+    margin-top: 60px;
     min-height: 345px;
   }
   @media @desktop-widths {
@@ -20,6 +20,9 @@
 .user-name__items {
   .items-base();
   margin-top: 15px;
+    @media @tablet-widths {
+      margin: 0;
+    }
 }
 
 .user-name__input {
@@ -28,8 +31,9 @@
     margin-bottom: 23px;
     margin-top: 7px;
   @media @tablet-widths {
-    width: 530px;
-    margin-bottom: 50px;
+    width: 520px;
+    margin-bottom: 47px;
+    margin-left: 20px;
   }
   @media @desktop-widths {
     width: 330px;
@@ -41,15 +45,12 @@
   margin-top: 40px;
 }
 
-.user-name__input placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-  text-align: left;
-}
 
 .user-name__label {
   padding-left: 25px;
   color: @label-color;
   text-transform: uppercase;
+    @media @tablet-widths {
+      padding-left: 15px;
+    }
 }

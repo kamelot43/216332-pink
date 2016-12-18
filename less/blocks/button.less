@@ -30,6 +30,15 @@
 .button--submit-form {
   .bg-green-btn ();
   margin-left: 20px;
+  @media @tablet-widths {
+      position: relative;
+      top: 138px;
+      left: 30px;
+  }
+
+  @media @desktop-widths {
+      top: -200px;
+    }  
 }
 
 .button--popup {
@@ -93,17 +102,4 @@
 
 .button--cancel-post {
   opacity: 0.3;
-}
-
-@media @tablet-widths {
-  .button--submit-form {
-    position: relative;
-    top: 100px;
-  }
-}
-
-@media @desktop-widths {
-  .button--submit-form {
-    top: -200px;
-  }
 }

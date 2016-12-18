@@ -70,12 +70,12 @@
     <!--Центровщик-->
     <div class="site-main__wrapper">
       <div class="slogan">
-        <div class="slogan__about slogan__about--mobile">
+        <div class="slogan__about ">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту.
         </div>
-        <div class="slogan__about slogan__about--tablet">
-          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту. Пожалуйста заполните форму ниже.
-        </div>
+        <div class="slogan__about slogan__about--request">
+         Пожалуйста заполните форму ниже.
+       </div>
       </div>
 
       <!--Форма-->
@@ -103,7 +103,7 @@
 
         <!--Блок достижений-->
         <fieldset class="achievement">
-          <legend class="achievement__title">Ваши безбашенные<br> достижения в путешествии</legend>
+          <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
 
           <ul class="achievement__items">
             <li class="achievement__item">
@@ -135,13 +135,14 @@
 
 
         <!--Обратная связь с пользователем-->
-        <fieldset class="feedback">          
+        <fieldset class="feedback">
+            <legend class="feedback__title">Контактная информация</legend>
           <ul class="feedback__items">
             <li class="feedback__item">
               <label class="feedback__label" for="feedback-input-1">Номер телефона:</label>
               <input class="feedback__input" type="tel" name="feedback-phone" id="feedback-input-1" placeholder="Номер пожалуйста">
             </li>
-            <li class="feedback_item">
+            <li class="feedback__item">
               <label class="feedback__label" for="feedback-input-2">Адрес почты:</label>
               <input class="feedback__input" type="email" name="feedback-mail" id="feedback-input-2" placeholder="Введите почту*" required>
             </li>
@@ -185,7 +186,8 @@
   <footer class="site-footer">
     <!--Центровщик-->
     <div class="site-footer__wrapper">
-      <div class="site-footer__logo">
+
+      <!--<div class="site-footer__logo">
         <a href="index.html">
           <img src="img/logo-pink-blue-mobile.svg" class="visually-hidden" alt="Логотип Пинк">
         </a>
@@ -199,7 +201,24 @@
         <a href="#">
           <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
         </a>
-      </div>
+      </div>-->
+      <section class="site-footer__content  site-footer__content--form">
+        <div class="site-footer__logo site-footer__logo--form">
+          <a href="index.html">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
+          </a>
+        </div>
+        <div class="site-footer__social site-footer__social--form">
+          <a class="social__link social__link--tv" href="#">TV</a>
+          <a class="social__link social__link--fb" href="#">FB</a>
+          <a class="social__link social__link--yt" href="#">YouTube</a>
+        </div>
+        <div class="site-footer__copyright site-footer__copyright--form">Разработано:
+          <a href="#">
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
+          </a>
+        </div>
+      </section>
     </div>
   </footer>
 

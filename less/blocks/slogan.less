@@ -5,6 +5,10 @@
   padding-top: 25px;
   background: rgba(127, 220, 136, 0.3);
   @media @tablet-widths {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     min-height: 160px;
   }
@@ -14,17 +18,19 @@
   line-height: 30px;
   text-align: center;
   padding-top: 15px;
-}
-
-.slogan__about--tablet {
-  display: none;
   @media @tablet-widths {
-    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    
+    padding: 0;
+    width: 500px;
+
   }
 }
 
-.slogan__about--mobile {
+.slogan__about--request {
+  display: none;
   @media @tablet-widths {
-    display: none;
+    display: block;
   }
 }
