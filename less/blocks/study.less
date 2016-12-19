@@ -1,7 +1,6 @@
 .study {
   display: none;
   @media @tablet-widths {
-    //display: block;
     min-height: 340px;
     background: rgba(120, 212, 0, 0.3);
     display: flex;
@@ -15,36 +14,27 @@
 }
 
 .study__content {
-  //padding-top: 50px;
-  //min-height: 230px;
-  //width: 400px;
-  //float: right;
   background: rgba(16, 0, 212, 0.3);
-    @media @tablet-widths {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      min-height: 250px;
-    }
-  @media @desktop-widths {
+  @media @tablet-widths {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    min-height: 250px;
+  }
+  @media @desktop-widths {
     width: 60%;
     min-height: 250px;
-
-    //padding-top: 150px;
   }
 }
 
 .study__descr {
-    @media @tablet-widths {
-      width: 320px;
-      padding-bottom: 2%;
-    }
+  @media @tablet-widths {
+    width: 320px;
+    padding-bottom: 2%;
+  }
   @media @desktop-widths {
     font-size: 18px;
     line-height: 30px;
-
     padding-left: 2%;
     padding-bottom: 4%;
     width: 80%;
@@ -53,29 +43,26 @@
 
 .study__title {
   @media @tablet-widths {
-    //padding-left: 30px;
-    //padding-bottom: 30px;
     font-size: 30px;
     line-height: 36px;
     font-weight: @bold;
     width: 180px;
-    //width: 200px;
     padding-top: 12%;
     padding-bottom: 3%;
   }
   @media @desktop-widths {
-
     width: 100%;
     padding-top: 15%;
     padding-left: 2%;
     padding-bottom: 20px;
   }
 }
+
 .study__link {
-    @media @desktop-widths {
-      padding-left: 2%;
-      font-size: 18px;
-      line-height: 30px;
-      color: @label-color;
-    }
+  @media @desktop-widths {
+    padding-left: 2%;
+    font-size: 18px;
+    line-height: 30px;
+    color: @label-color;
+  }
 }
