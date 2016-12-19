@@ -9,9 +9,6 @@
 
 .button--download {
   .bg-elipse-btn();
-  //margin-top: 22px;
-  //margin-bottom: 35px;
-  //margin-left: 20px;
 }
 
 .button--close-menu {
@@ -30,16 +27,17 @@
 .button--submit-form {
   .bg-green-btn ();
   margin-left: 20px;
+
   @media @tablet-widths {
-      position: relative;
-      top: 138px;
-      left: 30px;
+    position: relative;
+    top: 138px;
+    left: 30px;
   }
 
   @media @desktop-widths {
     top: -60px;
     left: 110px;
-    }
+  }
 }
 
 .button--popup {
@@ -49,20 +47,20 @@
 .button--likes {
   background-image: url("../img/icon-heart.svg");
   background-position: center;
-  //position: absolute;
-  //bottom: 5px;
-  //left: 10px;
   width: 20px;
   height: 20px;
   outline: 1px solid red;
   margin-right: 15px;
-    @media @tablet-widths {
-      display: none;
-    }
+
+  @media @tablet-widths {
+    display: none;
+  }
 }
+
 .button--photo-filter-1 {
   background-image: url("../img/icon-editor-crop.svg");
- .button--photo-filter ();
+  .button--photo-filter ();
+
   @media @tablet-widths {
     margin: 0;
   }
@@ -70,7 +68,8 @@
 
 .button--photo-filter-2 {
   background-image: url("../img/icon-editor-fill.svg");
- .button--photo-filter ();
+  .button--photo-filter ();
+
   @media @tablet-widths {
     margin: 0;
   }
@@ -79,6 +78,7 @@
 .button--photo-filter-3 {
   background-image: url("../img/icon-editor-contrast.svg");
   .button--photo-filter ();
+
   @media @tablet-widths {
     margin: 0;
   }
@@ -90,13 +90,12 @@
   background-color: white;
   border: 2px solid @label-color;
   color: @label-color;
-  //margin-left: 15px;
   margin-bottom: 20px;
+  
   @media @desktop-widths {
     margin-bottom: 0;
   }
 }
-
 
 .button--cancel-post {
   opacity: 0.3;

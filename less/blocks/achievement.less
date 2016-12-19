@@ -5,6 +5,7 @@
   padding: 0;
   border: none;
   background: rgba(219, 111, 49, 0.5);
+
   @media @tablet-widths {
     position: relative;
     width: 700px;
@@ -13,9 +14,8 @@
     top: 730px;
     height: 560px;
   }
+
   @media @desktop-widths {
-    //display: flex;
-    //justify-content: center;
     width: 950px;
     height: 230px;
     margin: 0 auto;
@@ -25,20 +25,21 @@
 
 .achievement__items {
   .items-base();
-    @media @tablet-widths  {
+
+  @media @tablet-widths {
     margin-left: 75px;
     margin-top: 60px;
   }
+
   @media @desktop-widths {
-  //margin: 0;
-  margin-left: 100px;
-  margin-top: 45px;
-  width: 800px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+    margin-left: 100px;
+    margin-top: 45px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .achievement__title {
@@ -46,12 +47,11 @@
   margin: 0;
   line-height: 18px;
   padding-top: 42px;
-    @media @tablet-widths  {
-      width: 100%;
-      //padding-top: 14px;
-      padding: 0;
 
-    }
+  @media @tablet-widths {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .achievement__label {
@@ -59,6 +59,7 @@
   line-height: 30px;
   text-align: center;
   padding-left: 62px;
+
   @media @desktop-widths {
     padding-left: 0;
   }
@@ -66,50 +67,51 @@
 
 //Перемещение пунктов в блоке достижений(не работает)
 .achievement__input:nth-child(1) {
-    @media @desktop-widths {
-      order:1;
-    }
+  @media @desktop-widths {
+    order: 1;
+  }
 }
+
 .achievement__input:nth-child(2) {
-    @media @desktop-widths {
-      order: 4;
-    }
+  @media @desktop-widths {
+    order: 4;
+  }
 }
+
 .achievement__input:nth-child(3) {
-    @media @desktop-widths {
-      order:-1;
-    }
+  @media @desktop-widths {
+    order: -1;
+  }
 }
+
 .achievement__input:nth-child(4) {
-    @media @desktop-widths {
-      order:5;
-    }
+  @media @desktop-widths {
+    order: 5;
+  }
 }
+
 .achievement__input:nth-child(5) {
-    @media @desktop-widths {
-      order: 3;
-    }
+  @media @desktop-widths {
+    order: 3;
+  }
 }
+
 .achievement__input:nth-child(6) {
-    @media @desktop-widths {
-      order: 6;
-    }
+  @media @desktop-widths {
+    order: 6;
+  }
 }
-
-
 
 .achievement__item {
   margin-top: 52px;
   @media @desktop-widths {
-    //display: inline-block;
     margin: 0;
     width: 250px;
-    //height: 50px;
     background: rgba(219, 111, 49, 0.4);
     margin-bottom: 50px;
-
   }
 }
+
 .achievement__item:first-child {
   margin-top: 45px;
   @media @desktop-widths {
