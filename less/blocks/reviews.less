@@ -175,8 +175,14 @@
     font-size: 18px;
   }
 }
+//временна выключил остальные слайды
+.reviews__item:nth-child(2),
+.reviews__item:nth-child(3) {
+  display: none;
+}
+
 //Слайдер отзывы пользователей (не работает).
-.reviews__item {
+/*.reviews__item {
   display: none;
 }
 #reviews-input-1:checked ~ .reviews__items .reviews__item:nth-child(1) {
@@ -187,4 +193,4 @@
 }
 #reviews-input-3:checked ~ .reviews__items .reviews__item:nth-child(3) {
   display: flex;
-}
+}*/
