@@ -1,14 +1,14 @@
 .soft {
-  width: @base-width;
-  height: 340px;
+  //.container();
+  //min-height: 340px;
   border: none;
-  .items-base();
+  //.items-base();
   background: rgba(245, 236, 98, 0.5);
   @media @tablet-widths {
-    width: 700px;
+    .wrapper(600px);
     position: relative;
     background: rgba(245, 236, 98, 0.5);
-    bottom: 900px;
+    bottom: 880px;
     outline: 1px solid rgba(245, 236, 98, 1);
   }
   @media @desktop-widths {
@@ -24,8 +24,10 @@
 
 .soft__items {
   .items-base();
+  margin-top: 30px;
   @media @tablet-widths {
-    margin-left: 70px;
+    margin-left: 60px;
+    margin-top: 45px;
   }
   @media @desktop-widths {
     margin-left: 40px;
@@ -45,11 +47,12 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  padding-left: 65px;
+  padding-left: 45px;
 }
 
 .soft__item {
-  margin-top: 43px;
+  //margin-top: 43px;
+  margin-bottom: 45px;
   @media @desktop-widths {
     margin-top: 46px;
   }

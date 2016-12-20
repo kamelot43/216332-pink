@@ -1,15 +1,13 @@
 .user-impression {
-  height: 340px;
-  width: 280px;
-  margin: 0 auto;
+  .container();
   border: none;
-  padding: 0;
+  //padding: 0;
   @media @tablet-widths {
     position: relative;
     top: 115px;
-    width: 650px;
+    .wrapper(600px);
     border: none;
-    height: 345px;
+    margin-top: 65px;
     padding: 0;
     background: rgba(219, 111, 49, 0.3);
     outline: 1px solid rgba(219, 111, 49, 0.8);
@@ -24,7 +22,7 @@
 
 .user-impression__title {
   .legend-style ();
-  padding-top: 55px;
+  padding-top: 30px;
   @media @tablet-widths {
     padding: 0;
   }
@@ -39,6 +37,7 @@
     height: 180px;
     margin-left: 80px;
     margin-top: 40px;
+    margin-bottom: 50px;
   }
   @media @desktop-widths {
     width: 810px;

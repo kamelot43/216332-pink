@@ -1,14 +1,15 @@
 .achievement {
-  width: @base-width;
-  height: 605px;
+  //.container();
+  //height: 605px;
+  min-height: 230px;
   outline: 1px solid pink;
-  padding: 0;
   border: none;
   background: rgba(219, 111, 49, 0.5);
 
   @media @tablet-widths {
+    .wrapper(600px);
     position: relative;
-    width: 700px;
+    //width: 700px;
     background: rgba(195, 29, 33, 0.3);
     outline: 1px solid #c31d21;
     top: 730px;
@@ -16,9 +17,9 @@
   }
 
   @media @desktop-widths {
-    width: 950px;
+    //width: 950px;
     height: 230px;
-    margin: 0 auto;
+    //margin: 0 auto;
     top: 265px;
   }
 }
@@ -27,8 +28,8 @@
   .items-base();
 
   @media @tablet-widths {
-    margin-left: 75px;
-    margin-top: 60px;
+    margin-left: 65px;
+    margin-top: 55px;
   }
 
   @media @desktop-widths {
@@ -58,7 +59,7 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  padding-left: 62px;
+  padding-left: 32px;
 
   @media @desktop-widths {
     padding-left: 0;
@@ -103,7 +104,7 @@
 }
 
 .achievement__item {
-  margin-top: 52px;
+  margin-bottom: 52px;
   @media @desktop-widths {
     margin: 0;
     width: 250px;
@@ -113,8 +114,12 @@
 }
 
 .achievement__item:first-child {
-  margin-top: 45px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   @media @desktop-widths {
     margin-top: 0;
   }
+}
+.achievement__item:last-child {
+  margin-bottom: 40px;
 }

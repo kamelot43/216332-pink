@@ -1,20 +1,21 @@
 .feedback {
-  width: 280px;
-  height: 260px;
+ .container();
+  min-height: 260px;
   border: none;
-  margin: 0 auto;
+  //margin: 0 auto;
   background: rgba(85, 184, 127, 0.3);
   outline: 1px solid rgba(85, 184, 127, 0.8);
   @media @tablet-widths {
+    .wrapper(600px);    
     position: relative;
     bottom: 200px;
-    width: 650px;
+    //width: 650px;
     border: none;
-    height: 345px;
+    //height: 345px;
     padding: 0;
   }
   @media @desktop-widths {
-    width: 950px;
+    //width: 950px;
     bottom: 200px;
     height: 170px;
   }
@@ -27,7 +28,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 15px;
   }
   @media @desktop-widths {
     flex-direction: row;
@@ -35,12 +36,12 @@
 }
 
 .feedback__input {
-  width: 280px;
+  width: 275px;
   height: 55px;
   margin-bottom: 25px;
   margin-top: 6px;
   @media @tablet-widths {
-    width: 520px;
+    width: 500px;
     order: -1;
     margin-bottom: 15px;
     margin-left: 27px;
