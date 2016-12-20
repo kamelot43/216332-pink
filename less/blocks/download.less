@@ -1,4 +1,5 @@
 .download {
+  //.container();
   display: flex;
   flex-direction: column;
   background-color: rgba(161, 128, 236, 0.3);
@@ -6,9 +7,10 @@
   outline: 1px solid red;
   justify-content: flex-end;
   @media @tablet-widths {
+   padding-left: 20px;
     justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
     padding-top: 0;
     min-height: 620px;
     width: 370px;
@@ -17,9 +19,10 @@
   @media @desktop-widths {
     display: flex;
     flex-direction: column;
-    width: 550px;
+    width: 320px;
     min-height: 770px;
     padding-top: 0;
+    padding-left: 0;
   }
 }
 
@@ -35,9 +38,6 @@
   }
   @media @desktop-widths {
     height: 320px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     background: rgba(12, 222, 112, 0.3);
   }
 }
@@ -67,16 +67,10 @@
   height: 100px;
   background: rgba(2, 157, 15, 0.4);
   @media @tablet-widths {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 130px;
     background: rgba(2, 157, 15, 0.4);
   }
   @media @desktop-widths {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 150px;
     background: rgba(235, 12, 181, 0.3);
   }
