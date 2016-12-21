@@ -4,6 +4,9 @@
   min-height: 370px;
   background-color: rgba(120, 212, 0, 0.3);
   overflow: hidden;
+  @media @desktop-widths {
+    height: 540px;
+  }
 }
 
 .pricelist__cell {
@@ -29,7 +32,6 @@
 
 .pricelist__items {
   position: relative;
-  //width: 900px;
   border-collapse: collapse;
   @media @tablet-widths {
     position: relative;
@@ -80,20 +82,8 @@
 .pricelist__controls {
   .slider-controls-styles();
   bottom: 15px;
-}
-
-@media @tablet-widths {
-  .pricelist {
-    //min-width: 100%;
-  }
-  .pricelist__controls {
+  @media @tablet-widths {
     display: none;
-  }
-}
-
-@media @desktop-widths {
-  .pricelist {
-    height: 540px;
   }
 }
 

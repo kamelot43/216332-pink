@@ -1,9 +1,11 @@
 .reviews {
   .container();
-  //width: @base-width;
   min-height: 402px;
   position: relative;
   background: rgba(31, 122, 90, 0.3);
+  @media @tablet-widths {
+    min-height: 302px;
+  }
 }
 
 .reviews__items {
@@ -16,6 +18,7 @@
   min-height: 220px;
   @media @tablet-widths {
     width: 100%;
+    background: rgba(150, 38, 77, 0.3);
   }
   @media @desktop-widths {
     width: 800px;
@@ -50,6 +53,7 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: @bold;
+    background: rgba(150, 38, 77, 0.3);
   }
   @media @desktop-widths {
     font-size: 24px;
@@ -67,23 +71,13 @@
 .reviews__controls {
   .slider-controls-styles ();
   bottom: 117px;
-}
-
-@media @tablet-widths {
-  .reviews {
-    //min-width: 100%;
-    min-height: 302px;
-  }
-  .reviews__item {
-    background: rgba(150, 38, 77, 0.3);
-  }
-  .reviews__author {
-    background: rgba(150, 38, 77, 0.3);
-  }
-  .reviews__controls {
+  @media @tablet-widths {
     display: none
   }
-  .reviews__comment {
+}
+
+.reviews__comment {
+  @media @tablet-widths {
     min-height: 120px;
     background: rgba(150, 38, 77, 0.3);
   }
