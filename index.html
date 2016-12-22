@@ -130,7 +130,7 @@
       </section>
       <!-- Здесь будет картинка вставленая фоном-->
     </section>
-    <section class="study visually-hidden">
+    <section class="study ">
       <div class="study__content ">
         <div class="study__title">Эффект на 24 часа!
         </div>
@@ -161,6 +161,8 @@
 
       <!--Блок со слайдами.Однотипные элементы вынесены в список-->
       <div class="reviews__items">
+        <div class="reviews__pic">
+        </div>
         <!--Слайд №1-->
         <div class="reviews__item ">
           <div class="reviews__descr">
@@ -186,6 +188,8 @@
           <div class="reviews__author ">Николай Петров</div>
           <div class="reviews__author reviews__author--biography">25 лет,водитель трамвая</div>
         </div>
+        <div class="reviews__pic">
+        </div>
       </div>
     </section>
 
@@ -210,15 +214,13 @@
       <!--Проблемы с таблицей-->
       <table class="pricelist__items ">
         <tr>
-          <th class="pricelist__title pricelist__hidden">
-            <div class="pricelist__value "></div>
-            <div class="pricelist__price "></div>
+          <th class="pricelist__title pricelist__hidden ">
           </th>
-          <th class="pricelist__title pricelist__hidden">
+          <th class="pricelist__title ">
             <div class="pricelist__value ">База</div>
             <div class="pricelist__price ">1,99 usd</div>
           </th>
-          <th class="pricelist__title pricelist__title--popular">
+          <th class="pricelist__title pricelist__title--popular checked">
             <div class="pricelist__value ">Стандарт</div>
             <div class="pricelist__price ">3,99 usd</div>
           </th>
@@ -229,22 +231,22 @@
 
         </tr>
         <tr class="pricelist__tr">
-          <td class="pricelist__option ">Розовый фильтр <span class="pricelist__icon pricelist__icon--yes"></span> </td>
-          <td class="pricelist__cell pricelist__cell--yes pricelist__hidden"></td>
-          <td class="pricelist__cell   pricelist__cell--yes"></td>
-          <td class="pricelist__cell   pricelist__cell--yes"></td>
+          <td class="pricelist__option pricelist__option--base">Розовый фильтр </td>
+            <td class="pricelist__option ">Розовый фильтр <span class="pricelist__icon pricelist__icon--yes"></span> </td>
+              <td class="pricelist__option ">Розовый фильтр <span class="pricelist__icon pricelist__icon--yes"></span> </td>
+                <td class="pricelist__option ">Розовый фильтр <span class="pricelist__icon pricelist__icon--yes"></span> </td>
         </tr>
         <tr class="pricelist__tr">
-          <td class="pricelist__option">Смайлики <span class="pricelist__icon pricelist__icon--yes"></span></td>
-          <td class="pricelist__cell pricelist__cell--no pricelist__hidden"></td>
-          <td class="pricelist__cell  pricelist__cell--yes"></td>
-          <td class="pricelist__cell  pricelist__cell--yes"></td>
+          <td class="pricelist__option pricelist__option--base">Смайлики </td>
+            <td class="pricelist__option">Смайлики <span class="pricelist__icon pricelist__icon--no"></span></td>
+              <td class="pricelist__option">Смайлики <span class="pricelist__icon pricelist__icon--yes"></span></td>
+                <td class="pricelist__option">Смайлики <span class="pricelist__icon pricelist__icon--yes"></span></td>
         </tr>
         <tr class="pricelist__tr">
+          <td class="pricelist__option pricelist__option--base">Комментарии </td>
+        <td class="pricelist__option">Комментарии <span class="pricelist__icon pricelist__icon--no"></span></td>
           <td class="pricelist__option">Комментарии <span class="pricelist__icon pricelist__icon--no"></span></td>
-          <td class="pricelist__cell pricelist__cell--no pricelist__hidden"></td>
-          <td class="pricelist__cell pricelist__cell--no"></td>
-          <td class="pricelist__cell pricelist__cell--yes"></td>
+          <td class="pricelist__option">Комментарии <span class="pricelist__icon pricelist__icon--yes"></span></td>
         </tr>
       </table>
     </section>

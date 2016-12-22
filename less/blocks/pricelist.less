@@ -9,45 +9,29 @@
   }
 }
 
-.pricelist__cell {
-  width: 50px;
-  border-bottom: 1px solid #e5e5e5;
-  height: 35px;
-  outline: 2px solid orange;
-  @media @tablet-widths {
-    width: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-.pricelist__cell--yes {
-  @media @tablet-widths {
-    background-image: url("../img/icon-yes.svg");
-  }
-}
-
-.pricelist__cell--no {
-  @media @tablet-widths {
-    background-image: url("../img/icon-no.svg");
-  }
-}
-
 .pricelist__option {
   position: relative;
   border-bottom: 1px solid #e5e5e5;
   height: 55px;
   width: 50px;
   text-transform: uppercase;
-  padding-left: 4%;
+  padding-left: 2%;
   outline: 2px solid red;
   @media @tablet-widths {
     width: 110px;
+    font-size: 0;
+    height: 45px;
+    padding-left: 3%;
+  }
+}
+
+.pricelist__option--base {
+  display: none;
+  @media @tablet-widths {
+    display: table-cell;
     font-size: 14px;
     font-weight: @light;
     text-transform: none;
-    height: 45px;
-    padding-left: 3%;
   }
   @media @desktop-widths {
     font-size: 18px;
@@ -59,8 +43,10 @@
 .pricelist__items {
   position: relative;
   border-collapse: collapse;
-  width: 590px;
+  width: 830px;
+  left: -97%;
   @media @tablet-widths {
+    left: 0;
     position: relative;
     width: 620px;
     margin-left: 50px;
@@ -68,7 +54,6 @@
   }
   @media @desktop-widths {
     width: 940px;
-    //left: 100px;
     top: 170px;
     margin-left: 10px;
   }
@@ -146,10 +131,16 @@
 .pricelist__icon {
   width: 25px;
   height: 25px;
-  display: inline-block;
   position: absolute;
   right: 20px;
   background-repeat: no-repeat;
+  @media @tablet-widths {
+    right: 50%;
+    left: 45%;
+  }
+}
+
+.pricelist__icon--base {
   @media @tablet-widths {
     display: none;
   }
@@ -172,19 +163,19 @@
 
 
 /*
+
 #pricelist-input-1:checked ~ .pricelist__items {
   left:0;
 }
 #pricelist-input-2:checked ~ .pricelist__items {
-  left:-86%;
+  left:-97%;
 }
 #pricelist-input-3:checked ~ .pricelist__items {
-  left:-180%;
+  left:-197%;
 }
 
 #pricelist-input-1:checked ~ .pricelist-input-1,
 #pricelist-input-2:checked ~ .pricelist-input-2,
 #pricelist-input-3:checked ~ .pricelist-input-3 {
   background: #c1c1c1;
-}
-*/
+}*/
