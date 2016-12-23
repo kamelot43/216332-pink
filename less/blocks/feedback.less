@@ -25,16 +25,17 @@
 
 .feedback__items {
   .items-base();
+  margin-top: 30px;
   @media @tablet-widths {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 45px;
   }
   @media @desktop-widths {
     flex-direction: row;
-    margin-top: 45px;
+    //margin-top: 45px;
   }
 }
 
@@ -47,7 +48,7 @@
     width: 500px;
     order: -1;
     margin-bottom: 15px;
-    margin-left: 27px;
+    margin-left: 10px;
   }
   @media @desktop-widths {
     width: 310px;
@@ -84,6 +85,8 @@
   display: none;
   @media @tablet-widths {
     display: inline;
+    position: absolute;
+    transform: translate(150px, -10px);
     text-align: center;
     font-size: 14px;
     font-weight: 400;
