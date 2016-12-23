@@ -1,19 +1,26 @@
 .achievement {
+  position: relative;
   min-height: 230px;
   outline: 1px solid pink;
   border: none;
   background: rgba(219, 111, 49, 0.5);
   @media @tablet-widths {
-    .wrapper(600px);
-    position: relative;
+    width: 620px;
+    order: 4;
+    margin-top: 60px;
+    //.wrapper(600px);
+    //position: relative;
     background: rgba(195, 29, 33, 0.3);
     outline: 1px solid #c31d21;
-    top: 730px;
-    height: 560px;
+    //top: 730px;
+    //height: 560px;
   }
   @media @desktop-widths {
+    //.container();
+    width: 900px;
     height: 230px;
-    top: 265px;
+    margin-top: 50px;
+    //top: 265px;
   }
 }
 
@@ -24,13 +31,14 @@
     margin-top: 55px;
   }
   @media @desktop-widths {
-    margin-left: 100px;
-    margin-top: 45px;
-    width: 800px;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 50px;
+    width: 830px;
+    margin-left: 50px;
   }
 }
 
@@ -40,8 +48,9 @@
   line-height: 18px;
   padding-top: 42px;
   @media @tablet-widths {
-    width: 100%;
     padding: 0;
+    position: absolute;
+    transform: translate(270px, -10px);
   }
 }
 
@@ -56,37 +65,37 @@
 }
 
 //Перемещение пунктов в блоке достижений(не работает)
-.achievement__input:nth-child(1) {
+.achievement__item:nth-child(1) {
   @media @desktop-widths {
     order: 1;
   }
 }
 
-.achievement__input:nth-child(2) {
+.achievement__item:nth-child(2) {
   @media @desktop-widths {
     order: 4;
   }
 }
 
-.achievement__input:nth-child(3) {
+.achievement__item:nth-child(3) {
   @media @desktop-widths {
     order: -1;
   }
 }
 
-.achievement__input:nth-child(4) {
+.achievement__item:nth-child(4) {
   @media @desktop-widths {
     order: 5;
   }
 }
 
-.achievement__input:nth-child(5) {
+.achievement__item:nth-child(5) {
   @media @desktop-widths {
     order: 3;
   }
 }
 
-.achievement__input:nth-child(6) {
+.achievement__item:nth-child(6) {
   @media @desktop-widths {
     order: 6;
   }

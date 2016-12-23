@@ -1,11 +1,10 @@
 .download {
-  display: flex;
-  flex-direction: column;
   background-color: rgba(161, 128, 236, 0.3);
-  min-height: 670px;
   outline: 1px solid red;
-  justify-content: flex-end;
+  padding-top: 390px;
   @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
     padding-left: 20px;
     justify-content: flex-start;
     padding-top: 0;
@@ -13,9 +12,7 @@
     width: 370px;
     background: rgba(157, 15, 107, 0.4);
   }
-  @media @desktop-widths {
-    display: flex;
-    flex-direction: column;
+  @media @desktop-widths {  
     width: 320px;
     min-height: 770px;
     padding-top: 0;

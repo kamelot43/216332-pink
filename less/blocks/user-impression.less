@@ -1,21 +1,27 @@
 .user-impression {
-  .container();
   border: none;
+  box-sizing: border-box;
+
   @media @tablet-widths {
-    position: relative;
-    top: 115px;
-    .wrapper(600px);
+      width: 620px;
+      order: 5;
+      margin-top: 50px;
+    //position: relative;
+    //top: 115px;
+    //.wrapper(600px);
     border: none;
-    margin-top: 65px;
-    padding: 0;
+    //margin-top: 65px;
+    //padding: 0;
     background: rgba(219, 111, 49, 0.3);
     outline: 1px solid rgba(219, 111, 49, 0.8);
   }
   @media @desktop-widths {
+    position: relative;
     width: 950px;
     height: 210px;
-    margin: 0 auto;
-    top: -160px;
+    //margin: 0 auto;
+    //top: -160px;
+    margin-top: 60px;
   }
 }
 
@@ -23,6 +29,8 @@
   .legend-style ();
   padding-top: 30px;
   @media @tablet-widths {
+    position: absolute;
+    transform: translate(365px, -10px);
     padding: 0;
   }
 }
@@ -34,14 +42,14 @@
   @media @tablet-widths {
     width: 485px;
     height: 180px;
-    margin-left: 80px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-top: 35px;
+    margin-bottom: 40px;
   }
   @media @desktop-widths {
     width: 810px;
     height: 120px;
-    margin-left: 70px;
-    margin-top: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
   }
 }

@@ -1,22 +1,27 @@
 .soft {
+  box-sizing: border-box;
   border: none;
   background: rgba(245, 236, 98, 0.5);
   @media @tablet-widths {
-    .wrapper(600px);
-    position: relative;
+    //.container();
+    width: 620px;
+    order: 2;
+    //.wrapper(600px);
+    //position: relative;
     background: rgba(245, 236, 98, 0.5);
-    bottom: 880px;
+    //bottom: 880px;
     outline: 1px solid rgba(245, 236, 98, 1);
   }
   @media @desktop-widths {
-    width: 430px;
     position: relative;
+    width: 430px;
+    //position: relative;
     background: rgba(245, 236, 98, 0.5);
-    bottom: 745px;
+    //bottom: 745px;
     outline: 1px solid #f5ec62;
-    left: 540px;
-    height: 300px;
-    margin: 0;
+    //left: 540px;
+    //height: 300px;
+    //margin: 0;
   }
 }
 
@@ -37,7 +42,9 @@
   padding-top: 55px;
   @media @tablet-widths {
     padding: 0;
-    width: 100%;
+    //width: 100%;
+    position: absolute;
+    transform: translate(45px, -10px);
   }
 }
 
@@ -51,6 +58,6 @@
 .soft__item {
   margin-bottom: 45px;
   @media @desktop-widths {
-    margin-top: 46px;
+    margin-top: 50px;
   }
 }
