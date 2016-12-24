@@ -1,7 +1,5 @@
 .user-form__footnote {
-  //display: inline-block;
   width: 185px;
-  //margin: 0 auto;
   height: 30px;
   outline: 1px dotted green;
   text-transform: uppercase;
@@ -11,22 +9,17 @@
   @media @tablet-widths {
     padding: 0;
     margin: 0;
-  //margin-left: 115px;
-    //position: relative;
-    //top: 70px;
-    //left: 220px;
   }
   @media @desktop-widths {
-    //left: 240px;
-    //top: -200px;
     width: 315px;
   }
 }
+
 .user-form__request {
   display: none;
   @media @desktop-widths {
     display: inline;
-}
+  }
 }
 
 .user-form {
@@ -37,31 +30,28 @@
     margin-top: 60px;
   }
   @media @desktop-widths {
-    //.container();
     flex-direction: row;
     flex-flow: wrap;
     justify-content: space-between;
     margin-top: 40px;
     align-items: flex-start;
-
   }
 }
-.user-form__consrt {
+
+.user-form__submit {
   @media @tablet-widths {
     width: 620px;
     display: flex;
-    //.container();
     padding: 0;
     justify-content: space-between;
     outline: 2px solid green;
     order: 6;
     margin-top: 70px;
-      margin-bottom: 60px;
-}
-@media @desktop-widths {
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 80px;
-
-}
+    margin-bottom: 60px;
+  }
+  @media @desktop-widths {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
 }
