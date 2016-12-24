@@ -1,0 +1,69 @@
+.study {
+  .container();
+  display: none;
+  @media @tablet-widths {
+    min-height: 340px;
+    background: rgba(120, 212, 0, 0.3);
+    display: flex;
+    justify-content: flex-end;
+  }
+  @media @desktop-widths {
+    display: flex;
+    min-height: 470px;
+    justify-content: flex-end;
+  }
+}
+
+.study__content {
+  background: rgba(16, 0, 212, 0.3);
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    min-height: 250px;
+  }
+  @media @desktop-widths {
+    width: 580px;
+    min-height: 250px;
+  }
+}
+
+.study__descr {
+  @media @tablet-widths {
+    width: 320px;
+    padding-bottom: 2%;
+  }
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 2%;
+    padding-bottom: 4%;
+    width: 550px;
+  }
+}
+
+.study__title {
+  @media @tablet-widths {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: @bold;
+    width: 180px;
+    padding-top: 12%;
+    padding-bottom: 3%;
+  }
+  @media @desktop-widths {
+    width: 100%;
+    padding-top: 18%;
+    padding-left: 2%;
+    padding-bottom: 20px;
+  }
+}
+
+.study__link {
+  @media @desktop-widths {
+    padding-left: 2%;
+    font-size: 18px;
+    line-height: 30px;
+    color: @label-color;
+  }
+}

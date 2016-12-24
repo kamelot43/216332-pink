@@ -1,19 +1,50 @@
 .user-impression {
-  height: @base-width;
-  width: 280px;
-  margin: 0 auto;
-  outline: 1px solid green;
   border: none;
-  padding: 0;
+  box-sizing: border-box;
+  @media @tablet-widths {
+    width: 620px;
+    order: 5;
+    margin-top: 70px;
+    border: none;
+    background: rgba(219, 111, 49, 0.3);
+    outline: 1px solid rgba(219, 111, 49, 0.8);
+  }
+  @media @desktop-widths {
+    position: relative;
+    width: 950px;
+    height: 210px;
+    margin-top: 60px;
+  }
 }
 
 .user-impression__title {
   .legend-style ();
-  outline: 1px dotted pink;
-  padding-top: 35px;
+  padding-top: 30px;
+  @media @tablet-widths {
+    position: absolute;
+    transform: translate(205px, -10px);
+    padding: 0;
+  }
+  @media @desktop-widths {
+    transform: translate(365px, -10px);
+  }
 }
+
 .user-impression__textarea {
-  width: 280px;
-  height: 260px;
-  outline: 2px dotted blue;
+  width: 255px;
+  height: 195px;
+  margin-top: 16px;
+  @media @tablet-widths {
+    width: 490px;
+    height: 185px;
+    margin-left: 50px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+  }
+  @media @desktop-widths {
+    width: 810px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
 }

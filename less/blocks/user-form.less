@@ -1,8 +1,57 @@
 .user-form__footnote {
   width: 185px;
-  margin: 0 auto;
   height: 30px;
   outline: 1px dotted green;
   text-transform: uppercase;
-  padding-top: 26px;
+  padding-top: 35px;
+  padding-left: 35px;
+  margin-left: 40px;
+  @media @tablet-widths {
+    padding: 0;
+    margin: 0;
+  }
+  @media @desktop-widths {
+    width: 315px;
+  }
+}
+
+.user-form__request {
+  display: none;
+  @media @desktop-widths {
+    display: inline;
+  }
+}
+
+.user-form {
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  @media @desktop-widths {
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: flex-start;
+  }
+}
+
+.user-form__submit {
+  @media @tablet-widths {
+    width: 620px;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    outline: 2px solid green;
+    order: 6;
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  @media @desktop-widths {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
 }

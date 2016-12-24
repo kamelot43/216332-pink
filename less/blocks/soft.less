@@ -1,27 +1,59 @@
 .soft {
-  width: @base-width;
-  height: 340px;
-  outline: 1px dotted orange;
+  box-sizing: border-box;
   border: none;
-  margin: 0;
-  padding: 0;
+  background: rgba(245, 236, 98, 0.5);
+  @media @tablet-widths {
+    width: 620px;
+    order: 2;
+    background: rgba(245, 236, 98, 0.5);
+    outline: 1px solid rgba(245, 236, 98, 1);
+  }
+  @media @desktop-widths {
+    position: relative;
+    width: 430px;
+    background: rgba(245, 236, 98, 0.5);
+    outline: 1px solid #f5ec62;
+  }
 }
 
 .soft__items {
   .items-base();
+  margin-top: 120px;
+  @media @tablet-widths {
+    margin-left: 60px;
+    margin-top: 55px;
+  }
+  @media @desktop-widths {
+    margin-left: 70px;
+  }
 }
 
 .soft__title {
   .legend-style ();
-  outline: 1px dotted pink;
-  padding-top: 35px;
+  position: absolute;
+  transform: translate(35px, 40px);
+  width: 170px;
+  @media @tablet-widths {
+    padding: 0;
+    position: absolute;
+    transform: translate(115px, -10px);
+    width: 350px;
+  }
+  @media @desktop-widths {
+    transform: translate(45px, -10px);
+  }
 }
 
 .soft__label {
+  font-size: 18px;
+  line-height: 30px;
   text-align: center;
-  padding-left: 65px;
+  padding-left: 45px;
 }
 
 .soft__item {
-  margin-top: 43px;
+  margin-bottom: 45px;
+  @media @desktop-widths {
+    margin-top: 50px;
+  }
 }

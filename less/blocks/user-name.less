@@ -1,30 +1,52 @@
 .user-name {
-  width: 280px;
+  box-sizing: border-box;
   min-height: 365px;
-  outline: 1px solid red;
-  margin: 0 auto;
+  background: rgba(101, 196, 249, 0.4);
+  @media @tablet-widths {
+    width: 620px;
+    order: 1;
+    border: none;
+  }
+  @media @desktop-widths {
+    width: 470px;
+  }
 }
 
 .user-name__items {
   .items-base();
+  margin-top: 15px;
+  @media @tablet-widths {
+    margin: 0;
+  }
 }
 
 .user-name__input {
-  width: 280px;
+  width: 250px;
   height: 55px;
-  outline: 1px solid green;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+  margin-top: 7px;
+  @media @tablet-widths {
+    width: 505px;
+    margin-bottom: 47px;
+    margin-left: 10px;
+  }
+  @media @desktop-widths {
+    margin: 0;
+    width: 330px;
+    margin-bottom: 55px;
+    margin-left: 10px;
+  }
 }
 
-.user-name__input placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-  text-align: left;
+.user-name__label:first-child {
+  margin-top: 40px;
 }
 
 .user-name__label {
-  padding-left: 25px;
+  padding-left: 5px;
   color: @label-color;
   text-transform: uppercase;
+  @media @tablet-widths {
+    padding-left: 0;
+  }
 }
