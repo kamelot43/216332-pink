@@ -64,7 +64,7 @@
 
     <section class="photo-gallery">
       <div class="slogan slogan--photo">
-        <div class="slogan__about">Взгляните на фотографии,которые выкладывают пользователи!Видите,как не хватает ваших!</div>
+        <div class="slogan__about slogan__about--photo">Взгляните на фотографии,которые выкладывают пользователи!Видите,как не хватает ваших!</div>
       </div>
       <!--Элемент визуализации-->
       <h2 class="visually-hidden">Посты пользователей</h2>
@@ -80,7 +80,7 @@
             <div class="photo__user photo__user--panorama">Анна <span class="photo__time">(5 минут назад)</span>
             </div>
             <div class="photo__title photo__title--panorama ">Прыгать или нет?Напишите в комментарии свой совет и посмотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
-            <div class="photo__likes photo__likes--panorama"> <button class="button button--likes" type="button">&#9829;</button> Нравится:215</div>
+            <div class="photo__likes photo__likes--panorama"> <button class="button button--likes button--likes-panorama" type="button">&#9829;</button> Нравится:215</div>
           </div>
         </article>
 
@@ -168,8 +168,8 @@
     <section class="photo-editor">
       <!--Элемент визуализации-->
       <h2 class="visually-hidden">Фоторедактор</h2>
-      <div class="slogan slogan--editor">
-        <div class="slogan__about">Затмите их всех!<br>Выкладывайте все,что накопилось в телефоне!</div>
+      <div class=photo-editor__slogan>
+        Затмите их всех!<br>Выкладывайте все,что накопилось в телефоне!
       </div>
 
       <section class="photo-editor__columns">
@@ -198,6 +198,7 @@
           <div class="photo-editor__base-range">
             <input class="photo-editor__input" type="range" min="1" max="100">
           </div>
+
           <div class="photo-editor__btn">
             <button class="button button--post" type="button">Запостить</button>
             <button class="button button--cancel-post" type="button">Отмена</button>
