@@ -27,20 +27,32 @@
 </head>
 
 <body>
+  <svg style="display:none">
+
+    <symbol id="icon-yes" viewBox="-82.357 4.875 21.698 16.09">
+      <path  d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+    </symbol>
+    <symbol id="icon-no" viewBox="0 0 26.752 26.752">
+       <path fill="red" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+  </svg>
   <!-- Шапка сайта -->
   <header class="site-header">
     <!--Центровщик-->
 
     <!--Элемент визуальзации-->
     <h1 class="visually-hidden">Приложение "Pink"</h1>
-    <div class="site-header__logo">
-      <a class="visually-hidden">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-      </a>
+    <div class="site-header__logo ">
+      <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="PINK logo">
+            </picture>
+
     </div>
 
     <button class="button button--toggle button--close-menu " type="button">Закрыть меню</button>
-    <nav class="site-nav ">
+    <nav class="site-nav">
+      <div class="site-nav__wrapper">
 
       <ul class="site-nav__items">
 
@@ -57,8 +69,9 @@
           <a class="site-nav__link" href="http://htmlacademy.ru/">html academy</a>
         </li>
       </ul>
+    </div>
     </nav>
-    <!--Скачать приложение -->
+      <!--Скачать приложение -->
     <section class="download">
       <h2 class="visually-hidden">Загрузка "Pink"</h2>
       <div class="download__slogan">
@@ -81,13 +94,14 @@
         Доступно для iPhone,iPad,Android,<br>Windows Phone,OS X,Windows 8.
       </div>
     </section>
+
   </header>
   <!--Основное содержание -->
   <main class="site-main">
 
 
     <!-- Блок преемуществ -->
-    <section class="features">
+    <section class="features ">
       <h2 class="visually-hidden">О приложении</h2>
       <!--Вводная часть как часть блока преемуществ-->
       <!--Вводная часть -->
@@ -103,7 +117,10 @@
       <section class="features__items">
         <div class="features__item">
           <div class="features__pic">
-            <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="превью пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png, img/iphone-screen-1-desktop@2x.png 2x">
+            <img class="photo__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/img/iphone-screen-mobile@1x.png 2x" alt="Превью пинк">
+          </picture>
           </div>
           <div class="features__title ">Поднимает настроение</div>
           <div class="features__description ">Приложение позволяет вам победить осенюю хандру и дипрессию буквально в несколько кликов</div>
@@ -111,7 +128,10 @@
         <!--Блок приемуществ №2 -->
         <div class="features__item">
           <div class="features__pic">
-            <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="превью пинк">
+            <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@2x.png 2x">
+            <img class="photo__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/img/iphone-screen-mobile@1x.png 2x" alt="Превью пинк">
+          </picture>
           </div>
           <div class="features__title ">Меняет мир вокруг</div>
           <div class="features__description">
@@ -120,7 +140,10 @@
         <!--Блок приемуществ №3 -->
         <div class="features__item ">
           <div class="features__pic">
-            <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="превью пинк">
+            <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png 2x">
+            <img class="photo__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/img/iphone-screen-mobile@1x.png 2x" alt="Превью пинк">
+          </picture>
           </div>
           <div class="features__title">Заводит новых друзей</div>
           <div class="features__description">
@@ -232,22 +255,70 @@
         </tr>
         <tr class="pricelist__tr">
           <td class="pricelist__option pricelist__option--base">Розовый фильтр </td>
-          <td class="pricelist__option ">Розовый фильтр <span class="pricelist__icon pricelist__icon--yes"></span> </td>
-          <td class="pricelist__option ">Розовый фильтр <span class="pricelist__icon pricelist__icon--yes"></span> </td>
-          <td class="pricelist__option ">Розовый фильтр <span class="pricelist__icon pricelist__icon--yes"></span> </td>
+
+          <td class="pricelist__option ">Розовый фильтр
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+            </svg>
+          </td>
+
+          <td class="pricelist__option ">Розовый фильтр
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+            </svg>
+          </td>
+
+          <td class="pricelist__option ">Розовый фильтр
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+            </svg>
+          </td>
         </tr>
+
         <tr class="pricelist__tr">
           <td class="pricelist__option pricelist__option--base">Смайлики </td>
-          <td class="pricelist__option">Смайлики <span class="pricelist__icon pricelist__icon--no"></span></td>
-          <td class="pricelist__option">Смайлики <span class="pricelist__icon pricelist__icon--yes"></span></td>
-          <td class="pricelist__option">Смайлики <span class="pricelist__icon pricelist__icon--yes"></span></td>
+
+          <td class="pricelist__option ">Смайлики
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+            </svg>
+          </td>
+
+          <td class="pricelist__option ">Розовый фильтр
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+            </svg>
+          </td>
+
+          <td class="pricelist__option ">Розовый фильтр
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+            </svg>
+          </td>
         </tr>
+
         <tr class="pricelist__tr">
           <td class="pricelist__option pricelist__option--base">Комментарии </td>
-          <td class="pricelist__option">Комментарии <span class="pricelist__icon pricelist__icon--no"></span></td>
-          <td class="pricelist__option">Комментарии <span class="pricelist__icon pricelist__icon--no"></span></td>
-          <td class="pricelist__option">Комментарии <span class="pricelist__icon pricelist__icon--yes"></span></td>
+
+          <td class="pricelist__option ">Коментарии
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+            </svg>
+          </td>
+
+          <td class="pricelist__option ">Коментарии
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+            </svg>
+          </td>
+
+          <td class="pricelist__option ">Розовый фильтр
+            <svg class="pricelist__icon" width="32" height="32">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+            </svg>
+          </td>
         </tr>
+
       </table>
     </section>
   </main>

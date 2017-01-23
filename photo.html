@@ -73,7 +73,11 @@
       <div class="photo-gallery__content">
         <article class="photo photo--panorama">
           <div class="photo__picture-wrapper photo__picture-wrapper--panorama">
-            <img class="photo__picture" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид с моста">
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="photo__picture"  src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорамный вид с моста" width="320" height="137">
+              </picture>
           </div>
 
           <div class="photo__content photo__content--panorama ">
@@ -87,7 +91,11 @@
         <!--Фотокарточка №2-->
         <div class="photo">
           <div class="photo__picture-wrapper">
-            <img class="photo__picture" src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="photo__picture" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Белый автомобиль">
+            </picture>
           </div>
           <div class="photo__content">
             <div class="photo__user">Левон <span class="photo__time">(5 часов назад)</span>
@@ -100,7 +108,11 @@
         <!--Фотокарточка №3-->
         <article class="photo">
           <div class="photo__picture-wrapper">
-            <img class="photo__picture" src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
+              </picture>
           </div>
           <div class="photo__content">
             <div class="photo__user">Антон <span class="photo__time">(12 часов назад)</span>
@@ -113,7 +125,11 @@
         <!--Фотокарточка №4-->
         <article class="photo">
           <div class="photo__picture-wrapper">
-            <img class="photo__picture" src="img/photo-3-mobile@1x.jpg" alt="Стеклянный потолок">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="photo__picture" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Cтеклянный потолок">
+            </picture>
           </div>
           <div class="photo__content">
             <div class="photo__user">Борис <span class="photo__time">(20 часов назад)</span>
@@ -126,7 +142,11 @@
         <!--Фотокарточка №5-->
         <article class="photo">
           <div class="photo__picture-wrapper">
-            <img class="photo__picture" src="img/photo-4-mobile@1x.jpg" alt="Прилавок с бахчой">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="photo__picture" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Прилавок с бахчой">
+            </picture>
           </div>
           <div class="photo__content">
             <div class="photo__user">Сергей <span class="photo__time">(25 часов назад)</span>
@@ -139,7 +159,11 @@
         <!--Фотокарточка №6-->
         <article class="photo">
           <div class="photo__picture-wrapper">
-            <img class="photo__picture" src="img/photo-5-mobile@1x.jpg" alt="Вид с горы">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="photo__picture" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Вид с горы">
+            </picture>
           </div>
           <div class="photo__content">
             <div class="photo__user">Максим <span class="photo__time">(40 часов назад)</span>
@@ -152,7 +176,11 @@
         <!--Фотокарточка №7-->
         <article class="photo">
           <div class="photo__picture-wrapper">
-            <img class="photo__picture" src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета">
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Вид из окна самолета">
+              </picture>
           </div>
           <div class="photo__content">
             <div class="photo__user">Надежда <span class="photo__time">(45 часов назад)</span>

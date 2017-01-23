@@ -3,6 +3,12 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   min-height: 1030px;
+  @media (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px 320px;
+  }
+
+
   @media @tablet-widths {
     background-image: none;
     min-height: 780px;
@@ -21,7 +27,7 @@
   }
   @media @desktop-widths {
     background: rgba(2, 157, 15, 0.4);
-    height: 320px;
+    height: 325px;
   }
 }
 
@@ -49,7 +55,7 @@
   padding-bottom: 5%;
   @media @tablet-widths {
     padding: 0;
-    padding-top: 8%;
+    padding-top: 50px;
   }
 }
 
@@ -65,10 +71,9 @@
   height: 450px;
   margin-top: 55px;
   @media @tablet-widths {
-    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     margin-top: 0;
-    background-position: 10% 10%;
-    background-size: 40%;
+    background-position: 75px 20px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -76,6 +81,16 @@
     flex-direction: column;
     height: 560px;
   }
+    @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
+    .features__items {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png.png");
+      background-size: 268px 481px;
+      background-position: 75px 20px;
+    }
+  }
+
+
+
   @media @desktop-widths {
     background-image: none;
     align-items: flex-start;
@@ -83,6 +98,8 @@
     margin: auto;
   }
 }
+
+
 
 .features__item {
   margin-bottom: 12px;
@@ -111,9 +128,14 @@
   display: none;
   @media @desktop-widths {
     display: block;
-    margin: 0 auto;
     margin-bottom: 20px;
+    margin: 0 auto;
   }
+}
+.features__pic:first-child {
+    @media @desktop-widths {
+    margin-left: 40px;
+}
 }
 
 .features__title {
@@ -133,7 +155,7 @@
     font-size: 30px;
     line-height: 30px;
     font-weight: @bold;
-    padding-top: 5%;
+    padding-top: 50px;
     padding-bottom: 0;
     width: 260px;
     text-align: center;
@@ -142,12 +164,12 @@
 
 .features__description {
   font-size: 14px;
-  line-height: 24px;
-  font-weight: @regular;
-  width: 270px;
-  background: rgba(51, 204, 255, 0.3);
-  text-align: center;
-  margin-left: 25px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 260px;
+    background: rgba(51, 204, 255, 0.3);
+    text-align: center;
+    margin: 0 auto;
   @media @tablet-widths {
     text-align: start;
     padding: 0;
