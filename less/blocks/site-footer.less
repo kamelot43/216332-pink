@@ -6,7 +6,7 @@
 }
 
 .site-footer__question {
-  min-height: 120px;
+  min-height: 110px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -224,30 +224,24 @@
 .site-footer__link {
   width: 50px;
   height: 50px;
-  background-color: orange;
   font-size: 0;
   background-repeat: no-repeat;
   background-position: center;
   color: #d22856;
   margin: 7px;
   border-radius: 50%;
+  border: 2px solid red;
   @media @tablet-widths {
     margin-left: 0;
     margin-right: 10px;
   }
 }
-
-.site-footer__link--tv {
-  background-image: url("../img/icon-twitter.svg");
+.site-footer__link:first-child {
+    @media @tablet-widths {
+    margin-left: 20px;
+}
 }
 
-.site-footer__link--fb {
-  background-image: url("../img/icon-facebook.svg");
-}
-
-.site-footer__link--yt {
-  background-image: url("../img/icon-youtube.svg");
-}
 
 .site-footer__map {
   @media @tablet-widths {
@@ -256,4 +250,15 @@
   @media @desktop-widths {
     height: 500px;
   }
+}
+.site-footer__pic {
+    @media @tablet-widths {
+      padding-top: 18px;
+      padding-left: 18px;
+}
+}
+.site-footer__picture {
+    @media @tablet-widths {
+      padding-left: 15px;
+}
 }

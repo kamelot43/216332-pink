@@ -56,8 +56,8 @@
 
 .download__items {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 95px;
   background: rgba(2, 157, 15, 0.4);
   @media @tablet-widths {
@@ -95,9 +95,21 @@
 .download__link {
   background-repeat: no-repeat;
   background-position: center;
-  width: 70px;
+  width: 50px;
   height: 70px;
   font-size: 0;
+  outline: 2px solid red;
+  margin-top: 8px;
+  margin-left: 30px;
+  @media @tablet-widths {
+    margin-top: 25px;
+}
+}
+.download__link:first-child {
+  margin-left: 55px;
+  @media @tablet-widths {
+    margin-left: 85px;
+}
 }
 
 .download__link--IOS {
