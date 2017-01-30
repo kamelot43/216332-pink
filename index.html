@@ -38,6 +38,8 @@
   </svg>
   <!-- Шапка сайта -->
   <header class="site-header">
+    <div class="site-header__wrapper">
+      <div class="site-header__demo-img">
     <!--Центровщик-->
 
     <!--Элемент визуальзации-->
@@ -72,6 +74,7 @@
       </ul>
     </div>
     </nav>
+
       <!--Скачать приложение -->
     <section class="download">
       <h2 class="visually-hidden">Загрузка "Pink"</h2>
@@ -95,7 +98,8 @@
         Доступно для iPhone,iPad,Android,<br>Windows Phone,OS X,Windows 8.
       </div>
     </section>
-
+  </div>
+</div>
   </header>
   <!--Основное содержание -->
   <main class="site-main">
@@ -191,6 +195,7 @@
       <!--Блок со слайдами.Однотипные элементы вынесены в список-->
       <div class="reviews__items">
         <div class="reviews__pic">
+          <img  src="img/icon-review-arrow-left.svg" width="22" heigth="42" alt="left arrow">
         </div>
         <!--Слайд №1-->
         <div class="reviews__item ">
@@ -218,6 +223,7 @@
           <div class="reviews__author reviews__author--biography">25 лет,водитель трамвая</div>
         </div>
         <div class="reviews__pic">
+            <img  src="img/icon-review-arrow-right.svg" width="22" heigth="42" alt="right arrow">
         </div>
       </div>
     </section>
@@ -356,7 +362,10 @@
     <section class="site-footer__content site-footer__content--mobile">
       <div class="site-footer__logo">
         <a href="index.html">
-          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
+          <picture>
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+                  <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
+                </picture>
         </a>
       </div>
       <div class="site-footer__social">

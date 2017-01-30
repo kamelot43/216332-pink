@@ -33,8 +33,18 @@
     height: 350px;
   }
   @media @desktop-widths {
+    position: relative;
     align-items: flex-end;
     height: 350px;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/icon-quotes.svg") no-repeat center;
+      top:16px;
+      width: 80px;
+      height: 80px;
+      opacity: 0.1;
+    }
   }
 }
 
@@ -95,10 +105,10 @@
   @media @tablet-widths {
     font-size: 18px;
     line-height: 30px;
-    padding-top: 6%;
-    margin-bottom: 5%;
+    padding-top: 35px;
+    margin-bottom: 35px;
     width: 630px;
-    padding-left: 4%;
+    padding-left: 58px;
   }
   @media @desktop-widths {
     padding-left: 3%;
@@ -137,6 +147,14 @@
     outline: 1px solid green;
     align-self: center;
   }
+}
+.reviews__pic img {
+  display: none;
+  @media @desktop-widths {
+    display: block;
+  padding-top: 22px;
+  opacity: 0.4;
+}
 }
 
 //Слайдер отзывы пользователей (не работает).

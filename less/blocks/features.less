@@ -56,20 +56,25 @@
     padding: 0;
     padding-top: 50px;
   }
+  @media @desktop-widths {
+    padding-top: 70px;
+}
 }
 
 .features__proposal:nth-child(2) {
   padding-top: 7%;
   @media @tablet-widths {
-    padding: 0;
+    padding: 8px;
   }
 }
 
+//Возможно в этом блоке допущена ошибка!!
 .features__items {
   background-color: rgba(241, 203, 255, 0.3);
   height: 450px;
   margin-top: 55px;
   @media @tablet-widths {
+    position: relative;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     margin-top: 0;
     background-position: 75px 20px;
@@ -79,17 +84,13 @@
     align-items: flex-end;
     flex-direction: column;
     height: 560px;
-  }
+
     @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
-    .features__items {
-      background-image: url("../img/iphone-screen-3-tablet@2x.png.png");
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px 481px;
       background-position: 75px 20px;
     }
   }
-
-
-
   @media @desktop-widths {
     background-image: none;
     align-items: flex-start;
@@ -97,6 +98,8 @@
     margin: auto;
   }
 }
+
+
 
 
 
@@ -127,13 +130,13 @@
   display: none;
   @media @desktop-widths {
     display: block;
-    margin-bottom: 20px;
-    margin: 0 auto;
+    margin-bottom: 5px;
+    //margin: 0 auto;
   }
 }
 .features__pic:first-child {
     @media @desktop-widths {
-    margin-left: 40px;
+    //margin-left: 40px;
 }
 }
 

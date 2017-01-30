@@ -1,44 +1,74 @@
-.site-header {
+.site-header__wrapper {
   min-height: 300px;
   background-color: rgba(152, 191, 105, 0.3);
-  //background: url("../img/iphone-hand-mobile@1x.png") no-repeat left 435px,
-               //url("../img/bg-back-mobile@1x.jpg") no-repeat center 260px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 260px;
+                 background-size: 700px 462px;
 
   @media @tablet-widths {
     //position: relative;
-    //background: url("../img/iphone-hand-tablet@1x.png") no-repeat center 450px,
-                 //url("../img/bg-back-tablet@1x.jpg") no-repeat center 360px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 260px;
   }
   @media @desktop-widths {
-    //background: url("../img/iphone-hand-desktop@1x.png") no-repeat 59px 205px,
-                 //url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
   }
 }
 
 @media (min-width: 320px) and (min-resolution: 144dpi),
        (min-width: 320px) and (min-resolution: 1.5dppx) {
-  .site-header {
-    //background: url("../img/iphone-hand-mobile@2x.png") no-repeat left 435px,
-                //url("../img/bg-back-mobile@2x.jpg") no-repeat center 260px;
-                background-size: 258px 286px, 700px 462px;
+  .site-header__wrapper {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center 260px;
+                background-size: 700px 462px;
   }
 }
 
 @media (min-width: 660px) and (min-resolution: 144dpi),
        (min-width: 660px) and (min-resolution: 1.5dppx) {
-  .site-header {
-    //background: url("../img/iphone-hand-tablet@2x.png") no-repeat center 450px,
-                 //url("../img/bg-back-tablet@2x.jpg") no-repeat center 360px;
-                   background-size: 700px 545px, 1200px 729px;
+  .site-header__wrapper {
+    background: url("../img/bg-back-tablet@2x.jpg") no-repeat center 260px;
+                   background-size: 1200px 729px;
   }
 }
 
 @media (min-width: 960px) and (min-resolution: 144dpi),
        (min-width: 960px) and (min-resolution: 1.5dppx) {
-  .site-header {
-    //background: url("../img/iphone-hand-desktop@2x.png") no-repeat 59px 205px,
-                 //url("../img/bg-back-desktop@2x.jpg") no-repeat center top;
-                  background-size: 1050px 645px, 2560px 853px;
+  .site-header__wrapper {
+    background:  url("../img/bg-back-desktop@2x.jpg") no-repeat center top;
+                  background-size:2560px 853px;
+
+  }
+}
+.site-header__demo-img {
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0px 435px;
+      background-size:258px 286px;
+        @media @tablet-widths {
+          background: url("../img/iphone-hand-tablet@1x.png") no-repeat 34px 440px;
+            background-size:700px 545px;
+}
+@media @desktop-widths {
+  background: url("../img/iphone-hand-desktop@1x.png") no-repeat 55px 210px;
+    background-size:1050px 645px;
+}
+}
+
+@media (min-width: 320px) and (min-resolution: 144dpi),
+       (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .site-header__demo-img {
+    background: url("../img/iphone-hand-mobile@2x.png") no-repeat 0px 435px;
+                background-size:258px 286px;
+  }
+}
+@media (min-width: 660px) and (min-resolution: 144dpi),
+       (min-width: 660px) and (min-resolution: 1.5dppx) {
+         .site-header__demo-img {
+           background: url("../img/iphone-hand-tablet@2x.png") no-repeat 34px 440px;
+           background-size:700px 545px;
+  }
+}
+@media (min-width: 960px) and (min-resolution: 144dpi),
+       (min-width: 960px) and (min-resolution: 1.5dppx) {
+         .site-header__demo-img {
+           background: url("../img/iphone-hand-desktop@1x.png") no-repeat 55px 210px;
+            background-size:1050px 645px;
 
   }
 }
@@ -58,7 +88,7 @@ transform: translate(-20px, 105px);
   height: 175px;
   @media @tablet-widths {
     min-height: 330px;
-    background: rgba(226, 244, 105, 0.3);
+    //background: rgba(226, 244, 105, 0.3);
   }
   @media @desktop-widths {
     clear: both;
@@ -101,6 +131,7 @@ transform: translate(-20px, 105px);
   text-align: left;
   height: 67px;
   //padding: 19px 20px;
+  background-color: @form-base-color;
    @media @tablet-widths {
      height: 110px;
    }
@@ -108,6 +139,7 @@ transform: translate(-20px, 105px);
     float: left;
     min-width: 200px;
     height: 75px;
+    background-color: transparent;
   }
 }
 .site-header__logo img {
