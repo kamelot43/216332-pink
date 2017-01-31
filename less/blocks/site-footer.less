@@ -161,13 +161,13 @@
 }
 
 .site-footer__copyright {
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  height: 45px;
-  padding-right: 15px;
-  justify-content: center;
-  align-items: flex-end;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+min-height: 55px;
+padding-left: 10px;
+justify-content: center;
+align-items: center;
   @media @tablet-widths {
     width: 33%;
     align-items: center;
@@ -205,8 +205,8 @@
 .site-footer__social {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 120px;
+  align-items: flex-start;
+  min-height : 100px;
   @media @tablet-widths {
     width: 33%;
     height: 100px;
@@ -232,22 +232,36 @@
 .site-footer__link {
   width: 50px;
   height: 50px;
+  //background-color: orange;
   font-size: 0;
   background-repeat: no-repeat;
   background-position: center;
   color: #d22856;
-  margin: 7px;
+  margin: 5px;
   border-radius: 50%;
+  margin-top: 21px;
   border: 2px solid red;
   @media @tablet-widths {
     margin-left: 0;
     margin-right: 10px;
   }
 }
-.site-footer__link:first-child {
-    @media @tablet-widths {
-    margin-left: 20px;
+
+.site-footer__link--tv {
+  background-image: url("../img/icon-twitter.svg");
 }
+
+.site-footer__link--fb {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.site-footer__link--yt {
+  background-image: url("../img/icon-youtube.svg");
+}
+.site-footer__link--html {
+  background-image: url("../img/logo-htmlacademy.svg");
+  border: none;
+  margin-top: 0;
 }
 
 
@@ -269,4 +283,8 @@
     @media @tablet-widths {
       padding-left: 15px;
 }
+}
+.site-footer__logo--photo img {
+  padding-left: 85px;
+  padding-top: 30px;
 }

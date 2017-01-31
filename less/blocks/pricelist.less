@@ -129,14 +129,15 @@
 }
 
 .pricelist__icon {
+  width: 30px;
+  height: 25px;
   position: absolute;
   right: 15px;
-      top: 13px;
-    @media @tablet-widths {
-      right: 50%;
-    left: 40%;
-    bottom: 0;
-}
+  background-repeat: no-repeat;
+  @media @tablet-widths {
+    right: 50%;
+    left: 45%;
+  }
 }
 
 .pricelist__icon--base {
@@ -147,10 +148,12 @@
 
 .pricelist__icon--yes {
   background-image: url("../img/icon-yes.svg");
+  background-size: 31px 25px;
 }
 
 .pricelist__icon--no {
   background-image: url("../img/icon-no.svg");
+  background-size: 31px 25px;
 }
 
 .pricelist__hidden {
