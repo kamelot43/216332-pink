@@ -28,10 +28,11 @@
 <body>
   <!-- Шапка сайта -->
   <header class="site-header">
+      <div class="site-header__wrapper">
     <!--Элемент визуализации-->
     <h1 class="visually-hidden">Приложение "Pink"</h1>
     <div class="site-header__logo">
-      <a href="index.html" class="visually-hidden">
+      <a href="index.html">
         <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
       </a>
     </div>
@@ -58,6 +59,7 @@
     <div class="site-header__challenge">
       <div class="site-header__descr">Конкурс на самое безбашенное путешествие с Пинк</div>
     </div>
+  </div>
   </header>
   <!--Основное содержание-->
   <main class="site-main site-main--form">
@@ -137,7 +139,7 @@
             <input class="feedback__input" type="tel" name="feedback-phone" id="feedback-input-1" placeholder="Номер пожалуйста">
           </li>
           <li class="feedback__item">
-            <label class="feedback__label" for="feedback-input-2">Адрес почты:</label>
+            <label class="feedback__label" for="feedback-input-2">Адресок почты:</label>
             <input class="feedback__input" type="email" name="feedback-mail" id="feedback-input-2" placeholder="Введите почту*" required>
           </li>
         </ul>
@@ -179,22 +181,22 @@
     </form>
   </main>
   <footer class="site-footer">
-
     <section class="site-footer__content">
-      <div class="site-footer__logo">
+      <div class="site-footer__logo site-footer__logo--photo">
         <a href="index.html">
-          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
+          <picture>
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+                  <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
+                </picture>
         </a>
       </div>
       <div class="site-footer__social">
-        <a class="site-footer__link site-footer__link--tv" href="#">TV</a>
-        <a class="site-footer__link site-footer__link--fb" href="#">FB</a>
-        <a class="site-footer__link site-footer__link--yt" href="#">YouTube</a>
-      </div>
-      <div class="site-footer__copyright ">Разработано:
-        <a href="#">
-          <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
-        </a>
+         <a class="site-footer__link site-footer__link--tv" href="#">TV</a>
+         <a class="site-footer__link site-footer__link--fb" href="#">FB</a>
+         <a class="site-footer__link site-footer__link--yt" href="#">YouTube</a>
+       </div>
+      <div class="site-footer__copyright">Разработано:
+        <a class="site-footer__link site-footer__link--html" href="#">HTML Academy</a>
       </div>
     </section>
   </footer>

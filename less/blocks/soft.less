@@ -18,7 +18,7 @@
 
 .soft__items {
   .items-base();
-  margin-top: 120px;
+  margin-top: 115px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -49,14 +49,42 @@
 }
 
 .soft__label {
+  position: relative;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  padding-left: 45px;
+  padding-left: 80px;
+  &::before {
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: 10px;
+   display: block;
+   box-sizing: border-box;
+   width: 39px;
+   height: 39px;
+   border: 2px solid #e5e5e5;
+   border-radius: 50%;
+   background-color: #ffffff;
+
+}
+}
+.soft__input:checked + .soft__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: @label-color;
+
 }
 
 .soft__input {
-  margin-left: 20px;
+  //margin-left: 20px;
+  display: none;
 }
 
 .soft__item {
