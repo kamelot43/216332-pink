@@ -31,10 +31,13 @@
     <div class="site-header__wrapper">
     <!--Элемент визуализации-->
     <h1 class="visually-hidden">Приложение "Pink"</h1>
-    <div class="site-header__logo">
-      <a href="index.html">
-        <img src="img/logo-pink-white-mobile.svg " alt="Логотип Пинк">
-      </a>
+    <div class="site-header__logo ">
+      <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="PINK logo">
+            </picture>
+
     </div>
     <button class="button button--toggle button--close-menu " type="button">Закрыть меню</button>
 
@@ -78,7 +81,7 @@
             <picture>
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photo__picture"  src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорамный вид с моста" width="320" height="137">
+                <img class="photo__picture"  src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорамный вид с моста">
               </picture>
           </div>
 
@@ -109,6 +112,7 @@
             <div class="photo__title">Вчера он на луну летал, сегодня в руки к нам попал.</div>
            <div class="photo__likes">Нравится:356</div>
           </div>
+
       </article>
 
         <!--Фотокарточка №3-->
@@ -120,12 +124,14 @@
                 <img class="photo__picture" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
               </picture>
           </div>
+
           <div class="photo__content">
             <div class="photo__user">Антон <span class="photo__time">(12 часов назад)</span>
             </div>
             <div class="photo__title">Соседи будут рады.</div>
              <div class="photo__likes">Нравится:666</div>
             </div>
+
         </article>
 
         <!--Фотокарточка №4-->
@@ -137,12 +143,14 @@
               <img class="photo__picture" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Cтеклянный потолок">
             </picture>
           </div>
+
           <div class="photo__content">
             <div class="photo__user">Борис <span class="photo__time">(20 часов назад)</span>
             </div>
             <div class="photo__title">Здесь могла быть ваша цитата о высоком и вечном.</div>
             <div class="photo__likes">Нравится:215</div>
             </div>
+
         </article>
 
         <!--Фотокарточка №5-->
@@ -154,12 +162,14 @@
               <img class="photo__picture" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Прилавок с бахчой">
             </picture>
           </div>
+
           <div class="photo__content">
             <div class="photo__user">Сергей <span class="photo__time">(25 часов назад)</span>
             </div>
             <div class="photo__title">Самая кубанская в мире!</div>
              <div class="photo__likes">Нравится:4</div>
             </div>
+
         </article>
 
         <!--Фотокарточка №6-->
@@ -171,12 +181,14 @@
               <img class="photo__picture" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Вид с горы">
             </picture>
           </div>
+
           <div class="photo__content">
             <div class="photo__user">Максим <span class="photo__time">(40 часов назад)</span>
             </div>
             <div class="photo__title">Где снег-то?</div>
            <div class="photo__likes">Нравится:50</div>
           </div>
+
         </article>
 
         <!--Фотокарточка №7-->
@@ -188,12 +200,14 @@
                 <img class="photo__picture" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Вид из окна самолета">
               </picture>
           </div>
+
           <div class="photo__content">
             <div class="photo__user">Надежда <span class="photo__time">(45 часов назад)</span>
             </div>
             <div class="photo__title">Всем GM и взаимные лайки!</div>
              <div class="photo__likes">Нравится:2560</div>
           </div>
+
         </article>
       </div>
     </section>
@@ -203,7 +217,7 @@
       <!--Элемент визуализации-->
       <h2 class="visually-hidden">Фоторедактор</h2>
       <div class=photo-editor__slogan>
-        Затмите их всех!<br>Выкладывайте все,что накопилось в телефоне!
+        Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне !
       </div>
 
       <section class="photo-editor__columns">
@@ -228,23 +242,22 @@
 
             <div class="photo-editor__filter">
               <button class="photo-editor__some photo-editor__some--crop" type="button"></button>
-              <div class="photo-editor__scale photo-editor__scale--hidden">
+              <div class="photo-editor__scale">
                   <div class="photo-editor__toggle  photo-editor__toggle--crop"></div>
                 </div>
-
             </div>
 
             <div class="photo-editor__filter">
               <button class="photo-editor__some photo-editor__some--fill "  type="button"></button>
-              <div class="photo-editor__scale ">
+              <div class="photo-editor__scale photo-editor__scale--hidden ">
                    <div class="photo-editor__toggle  photo-editor__toggle--fill"></div>
                  </div>
             </div>
 
+
             <div class="photo-editor__filter">
               <button class="photo-editor__some photo-editor__some--contrast "  type="button"></button>
-
-              <div class="photo-editor__scale  photo-editor__scale--hidden">
+              <div class="photo-editor__scale photo-editor__scale--hidden ">
                   <div class="photo-editor__toggle  photo-editor__toggle--contrast"></div>
                 </div>
             </div>

@@ -31,10 +31,13 @@
       <div class="site-header__wrapper">
     <!--Элемент визуализации-->
     <h1 class="visually-hidden">Приложение "Pink"</h1>
-    <div class="site-header__logo">
-      <a href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-      </a>
+    <div class="site-header__logo ">
+      <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="PINK logo">
+            </picture>
+
     </div>
     <button class="button button--toggle button--close-menu " type="button">Закрыть меню</button>
 

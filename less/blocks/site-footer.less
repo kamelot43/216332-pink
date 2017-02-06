@@ -147,6 +147,9 @@
 }
 .site-footer__logo--photo {
   width: 100%;
+    @media @tablet-widths {
+      width: 33%;
+}
 }
 
 .site-footer__logo img {
@@ -177,6 +180,7 @@ align-items: center;
     font-size: 14px;
     line-height: 18px;
     padding-top: 5px;
+    padding-right: 15px;
   }
   @media @desktop-widths {
     width: 33%;
@@ -242,9 +246,15 @@ align-items: center;
   margin-top: 21px;
   border: 2px solid red;
   @media @tablet-widths {
+    margin-top: 25px;
     margin-left: 0;
     margin-right: 10px;
   }
+}
+.site-footer__link:first-child {
+  @media @tablet-widths {
+    margin-left: 30px;
+}
 }
 
 .site-footer__link--tv {
@@ -287,4 +297,7 @@ align-items: center;
 .site-footer__logo--photo img {
   padding-left: 85px;
   padding-top: 30px;
+    @media @tablet-widths {
+      padding-left: 75px;
+    }
 }
