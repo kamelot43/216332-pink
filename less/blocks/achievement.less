@@ -12,7 +12,7 @@
     outline: 1px solid #c31d21;
   }
   @media @desktop-widths {
-    width: 900px;
+    width: 920px;
     height: 230px;
     margin-top: 50px;
   }
@@ -29,11 +29,11 @@
   }
   @media @desktop-widths {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 60px;
-    width: 830px;
+    width: 100%;
     margin-left: 50px;
   }
 }
@@ -82,8 +82,11 @@
     //transition: all 0.1s linear;
   }
   @media @desktop-widths {
-    padding-left: 0;
+    padding-left: 60px;
+      &::before {
+        left: 5px;
   }
+}
 }
 .achievement__input:checked + .achievement__label::after {
   content: "";
@@ -95,16 +98,39 @@
   height: 16px;
   background-image: url("../img/icon-yes.svg");
 }
+.achievement__item {
+  margin-bottom: 52px;
+  @media @desktop-widths {
+    margin: 0;
+    width: 260px;
+    background: rgba(219, 111, 49, 0.4);
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+}
+
+.achievement__item:first-child {
+  @media @desktop-widths {
+    margin-top: 0;
+  }
+}
+
+.achievement__item:last-child {
+  margin-bottom: 40px;
+}
+
 
 .achievement__item:nth-child(1) {
   @media @desktop-widths {
-    order: 1;
+    order: -1;
+    margin-left: 0;
   }
 }
 
 .achievement__item:nth-child(2) {
   @media @desktop-widths {
     order: 4;
+    margin-left: 0;
   }
 }
 
@@ -130,24 +156,4 @@
   @media @desktop-widths {
     order: 6;
   }
-}
-
-.achievement__item {
-  margin-bottom: 52px;
-  @media @desktop-widths {
-    margin: 0;
-    width: 250px;
-    background: rgba(219, 111, 49, 0.4);
-    margin-bottom: 50px;
-  }
-}
-
-.achievement__item:first-child {
-  @media @desktop-widths {
-    margin-top: 0;
-  }
-}
-
-.achievement__item:last-child {
-  margin-bottom: 40px;
 }

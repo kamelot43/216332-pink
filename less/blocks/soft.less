@@ -10,7 +10,8 @@
   }
   @media @desktop-widths {
     position: relative;
-    width: 430px;
+    width: 440px;
+    top: 10px;
     background: rgba(245, 236, 98, 0.5);
     outline: 1px solid #f5ec62;
   }
@@ -28,7 +29,7 @@
   }
   @media @desktop-widths {
     margin-left: 50px;
-    margin-top: 65px;
+    margin-top: 55px;
   }
 }
 
@@ -66,7 +67,10 @@
    border: 2px solid #e5e5e5;
    border-radius: 50%;
    background-color: #ffffff;
-
+     @media @desktop-widths {
+    top: -10px;
+    left: 20px;
+}
 }
 }
 .soft__input:checked + .soft__label::after {
@@ -79,7 +83,10 @@
   height: 15px;
   border-radius: 50%;
   background-color: @label-color;
-
+  @media @desktop-widths {
+    top: 2px;
+    left: 32px;
+}
 }
 
 .soft__input {

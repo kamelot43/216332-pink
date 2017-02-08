@@ -20,14 +20,15 @@
   background: rgba(133, 36, 36, 0.4);
   align-items: center;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 47px;
   font-size: 14px;
   line-height: 30px;
   @media @tablet-widths {
+    padding-top: 40px;
     font-size: 18px;
     line-height: 30px;
     font-weight: @regular;
-    padding-top: 40px;
+
   }
   @media @desktop-widths {
     padding-top: 0;
@@ -67,6 +68,9 @@
     height: 515px;
     .wrapper(700px);
   }
+  @media @desktop-widths {
+    .wrapper(930px);
+  }
 }
 
 .photo-editor__column-1 {
@@ -77,13 +81,12 @@
   @media @tablet-widths {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     width: 50%;
   }
   @media @desktop-widths {
-    width: 380px;
-    justify-content: flex-end;
-    align-items: flex-end;
+    width: 395px;
+
   }
 }
 
@@ -119,8 +122,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 45px;
+    margin-top: 36px;
     outline: 2px solid gray;
+    margin-bottom: 40px;
   }
   @media @desktop-widths {
     width: 450px;
@@ -136,13 +140,14 @@
     flex-direction: row;
     width: 310px;
     //margin-bottom: 20px;
-    height: 74px;
+    height: 50px;
     border-bottom: 2px solid red;
     padding-top: 22px;
   }
   @media @desktop-widths {
     width: 400px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
+    padding-top: 0;
 
   }
 }
@@ -218,6 +223,14 @@
     width: 24px;
     height: 24px;
     background-size: cover;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+@media @desktop-widths {
+  height: 48px;
+  width: 48px;
+  margin-top: 0;
+  margin-left: 10px;
 }
 }
 .photo-editor__some--crop {
@@ -233,6 +246,9 @@
   background-size: 18px 18px;
     background-position: 5px 2px;
   }
+  @media @desktop-widths {
+    background-size: 35px 35px;
+}
 }
 
 .photo-editor__scale {
@@ -244,8 +260,13 @@
   left: 5px;
   @media @tablet-widths {
     width: 200px;
-    top: 31px;
-    left: 50px;
+    top: 37px;
+    left: 70px;
+  }
+  @media @desktop-widths {
+    width: 285px;
+    top: 17px;
+    left: 100px;
   }
 }
 .photo-editor__scale--hidden {

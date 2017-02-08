@@ -188,6 +188,8 @@ align-items: center;
     justify-content: flex-end;
     background: rgba(235, 12, 181, 0.3);
     outline: 1px solid orange;
+    font-size: 18px;
+    font-weight: @regular;
   }
 }
 
@@ -250,13 +252,18 @@ align-items: center;
     margin-left: 0;
     margin-right: 10px;
   }
+  @media @desktop-widths {
+    margin-top: 45px;
+  }
 }
-.site-footer__link:first-child {
+.site-footer__social .site-footer__link:first-child {
   @media @tablet-widths {
     margin-left: 30px;
 }
+  @media @desktop-widths {
+    margin-left: 45px;
 }
-
+}
 .site-footer__link--tv {
   background-image: url("../img/icon-twitter.svg");
 }
@@ -272,6 +279,9 @@ align-items: center;
   background-image: url("../img/logo-htmlacademy.svg");
   border: none;
   margin-top: 0;
+    @media @desktop-widths {
+      margin-right: 20px;
+    }
 }
 
 
@@ -300,4 +310,8 @@ align-items: center;
     @media @tablet-widths {
       padding-left: 75px;
     }
+      @media @desktop-widths {
+        padding-left: 45px;
+        padding-top: 45px;
+}
 }
