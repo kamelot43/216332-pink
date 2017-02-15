@@ -1,23 +1,28 @@
 .download {
   //background-color: #1d2631;
   outline: 1px solid red;
-  padding-top: 395px;
+  //padding-top: 395px;
   @media @tablet-widths {
-    z-index: 10;
+  position: relative;
+   z-index: 10;
+   width: 320px;
+   margin-top: -554px;
+   background-color: transparent;
     display: flex;
     flex-direction: column;
-    padding-left: 35px;
+    margin-left: 60px;
     justify-content: flex-start;
-    padding-top: 0;
-    min-height: 620px;
-    width: 370px;
-    background: rgba(157, 15, 107, 0.4);
+    //padding-top: 0;
+    //min-height: 620px;
+    //width: 370px;
+    margin-bottom: 75px;
+
   }
   @media @desktop-widths {
     width: 380px;
-    min-height: 740px;
-    padding-top: 0;
-    padding-left: 0;
+    margin-top: -630px;
+    margin-left: 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -26,13 +31,13 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 250px;
+    height: 185px;
     background: rgba(2, 157, 15, 0.4);
     font-size: 35px;
     text-align: center;
   }
   @media @desktop-widths {
-    height: 320px;
+    height: 180px;
     background: rgba(12, 222, 112, 0.3);
   }
 }
@@ -113,8 +118,11 @@
 .download__link:first-child {
   margin-left: 55px;
   @media @tablet-widths {
-    margin-left: 85px;
+    margin-left: 50px;
 }
+  @media @desktop-widths {
+    margin-left: 90px;
+  }
 }
 
 .download__link--IOS {

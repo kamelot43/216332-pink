@@ -1,74 +1,39 @@
-.site-header__wrapper {
-  min-height: 300px;
-  background-color: rgba(152, 191, 105, 0.3);
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 260px;
+.site-header {
+  //min-height: 300px;
+  //background-color: rgba(152, 191, 105, 0.3);
+  //background: url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
                  background-size: 700px 462px;
 
   @media @tablet-widths {
     //position: relative;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 260px;
+    //background: url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
   }
   @media @desktop-widths {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
+    //background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
   }
 }
 
 @media (min-width: 320px) and (min-resolution: 144dpi),
        (min-width: 320px) and (min-resolution: 1.5dppx) {
-  .site-header__wrapper {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center 260px;
+  .site-header {
+    //background: url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
                 background-size: 700px 462px;
   }
 }
 
 @media (min-width: 660px) and (min-resolution: 144dpi),
        (min-width: 660px) and (min-resolution: 1.5dppx) {
-  .site-header__wrapper {
-    background: url("../img/bg-back-tablet@2x.jpg") no-repeat center 260px;
+  .site-header {
+    //background: url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
                    background-size: 1200px 729px;
   }
 }
 
 @media (min-width: 960px) and (min-resolution: 144dpi),
        (min-width: 960px) and (min-resolution: 1.5dppx) {
-  .site-header__wrapper {
-    background:  url("../img/bg-back-desktop@2x.jpg") no-repeat center top;
+  .site-header {
+    //background:  url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom;
                   background-size:2560px 853px;
-
-  }
-}
-.site-header__demo-img {
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0px 435px;
-      background-size:258px 286px;
-        @media @tablet-widths {
-          background: url("../img/iphone-hand-tablet@1x.png") no-repeat 34px 440px;
-            background-size:700px 545px;
-}
-@media @desktop-widths {
-  background: url("../img/iphone-hand-desktop@1x.png") no-repeat 55px 210px;
-    background-size:1050px 645px;
-}
-}
-
-@media (min-width: 320px) and (min-resolution: 144dpi),
-       (min-width: 320px) and (min-resolution: 1.5dppx) {
-  .site-header__demo-img {
-    background: url("../img/iphone-hand-mobile@2x.png") no-repeat 0px 435px;
-                background-size:258px 286px;
-  }
-}
-@media (min-width: 660px) and (min-resolution: 144dpi),
-       (min-width: 660px) and (min-resolution: 1.5dppx) {
-         .site-header__demo-img {
-           background: url("../img/iphone-hand-tablet@2x.png") no-repeat 34px 440px;
-           background-size:700px 545px;
-  }
-}
-@media (min-width: 960px) and (min-resolution: 144dpi),
-       (min-width: 960px) and (min-resolution: 1.5dppx) {
-         .site-header__demo-img {
-           background: url("../img/iphone-hand-desktop@1x.png") no-repeat 55px 210px;
-            background-size:1050px 645px;
 
   }
 }
@@ -124,41 +89,22 @@ transform: translate(-20px, 105px);
 .site-header--form {
   min-height: 495px;
 }
-
-.site-header__logo {
-  min-width: 100%;
-  outline: 1px solid red;
-  font-size: 0;
-  text-align: left;
-  height: 67px;
-  //padding: 19px 20px;
-  background-color: @form-base-color;
-   @media @tablet-widths {
-     height: 110px;
+.site-header__demo-img {
+  overflow: hidden;
+  width: 320px;
+  min-height: 286px;
+  margin: 109px auto 0;
+  line-height: 0;
+    @media @tablet-widths {
+    position: relative;
+   z-index: 5;
+   width: 660px;
+   min-height: 545px;
+   margin-top: 73px;
+ }
+   @media @desktop-widths {
+    width: 940px;
+   min-height: 645px;
+   margin-top: 130px;
    }
-  @media @desktop-widths {
-    float: left;
-    min-width: 200px;
-    height: 75px;
-    background-color: transparent;
-  }
-}
-.site-header__logo img {
-  padding-left: 20px;
-  padding-top: 20px;
-  @media @tablet-widths {
-    height:40px;
-    width: 146px;
-    padding-left: 75px;
-    padding-top: 30px;
-  }
-    @media @desktop-widths {
-      padding-left: 40px;
-}
-}
-.site-header__inner {
-  @media @desktop-widths {
-   background-color: rgba(0, 0, 0, 0.3);
-   height: 110px;
-  }
 }

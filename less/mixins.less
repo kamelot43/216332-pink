@@ -98,3 +98,11 @@
     max-width: 960px;
   }
 }
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
