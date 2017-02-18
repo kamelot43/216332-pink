@@ -27,47 +27,48 @@
 
 <body>
   <!-- Шапка сайта -->
-  <div class="site-header__wrapper">
-  <header class="site-header">
-    <section class="site-header__inner">
 
-    <!--Элемент визуализации-->
+  <header class="site-header">
     <h1 class="visually-hidden">Приложение "Pink"</h1>
-    <div class="site-header__logo ">
-      <picture>
+
+
+    <nav class="site-nav site-nav--closed site-nav--nojs">
+      <button class="site-nav__toggle" type="button">Закрыть меню</button>
+      <div class="site-nav__wrapper">
+        <ul class="site-nav__logo-items">
+          <li class="site-nav__logo-item">
+            <picture>
               <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
               <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="PINK logo">
             </picture>
+          </li>
+        </ul>
 
-    </div>
-    <button class="button button--toggle button--close-menu " type="button">Закрыть меню</button>
+        <ul class="site-nav__items">
 
-    <!--Навигация-->
-    <nav class="site-nav">
-
-      <ul class="site-nav__items">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link">Конкурс</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="http://htmlacademy.ru/">HTML academy</a>
-        </li>
-      </ul>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="http://htmlacademy.ru/">html academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-  </section>
+
     <div class="site-header__challenge">
       <div class="site-header__descr">Конкурс на самое безбашенное путешествие с Пинк</div>
     </div>
 
   </header>
-  </div>
+
   <!--Основное содержание-->
   <main class="site-main site-main--form">
     <!--Блок для кнопок-->
@@ -225,6 +226,22 @@
       <button class="button button--popup" type="button" title="Закрыть окно">Закрыть окно</button>
     </div>
   </div>
+  <script>
+   var navMain = document.querySelector('.site-nav');
+   var navToggle = document.querySelector('.site-nav__toggle');
+
+   navMain.classList.remove('site-nav--nojs');
+
+   navToggle.addEventListener('click', function() {
+     if (navMain.classList.contains('site-nav--closed')) {
+       navMain.classList.remove('site-nav--closed');
+       navMain.classList.add('site-nav--opened');
+     } else {
+       navMain.classList.add('site-nav--closed');
+       navMain.classList.remove('site-nav--opened');
+     }
+   });
+ </script>
 </body>
 
 </html>

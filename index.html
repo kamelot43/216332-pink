@@ -3,25 +3,26 @@
 
 <head>
   <style>
+  BODY {
+    background: url('preview/pink-index-mobile.jpg')50% 0% no-repeat;
+  }
+
+  @media (min-width: 660px) {
     BODY {
-      background: url('preview/pink-index-mobile.jpg')50% 0% no-repeat;
+      background-image: url('preview/pink-index-tablet.jpg');
     }
+  }
 
-    @media (min-width: 660px) {
-      BODY {
-        background-image: url('preview/pink-index-tablet.png');
-      }
+  @media (min-width: 960px) {
+    BODY {
+      background-image: url('preview/pink-index-desktop.jpg');
     }
-
-    @media (min-width: 960px) {
-      BODY {
-        background-image: url('preview/pink-index-desktop.jpg');
-      }
-    }
+  }
   </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+
 
   <title>HTML Academy: Пинк</title>
 </head>
@@ -88,6 +89,7 @@
   <!--Основное содержание -->
   <main class="site-main">
     <section class="download">
+      <div class="download__container">
       <h2 class="visually-hidden">Загрузка "Pink"</h2>
       <div class="download__slogan">
         <div class="download__content">
@@ -108,15 +110,19 @@
       <div class="download__support ">
         Доступно для iPhone,iPad,Android,<br>Windows Phone,OS X,Windows 8.
       </div>
+    </div>
     </section>
 
 
     <!-- Блок преемуществ -->
     <section class="features ">
+        <div class="features__wrapper">
+      <div class="features__container">
       <h2 class="visually-hidden">О приложении</h2>
       <!--Вводная часть как часть блока преемуществ-->
       <!--Вводная часть -->
       <div class="features__proposal-container">
+
         <div class="features__proposal">
           Устали от серости мегаполиса?
         </div>
@@ -124,8 +130,11 @@
           Нам есть, что вам <br>предложить!
         </div>
       </div>
+
       <!--Блок приемуществ №1 -->
       <section class="features__items">
+
+
 
 
         <div class="features__item">
@@ -166,31 +175,42 @@
           </div>
         </div>
 
-
       </section>
+    </div>
+
 
 
       <!-- Здесь будет картинка вставленая фоном-->
     </section>
     <section class="study ">
+
+
       <div class="study__timer">
         <svg class="study__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="238px" height="276px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve"
           preserveAspectRatio="none">
   <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
 </svg>
       </div>
+
       <div class="study__content ">
         <div class="study__title">Эффект на 24 часа!
         </div>
+
         <div class="study__descr">
           Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</div>
         <a href="#" class="study__link">Узнать больше об исследовании</a>
       </div>
+
+      <div>
+
     </section>
 
 
     <!-- Блок с отзывами.-->
     <section class="reviews">
+        <div class="reviews__wrapper">
+      <div class="reviews__container">
+
       <!--Элемент визуальзации-->
       <h2 class="visually-hidden">Отзывы</h2>
       <!--Слайдер-->
@@ -241,6 +261,8 @@
           <img src="img/icon-review-arrow-right.svg" width="22" heigth="42" alt="right arrow">
         </div>
       </div>
+    </div>
+  </div>
     </section>
 
 

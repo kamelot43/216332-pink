@@ -1,5 +1,11 @@
 .site-nav__wrapper {
 .clearfix();
+  @media @tablet-widths {
+    .wrapper(620px);
+  }
+    @media @desktop-widths {
+      width: auto;
+    }
 }
 .site-nav__items {
   .items-base();
@@ -32,7 +38,7 @@
   color:#ffffff;
   @media @tablet-widths {
     height: 48px;
-    padding-top: 2%;
+    padding-top: 15px;
   }
   @media @desktop-widths {
     padding-top: 30%;
@@ -96,7 +102,7 @@
   @media @tablet-widths {
     height:40px;
     width: 146px;
-    padding-left: 75px;
+    padding-left: 0;
     padding-top: 30px;
   }
     @media @desktop-widths {
@@ -117,6 +123,10 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
+  @media @tablet-widths {
+    top: 30px;
+    right: 55px;
+  }
   @media @desktop-widths {
     display: none;
   }

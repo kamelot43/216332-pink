@@ -1,10 +1,17 @@
 .pricelist {
   position: relative;
-  min-height: 370px;
-  background-color: rgba(120, 212, 0, 0.3);
+  //min-height: 380px;
+  //background-color: #f2f2f2;
   overflow: hidden;
+  padding-top: 125px;
+  padding-bottom: 95px;
+  outline: 2px solid orange;
+  @media @tablet-widths {
+    padding-top: 80px;
+  }
   @media @desktop-widths {
     height: 540px;
+
   }
 }
 
@@ -67,6 +74,8 @@
   text-align: center;
   overflow: hidden;
   outline: 2px solid blue;
+  background: #283645;
+  color: #ffffff;
   @media @tablet-widths {
     width: 100px;
     height: 75px;
@@ -168,6 +177,7 @@
   display: none;
   @media @tablet-widths {
     display: table-cell;
+    background: transparent;
   }
 }
 
