@@ -36,7 +36,8 @@
   @media @desktop-widths {
     position: relative;
     align-items: flex-end;
-    height: 350px;
+    //height: 350px;
+    padding-top: 175px;
     &::before {
       content: "";
       position: absolute;
@@ -198,4 +199,7 @@
     @media @tablet-widths {
       .wrapper(620px);
 }
+  @media @desktop-widths {
+    .wrapper(940px);
+  }
 }
